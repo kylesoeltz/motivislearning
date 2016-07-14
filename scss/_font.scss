@@ -1,0 +1,18 @@
+/*@font-face {
+	font-family: 'Lrm';
+	src:url('fonts/icomoon.eot?73g9zs');
+	src:url('fonts/icomoon.eot?#iefix73g9zs') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?73g9zs') format('truetype'),
+		url('fonts/icomoon.woff?73g9zs') format('woff'),
+		url('fonts/icomoon.svg?73g9zs#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+@mixin iconFont() {
+    font: normal normal normal 14px/1 'MotivisWebsite';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

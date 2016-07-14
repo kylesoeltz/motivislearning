@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700,700italic,600,600italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
+
+/*-----
+	Variables & Mixins
+	-----*/
+$border-radius: 4px;
+$standard-bottomMargin: 26px;
+$standard-horizontalPadding: 23px;
+$standard-verticalPadding: 20px;
+$standard-padding: $standard-verticalPadding $standard-horizontalPadding;
+
+
+// Structural Colors
+$color-headerFooterBg: #3f3f3f;
+$color-pageBg: #f9f9f9;
+
+// Standard Colors
+$color-black: #3f3f3f;
+$color-darkGray: #595959;
+$color-gray: #d7d7d7;
+$color-lightGray: #efefef;
+$color-charcoal: #9d9d9d;
+$color-strokeGray: #e8e9ec;
+$color-fadedGray: #f5f5f5;
+$color-offWhite: #f9f9f9;
+$color-white: #ffffff;
+
+$color-blue: #0d9fd0;
+$color-orange: #e3573c;
+$color-navy: #1b7bac;
+$color-green: #4bca81;
+$color-red: #d53030;
+$color-paleYellow: #fcf8e3;
+
+$color-primary: #bababc; //deprecated, don't use
+$color-secondary: #bababc; //deprecated, don't use
+
+$color-caution: #c89c4a;
+$color-caution-fade: #dfc79c;
+$color-error: #af1813;
+$color-error-fade: #d99c9a;
+$color-success: #3a773a;
+$color-success-fade: #98b798;
+
+
+
+// Progress Bar Colors
+$color-progressCompleted: #ff3366;
+$color-progressStarted: #ffd6e0;
+
+// Link Colors
+$color-link: #12a9db;
+$color-linkHover: #12a9db;
+
+// Break Points
+$break-mobileExtraSmall: 350px;
+$break-mobileSmall: 500px;
+$break-mobileMedium: 600px;
+$break-tabletSmall: 767px;
+$break-tabletMedium: 900px;
+$break-desktopSmall: 1025px;
+$break-desktopMedium: 1300px;
+$break-desktopLarge: 1400px;
+
+
+
+@mixin standardPadding() {
+    padding: $standard-verticalPadding ($standard-horizontalPadding/2);
+    @media (min-width: $break-mobileSmall) {
+        padding: $standard-padding;
+    }
+}
+
+@mixin color-charcoal($opacity) {
+    background: rgba(100,100,100,$opacity);
+}
+
+// Font Mixins
+@mixin font-roboto-light() {
+    font-family:'Roboto Slab', arial, sans-serif;
+    font-weight: 300;
+}
+@mixin font-roboto-bold() {
+    font-family:'Roboto Slab', arial, sans-serif;
+    font-weight: 700;
+}
+@mixin font-primary-light() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 300;
+}
+@mixin font-primary-regular() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 400;
+}
+@mixin font-primary-semibold() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 600;
+}
+@mixin font-primary-bold() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 700;
+}
+@mixin font-primary-regular-italic() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+@mixin font-primary-semibold-italic() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+@mixin font-primary-bold-italic() {
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@mixin placeholderStyles($font-size) {
+    &::-webkit-input-placeholder {
+        font-size: $font-size;
+    }
+    &::-moz-placeholder {
+        font-size: $font-size;
+    }
+    &:-moz-placeholder {
+        font-size: $font-size;
+    }
+    &:-ms-input-placeholder {
+        font-size: $font-size;
+    }
+}
+
+@mixin placeholderColor($font-color) {
+    &::-webkit-input-placeholder {
+       color: $font-color;
+    }
+    &::-moz-placeholder {
+       color: $font-color;
+    }
+    &:-moz-placeholder {
+       color: $font-color;
+    }
+    &:-ms-input-placeholder {
+       color: $font-color;
+    }
+}
+
+@mixin customScrollbar() {
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $color-gray;
+        border: 3px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+    }
+}
+
+
+@mixin linkUnderlines($backgroundColor, $color) {
+    color: $color;
+    text-decoration: none;
+    text-shadow: .03em 0 $backgroundColor, -.03em 0 $backgroundColor, 0 .03em $backgroundColor, 0 -.03em $backgroundColor, .06em 0 $backgroundColor, -.06em 0 $backgroundColor, .09em 0 $backgroundColor, -.09em 0 $backgroundColor, .12em 0 $backgroundColor, -.12em 0 $backgroundColor, .15em 0 $backgroundColor, -.15em 0 $backgroundColor;
+    background-image: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient($color, $color);
+    background-size: .05em 1px, .05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: 0% 90%, 100% 90%, 0% 90%;
+}
+@mixin linkUnderlinesImportant($backgroundColor, $color) {
+    color: $color !important;
+    text-decoration: none !important;
+    text-shadow: .03em 0 $backgroundColor, -.03em 0 $backgroundColor, 0 .03em $backgroundColor, 0 -.03em $backgroundColor, .06em 0 $backgroundColor, -.06em 0 $backgroundColor, .09em 0 $backgroundColor, -.09em 0 $backgroundColor, .12em 0 $backgroundColor, -.12em 0 $backgroundColor, .15em 0 $backgroundColor, -.15em 0 $backgroundColor !important;
+    background-image: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient($color, $color) !important;
+    background-size: .05em 1px, .05em 1px, 1px 1px !important;
+    background-repeat: no-repeat, no-repeat, repeat-x !important;
+    background-position: 0% 90%, 100% 90%, 0% 90% !important;
+}
+@mixin removeUnderlines() {
+    text-decoration: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+}
+
+@mixin centeredShadow() {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@mixin lightShadow() {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin heavyShadow($opacity) {
+    -webkit-box-shadow: 0px 5px 46px -2px rgba(0,0,0,$opacity);
+    -moz-box-shadow: 0px 5px 46px -2px rgba(0,0,0,$opacity);
+    box-shadow: 0px 5px 46px -2px rgba(0,0,0,$opacity);
+}
+
+@-webkit-keyframes animScale {
+	0% { opacity: 0; -webkit-transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); }
+	100% { opacity: 1; -webkit-transform: translate3d(0,0,0) scale3d(1,1,1); }
+}
+@keyframes animScale {
+	0% { opacity: 0; -webkit-transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); }
+	100% { opacity: 1; -webkit-transform: translate3d(0,0,0) scale3d(1,1,1); transform: translate3d(0,0,0) scale3d(1,1,1); }
+}
+@-webkit-keyframes animScaleOff {
+	0% { opacity: 1; -webkit-transform: translate3d(0,0,0) scale3d(1,1,1); }
+	100% { opacity: 0; -webkit-transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); }
+}
+@keyframes animScaleOff {
+	0% { opacity: 1; -webkit-transform: translate3d(0,0,0) scale3d(1,1,1); transform: translate3d(0,0,0) scale3d(1,1,1); }
+	100% { opacity: 0; -webkit-transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); transform: translate3d(0,40px,0) scale3d(0.1,0.6,1); }
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

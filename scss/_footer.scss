@@ -1,0 +1,52 @@
+/*-----
+	Footer Styles
+	-----*/
+footer {
+	padding: 68px 10px;
+	border-top: solid 1px $color-strokeGray;
+	small {
+		text-transform: uppercase;
+	}
+}
+
+p.social-icons {
+	a {
+		color: $color-white;
+		background-color: $color-darkGray;
+		border-radius: 600px;
+		border: none;
+		width: 36px;
+		height: 36px;
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		margin: 0 7px 12px;
+		i {
+			vertical-align: middle;
+			top: 1px;
+			position: relative;
+			&.fa-facebook {
+				top: 2px;
+				left: 3px;
+				font-size: 19px;
+			}
+			&.fa-pinterest {
+				left: 2px;
+				top: 2px;
+				font-size: 22px;
+			}
+			&.fa-youtube {
+				left: 2px;
+				font-size: 22px;
+			}
+			&.fa-google-plus {
+				top: 2px;
+				left: 2px;
+				font-size: 18px;
+			}
+		}
+		&:hover {
+			background-color: lighten($color-darkGray, 10)
+		}
+	}
+}

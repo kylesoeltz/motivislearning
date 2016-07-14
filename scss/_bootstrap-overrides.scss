@@ -1,0 +1,13 @@
+.btn {
+    border-radius: 0;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: $color-white;
+}
+button:focus {outline:0 !important;}
+
+.col-xs-24.pull-right {
+	@media (max-width: 991px) {
+		float: none !important;
+	}
+}

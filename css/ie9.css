@@ -1,0 +1,11 @@
+section.mainContent a.btn.btnColorSecondary,
+section.mainContent a.btn.btnColorPrimary {
+    line-height: 26px;
+}
+section.mainContent a.btn.btnColorSecondary:hover,
+section.mainContent a.btn.btnColorPrimary:hover {
+    text-align: center !important;
+}
+section.mainContent a.btn:hover {
+    line-height: 26px;
+}

@@ -1,0 +1,399 @@
+/*-----
+	Content Styles
+	TOC
+
+	Section 1: Global styles
+	Section 2: Link and button styles
+	Section 3: Front-page slider
+	Section 4: Full width sections
+	-----*/
+
+//
+//	Section 1: Global styles
+//
+///////////////////////////
+
+
+.avatar {
+	border-radius: 600px;
+	border: solid 2px $color-white;
+	max-width: 136px;
+	max-height: 136px;
+	&.avatar-medium {
+		max-width: 175px;
+		max-height: 175px;
+	}
+}
+
+.standard-block {
+	position: relative;
+	padding-left: 170px;
+	img.avatar {
+		position: absolute;
+		left: 0;
+	}
+	@media (max-width: 933px) {
+		padding-left: 105px;
+		img.avatar {
+			max-width: 90px;
+			max-height: 90px;
+		}
+	}
+	@media (max-width: 500px) {
+		padding-left: 0;
+		img.avatar {
+			max-width: 112px;
+			max-height: 112px;
+			position: relative;
+			display: block;
+			text-align: center;
+			margin: 18px auto;
+		}
+	}
+}
+
+.open-space {
+	letter-spacing: 2px;
+}
+
+p.details {
+	border-top: solid 1px $color-gray;
+	font-size: 14px;
+	padding-top: 8px;
+}
+
+.color-block {
+	margin: 10px 0 10px 0;
+	width: 300px;
+	padding: 15px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: $color-white;
+	&:first-child {
+		margin-top: 80px;
+	}
+	&:last-child {
+		margin-bottom: 80px;
+	}
+}
+
+.pagination {
+	a {
+		border: none;
+		&:not(:first-child):not(:last-child) {
+			color: $color-darkGray;
+		}
+	}
+	margin-bottom: 300px; //delete if needed, only for demo purposes
+}
+
+
+//
+//	Section 2: Link and button styles
+//
+///////////////////////////
+
+[class*="btn-"] {
+	padding: 12px 24px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all .2s ease;
+	display: inline-block;
+}
+
+[class*="btn-solid-"] {
+	color: $color-white;
+}
+
+[class*="btn-ghost-"] {
+	border-width: 2px;
+	border-style: solid;
+}
+
+.btn-solid-orange {
+	background-color: $color-orange;
+	&:hover {
+		background-color: lighten($color-orange, 3);
+	}
+}
+
+.btn-ghost-white {
+	border-color: $color-white;
+	color: $color-white;
+	&:hover {
+		background-color: $color-white;
+		border-color: $color-white;
+		color: $color-darkGray;
+	}
+}
+
+.center-btn {
+	text-align: center;
+}
+
+//aside nav
+aside.side-nav {
+	ul {
+		padding: $standard-padding;
+		background-color: $color-offWhite;
+		&:first-child:not(:last-child) {
+			padding-bottom: 10px;
+		}
+		li {
+			line-height: 1.9em;
+		}
+	}
+	.featured-content {
+		padding: 45px 25px;
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: $standard-bottomMargin*2;
+	}
+}
+
+
+
+
+//
+//	Section 3: Front-page slider
+//
+///////////////////////////
+
+
+.front-page-slider {
+	height: 670px;
+	margin-bottom: $standard-bottomMargin*2;
+	position: relative;
+	overflow: hidden;
+	background-image: url('images/left-hero-texture.jpg');
+	svg.paint-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -1200px;
+		z-index: 20;
+	}
+	.slide-container {
+		width: 100%;
+		.slide {
+			display: none;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			&[data-slide="1"] {
+				display: block;
+			}
+			img {
+				max-width: none;
+				position: relative;
+				z-index: 10;
+				left: 567px; //or 43%;
+			}
+			.slide-content {
+				max-width: 1350px;
+				padding: 110px 675px 0 50px;
+				margin: 0 auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 30;
+				text-align: left;
+				p {
+					color: $color-white;
+					margin-bottom: 34px;
+				}
+				a.btn-ghost-white:hover {
+					color: $color-green;
+				}
+			}
+		}
+	}
+}
+
+
+
+//
+//	Section 4: Full width sections
+//
+///////////////////////////
+
+.callouts {
+	@include clearfix();
+	margin-bottom: $standard-bottomMargin *3;
+	p.text-center {
+		padding: 0 10px;
+	}
+}
+i.fa.title-icon {
+	color: $color-blue;
+	text-align: center;
+	display: block;
+	margin: $standard-bottomMargin auto;
+	font-size: 108px;
+}
+
+.full-width {
+	width: 100%;
+	&.navy {
+		background-color: $color-navy;
+		padding: 40px 0;
+		color: $color-white;
+		h4 {
+			margin-bottom: $standard-bottomMargin;
+		}
+		a.btn-ghost-white:hover {
+			color: $color-navy;
+		}
+	}
+	&.blue {
+		background-color: $color-blue;
+		padding: 80px 0;
+		color: $color-white;
+		.standard-block {
+			padding-left: 210px;
+			@media (max-width: 933px) {
+				padding-left: 0;
+				img.avatar {
+					max-width: 140px;
+					max-height: 140px;
+					display: block;
+					position: relative;
+					margin: 0 auto 40px;
+				}
+			}
+		}
+		a.btn-ghost-white:hover {
+			color: $color-blue;
+		}
+	}
+	&.paint {
+		background-image: url('images/left-hero-texture.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 50px 0;
+		margin-bottom: 300px; //remove if needed, only for demo
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+	&.image-dots {
+		background-image: url('images/dot-bg.jpg');
+		position: relative;
+		padding: 118px 0;
+		.image-half {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: right center;
+			img {
+				position: absolute;
+			    right: 64px;
+			    top: 0;
+			    bottom: 0;
+			    margin: auto;
+			}
+		}
+	    @media (max-width: 768px) {
+	    	padding: 0 0 50px;
+			.image-half {
+		    	position: relative;
+		    	width: 100%;
+		    	height: 300px;
+		    	margin-bottom: 50px;
+		    	img {
+		    		right: 0;
+		    		left: 0;
+		    	}
+	    	}
+	    }
+		h5 {
+			margin-bottom: $standard-bottomMargin;
+		}
+		h3 {
+			a {
+				color: $color-orange;
+				&:hover {
+					border-color: $color-orange;
+				}
+			}
+		}
+	}
+	section.featured-content {
+		padding: 90px 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 300px; //remove if needed, only for demo
+	}
+}
+
+.alternate-sides {
+	article.full-width.image-dots:nth-of-type(even) {
+		.image-half {
+			right: 0;
+			img {
+				left: 64px;
+				right: auto;
+			    @media (max-width: 768px) {
+			    	left: 0;
+			    	right: 0;
+			    }
+			}
+		}
+	}
+}
+
+blockquote {
+	font-size: 35px;
+	@include font-roboto-light();
+	line-height: 1.5em;
+	padding: 35px 55px;
+	position: relative;
+	&:before, &:after {
+		@include iconFont();
+		font-size: 26px;
+	}
+	&:before {
+		position: absolute;
+		content: '\f00d';
+		left: 0;
+		top: 0;
+	}
+	&:after {
+		content: '\f00e';
+		position: relative;
+		bottom: -20px;
+		right: -20px;
+	}
+	+ cite {
+		padding-left: 55px;
+		margin-top: 10px;
+		display: block;
+		font-size: 16px;
+		line-height: 1em;
+		@include font-primary-bold();
+		text-transform: uppercase;
+		small {
+			display: block;
+			text-transform: none;
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 12px;
+		}
+	}
+	@media (max-width: 933px) {
+		font-size: 24px;
+		padding: 35px 0px;
+		+ cite {
+			padding-left: 0;
+		}
+	}
+
+}
