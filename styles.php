@@ -220,6 +220,50 @@
         			</div>
         		</section>
         	</article>
+        	<article class="full-width image-dots">
+        		<div class="inner">
+        			<section>
+        				<div class="row">
+        					<div class="text-center bullet-header">
+        						<h2>Taking student-centered learning to the next level</h2>
+        						<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        					</div>
+        				</div>
+        				<div class="row">
+        					<div class="col-md-12">
+        						<i class="fa fa-medal bullet-icon" aria-hidden="true"></i>
+        						<div class="bullet-box">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        					<div class="col-md-12">
+        						<i class="fa fa-medal bullet-icon" aria-hidden="true"></i>
+        						<div class="bullet-box">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="row">
+        					<div class="col-md-12">
+        						<i class="fa fa-medal bullet-icon" aria-hidden="true"></i>
+        						<div class="bullet-box">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        					<div class="col-md-12">
+        						<i class="fa fa-medal bullet-icon" aria-hidden="true"></i>
+        						<div class="bullet-box">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</section>
+        		</div>
+        	</article>
         </main>
         <?php include 'includes/footer.php'; ?>
     </body>

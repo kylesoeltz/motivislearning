@@ -5961,6 +5961,7 @@ nav.main-nav {
 	Section 3: Front-page slider
 	Section 4: Full width sections
 	Section 5: Card Styles
+	Section 6: Bullet Box
 	-----*/
 .avatar {
   border-radius: 600px;
@@ -6291,6 +6292,24 @@ blockquote {
   background-color: #f9f9f9;
   border-radius: 0 0 4px 4px;
   padding: 20px 23px; }
+
+.bullet-header {
+  margin-bottom: 26px; }
+  .bullet-header p {
+    border-top: 1px solid #e3573c;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 23px; }
+
+.bullet-box {
+  max-width: 80%;
+  margin: 0 auto;
+  vertical-align: top; }
+
+i.fa.bullet-icon {
+  float: left;
+  margin-top: 5px;
+  margin-right: 25px; }
 
 /*-----
 	Footer Styles

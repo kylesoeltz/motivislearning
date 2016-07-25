@@ -7,6 +7,7 @@
 	Section 3: Front-page slider
 	Section 4: Full width sections
 	Section 5: Card Styles
+	Section 6: Bullet Box
 	-----*/
 
 //
@@ -440,4 +441,31 @@ blockquote {
 	background-color: $color-offWhite;
 	border-radius: 0 0 $border-radius $border-radius;
 	padding: $standard-padding;
+}
+
+//
+//	Section 6: Bullet Styling
+//
+///////////////////////////
+
+.bullet-header {
+	margin-bottom: $standard-bottomMargin;
+	p {
+		border-top: 1px solid $color-orange;
+		max-width: 600px;
+		margin: 0 auto;
+		padding: $standard-padding;
+    }
+}
+
+.bullet-box{
+	max-width: 80%;
+	margin: 0 auto;
+    vertical-align: top;
+}
+
+i.fa.bullet-icon{
+	float: left;
+	margin-top: 5px;
+	margin-right: 25px;
 }
