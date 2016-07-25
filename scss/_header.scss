@@ -127,7 +127,7 @@ nav.main-nav {
 				}
 			}
 		}
-		a.btn-solid-orange[class*="btn-"] {
+		a.btn {
 			padding: 10px 20px;
 		}
 	}
@@ -189,7 +189,7 @@ nav.main-nav {
 					}
 				}
 			}
-			a.btn-solid-orange[class*="btn-"] {
+			a.btn {
 				padding: 7px 14px;
 				font-size: 12px;
 			}
@@ -229,7 +229,7 @@ nav.main-nav {
 					}
 				}
 			}
-			a.btn-solid-orange[class*="btn-"] {
+			a.btn {
 				padding: 5px 12px;
 				font-size: 11px;
 			}
@@ -345,7 +345,7 @@ nav.main-nav {
 					border: solid 1px $color-white;
 				}
 			}
-			a.btn-solid-orange[class*="btn-"] {
+			a.btn {
 				right: -250px;
 				display: block;
 				position: absolute;
@@ -399,7 +399,7 @@ nav.main-nav {
 				height: auto;
 				overflow: visible;
 				ul,
-				a.btn-solid-orange[class*="btn-"],
+				a.btn,
 				form.search {
 					right: 0;
 					transition: right .3s ease-out;

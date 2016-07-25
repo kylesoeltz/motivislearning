@@ -313,7 +313,7 @@
         	<div class="slide-content">
 	        	<h1>Their Future is Our&nbsp;Mission</h1>
 	        	<p class="large">A modern platform for a holistic student&nbsp;experience.</p>
-	        	<a href="#" class="btn-ghost-white">Request Demo</a>
+	        	<a href="#" class="btn">Request Demo</a>
         	</div>
     	</div>
     	<div class="slide" data-slide="2">
@@ -321,7 +321,7 @@
         	<div class="slide-content">
 	        	<h1>Slide 2</h1>
 	        	<p class="large">A modern platform for a holistic student&nbsp;experience.</p>
-	        	<a href="#" class="btn-ghost-white">Request Demo</a>
+	        	<a href="#" class="btn">Request Demo</a>
         	</div>
     	</div>
     	<div class="slide" data-slide="3">
@@ -329,7 +329,7 @@
         	<div class="slide-content">
 	        	<h1>Slide 3</h1>
 	        	<p class="large">A modern platform for a holistic student&nbsp;experience.</p>
-	        	<a href="#" class="btn-ghost-white">Request Demo</a>
+	        	<a href="#" class="btn">Request Demo</a>
         	</div>
     	</div>
 	</section>

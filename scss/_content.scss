@@ -94,18 +94,10 @@ p.details {
 //
 ///////////////////////////
 
-[class*="btn-"] {
-	padding: 12px 24px;
-	border-radius: 5px;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 1px;
-	transition: all .2s ease;
-	display: inline-block;
+[class*="btn"] {
 }
 
 [class*="btn-solid-"] {
-	color: $color-white;
 }
 
 [class*="btn-ghost-"] {
@@ -113,7 +105,15 @@ p.details {
 	border-style: solid;
 }
 
-.btn-solid-orange {
+.btn {
+	padding: 12px 24px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all .2s ease;
+	display: inline-block;
+	color: $color-white;
 	background-color: $color-orange;
 	&:hover {
 		background-color: lighten($color-orange, 3);
@@ -128,10 +128,6 @@ p.details {
 		border-color: $color-white;
 		color: $color-darkGray;
 	}
-}
-
-.center-btn {
-	text-align: center;
 }
 
 //aside nav

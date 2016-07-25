@@ -28,7 +28,7 @@
 					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-						            <a href="#" class="btn-solid-orange">Learn More</a>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 				        		<div class="col-md-8">
 					        		<i class="fa fa-social title-icon"></i>
@@ -36,7 +36,7 @@
 					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-						            <a href="#" class="btn-solid-orange">Learn More</a>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 				        		<div class="col-md-8">
 					        		<i class="fa fa-career-path title-icon"></i>
@@ -44,7 +44,7 @@
 					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-						            <a href="#" class="btn-solid-orange">Learn More</a>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 			        		</div>
 		        		</div>
@@ -55,7 +55,7 @@
 	        	<div class="inner">
 	        		<section>
 		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
-			        	<a href="#" class="btn-ghost-white">Learn More</a>
+			        	<a href="#" class="btn">Learn More</a>
 	        		</section>
         		</div>
         	</article>
@@ -80,7 +80,7 @@
 			        		<h5>Case Study</h5>
 				        	<h3><a href="#">Cornell Brings Online Community Alive, Reduces Email Overload</a></h3>
 				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
-				            <a href="#" class="btn-solid-orange">Learn More</a>
+				            <a href="#" class="btn">Learn More</a>
 			        	</div>
 		        	</div>
 	        	</article>
@@ -93,7 +93,7 @@
 			        		<h5>Case Study</h5>
 				        	<h3><a href="#">Harvard Brings Online Community Alive, Reduces Email Overload</a></h3>
 				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
-				            <a href="#" class="btn-solid-orange">Learn More</a>
+				            <a href="#" class="btn">Learn More</a>
 			        	</div>
 		        	</div>
 	        	</article>

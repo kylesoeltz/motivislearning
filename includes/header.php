@@ -34,12 +34,14 @@ function getCurrentPage()
                 <li><a href="/insights.php">Insights</a></li>
                 <li><a href="/contact.php">Contact</a></li>
             </ul>
+            <?php /* Removed for the time being * / ?>
             <form class="search">
                 <input type="text" placeholder="Search" />
                 <button type="submit" name="search">Search</button>
                 <button type="button" name="cancel">Cancel</button>
             </form>
-            <a href="/demo.php" class="btn-solid-orange">Request Demo</a>
+            <?php /* */ ?>
+            <a href="/demo.php" class="btn">Request Demo</a>
         </div>
     </nav>
 </header>
