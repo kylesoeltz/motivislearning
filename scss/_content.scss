@@ -225,7 +225,8 @@ aside.side-nav {
 .callouts {
 	@include clearfix();
 	margin-bottom: $standard-bottomMargin *3;
-	p.text-center {
+	text-align: center;
+	p {
 		padding: 0 10px;
 	}
 }
@@ -239,12 +240,19 @@ i.fa.title-icon {
 
 .full-width {
 	width: 100%;
+	&.text-center {
+		text-align: center;
+		section {
+			text-align: center;
+		}
+	}
 	&.navy {
 		background-color: $color-navy;
 		padding: 40px 0;
 		color: $color-white;
 		h4 {
 			margin-bottom: $standard-bottomMargin;
+			letter-spacing: 2px;
 		}
 		a.btn-ghost-white:hover {
 			color: $color-navy;
