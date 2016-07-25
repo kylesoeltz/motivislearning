@@ -63,7 +63,8 @@ $break-desktopSmall: 1025px;
 $break-desktopMedium: 1300px;
 $break-desktopLarge: 1400px;
 
-
+// Extras
+$bajillion: 9999px;
 
 @mixin standardPadding() {
     padding: $standard-verticalPadding ($standard-horizontalPadding/2);
