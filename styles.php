@@ -175,6 +175,51 @@
 	        		<a href="#"><i class="fa fa-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="fa fa-right-arrow"></i></a>
         		</div>
         	</article>
+        	<article class="inner">
+        		<section>
+        			<div class="row">
+        				<div class="text-center">
+        					<h2>Taking student centered learning to the next level</h2>
+        					<p>The Motivis LRM is the only technology available today that is able to support <br> the rapid growth and paradigm shift of competency-based education.</p>
+        				</div>
+        			</div>
+        			<div class="row">
+        				<div class="col-md-8">
+        					<div class="card">
+        						<div class="card-cover">
+        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        						</div>
+        						<div class="card-content">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-md-8">
+        					<div class="card">
+        						<div class="card-cover">
+        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        						</div>
+        						<div class="card-content">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-md-8">
+        					<div class="card">
+        						<div class="card-cover">
+        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        						</div>
+        						<div class="card-content">
+        							<h4>Support personalized learning in real time</h4>
+        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</section>
+        	</article>
         </main>
         <?php include 'includes/footer.php'; ?>
     </body>
