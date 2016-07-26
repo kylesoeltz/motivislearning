@@ -38,7 +38,7 @@ nav.main-nav {
 	}
 	.inner {
 		text-align: right;
-		padding: 0 10px !important;
+		padding: 0 10px;
 		ul {
 			display: inline-block;
 			margin-top: 20px;
@@ -54,6 +54,7 @@ nav.main-nav {
 					transition: all .2s ease;
 					&:hover {
 						border-color: rgba($color-darkGray, 1);
+						cursor: pointer;
 					}
 				}
 				margin-right: 20px;
@@ -128,7 +129,17 @@ nav.main-nav {
 			}
 		}
 		a.btn {
-			padding: 10px 20px;
+			padding: 5px 15px;
+			color: $color-white;
+			background-color: $color-orange;
+			border: none;
+			&:hover{
+				background-color: lighten($color-orange, 3);
+			}
+
+			li {
+				margin-top: 5px;
+			}
 		}
 	}
 }
@@ -190,7 +201,7 @@ nav.main-nav {
 				}
 			}
 			a.btn {
-				padding: 7px 14px;
+				padding: 4px 10px;
 				font-size: 12px;
 			}
 			form.search {
@@ -230,7 +241,7 @@ nav.main-nav {
 				}
 			}
 			a.btn {
-				padding: 5px 12px;
+				padding: 3px 7px;
 				font-size: 11px;
 			}
 			form.search {
@@ -305,7 +316,7 @@ nav.main-nav {
 				}
 			}
 			ul {
-				right: -250px;
+				right: -260px;
 				transition: right .1s ease-out;
 				width: 250px;
 				position: relative;
@@ -404,6 +415,9 @@ nav.main-nav {
 					right: 0;
 					transition: right .3s ease-out;
 				}
+			}
+			li:last-child{
+				margin-top: 10px;				
 			}
 		}
 	}

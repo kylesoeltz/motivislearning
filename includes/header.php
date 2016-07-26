@@ -33,15 +33,8 @@ function getCurrentPage()
                 <li><a href="/about.php">About</a></li>
                 <li><a href="/insights.php">Insights</a></li>
                 <li><a href="/contact.php">Contact</a></li>
-            </ul>
-            <?php /* Removed for the time being * / ?>
-            <form class="search">
-                <input type="text" placeholder="Search" />
-                <button type="submit" name="search">Search</button>
-                <button type="button" name="cancel">Cancel</button>
-            </form>
-            <?php /* */ ?>
-            <a href="/demo.php" class="btn">Request Demo</a>
+                <li><a href="/demo.php" class="btn">Request Demo</a></li>
+            </ul>            
         </div>
     </nav>
 </header>
