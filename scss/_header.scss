@@ -2,7 +2,7 @@
 	Header Styles
 	-----*/
 
-header {
+header.nav-header {
 	position: relative;
 	height: 90px;
 	z-index: 200;
@@ -180,7 +180,7 @@ nav.main-nav {
 }
 
 @media (max-width: 1036px) {
-	header {
+	header.nav-header {
 		height: 70px;
 	}
 	nav.main-nav {
@@ -220,7 +220,7 @@ nav.main-nav {
 
 
 @media (max-width: 880px) {
-	header {
+	header.nav-header {
 		height: 70px;
 	}
 	nav.main-nav {
@@ -267,7 +267,7 @@ nav.main-nav {
 
 
 @media (max-width: 780px) {
-	header {
+	header.nav-header {
 		height: 50px;
 	}
 	nav.main-nav {
@@ -417,7 +417,7 @@ nav.main-nav {
 				}
 			}
 			li:last-child{
-				margin-top: 10px;				
+				margin-top: 10px;
 			}
 		}
 	}

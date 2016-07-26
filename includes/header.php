@@ -22,7 +22,7 @@ function getCurrentPage()
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
 
-<header>
+<header class="nav-header">
     <nav class="main-nav">
         <div class="inner">
             <h1 class="logo"><a href="/">Motivis Learning</a></h1>
@@ -34,7 +34,7 @@ function getCurrentPage()
                 <li><a href="/insights.php">Insights</a></li>
                 <li><a href="/contact.php">Contact</a></li>
                 <li><a href="/demo.php" class="btn">Request Demo</a></li>
-            </ul>            
+            </ul>
         </div>
     </nav>
 </header>
