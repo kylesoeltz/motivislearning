@@ -132,6 +132,15 @@ p.details {
 	}
 }
 
+.navy a{
+	background-color: $color-navy;
+	border: 1px solid $color-white;
+	&:hover {
+		background-color: $color-white;
+		color: $color-navy;
+	}
+}
+
 //aside nav
 aside.side-nav {
 	ul {

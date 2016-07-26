@@ -6058,6 +6058,13 @@ p.details {
     border-color: #ffffff;
     color: #595959; }
 
+.navy a {
+  background-color: #1b7bac;
+  border: 1px solid #ffffff; }
+  .navy a:hover {
+    background-color: #ffffff;
+    color: #1b7bac; }
+
 aside.side-nav ul {
   padding: 20px 23px;
   background-color: #f9f9f9; }
