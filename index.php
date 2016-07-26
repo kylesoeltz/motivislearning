@@ -51,7 +51,7 @@
 		        	</section>
 	        	</div>
         	</article>
-        	<article class="full-width navy text-center">
+        	<article class="navy text-center">
 	        	<div class="inner">
 	        		<section>
 		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
@@ -59,7 +59,7 @@
 	        		</section>
         		</div>
         	</article>
-        	<article class="full-width blue">
+        	<article class="blue">
 	        	<div class="inner">
 		        	<section class="standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
@@ -71,7 +71,7 @@
 	        	</div>
         	</article>
         	<div class="alternate-sides">
-	        	<article class="full-width image-dots">
+	        	<article class="image-dots">
 		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 			        	<img src="images/cornell.png">
 		        	</div>
@@ -84,7 +84,7 @@
 			        	</div>
 		        	</div>
 	        	</article>
-	        	<article class="full-width image-dots">
+	        	<article class="image-dots">
 		        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 			        	<img src="images/harvard.png">
 		        	</div>
