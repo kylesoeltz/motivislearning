@@ -14,55 +14,57 @@
         <?php include 'includes/header.php'; ?>
         <main>
 	        <?php include 'includes/front-page-slider.php'; ?>
-        	<article class="inner">
-	        	<div class="row">
-		        	<div class="col-sm-16 col-lg-14">
-			        	<section class="standard-block">
-			        		<img src="images/avatar-test.jpg" class="avatar">
-			        		<div class="content">
-				        		<h5>h5 - Case Study (open sans bold 14pt #595959)</h5>
-				        		<h3><a href="#">Cornell Brings Online (open sans light 30pt/36pt #12a9db)</a></h3>
-				        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis (open sans regular 16pt/28pt #595959)</p>
-				        		<p class="details">June 10, 2016 &nbsp;|&nbsp; <a href="#">Under Case Studies, Student Success</a>&nbsp; |&nbsp; <a href="#">Comments&nbsp;(0)</a></p>
-			        		</div>
-			        	</section>
-			        	<section>
-				        	<div class="color-block" style="background-color: #0d9fd0;">$color-blue</div>
-				        	<div class="color-block" style="background-color: #e3573c;">$color-orange</div>
-				        	<div class="color-block" style="background-color: #1b7bac;">$color-navy</div>
-				        	<div class="color-block" style="background-color: #595959;">$color-darkGray</div>
-				        	<div class="color-block" style="background-color: #d7d7d7; color: #595959;">$color-gray</div>
-				        	<div class="color-block" style="background-color: #efefef; color: #595959;">$color-lightGray</div>
-				        	<div class="color-block" style="background-color: #f9f9f9; color: #595959;">$color-offWhite</div>
-			        	</section>
-		        	</div>
-		        	<div class="col-sm-8 col-lg-offset-2">
-			        	<aside class="side-nav">
-			        		<ul>
-			        			<li><h5>Insights</h5></li>
-			        			<li><a href="#">Case Studies</a></li>
-			        			<li><a href="#">Blog</a></li>
-			        			<li><a href="#">Events</a></li>
-			        			<li><a href="#">Press Releases</a></li>
-			        			<li><a href="#">Videos</a></li>
-			        		</ul>
-			        		<ul>
-			        			<li><h5>By Topic</h5></li>
-			        			<li><a href="#">Learning Relationship Managment</a></li>
-			        			<li><a href="#">Competency Based Education</a></li>
-			        			<li><a href="#">Salesforce</a></li>
-			        			<li><a href="#">Student Success</a></li>
-			        			<li><a href="#">In The News</a></li>
-			        		</ul>
-			        		<div class="featured-content" style="background-image: url('images/featured-aside.jpg');">
-				        		<h6>Featured content name (roboto slab bold 40px/60px #fff)</h6>
-					            <a href="#" class="btn-solid-orange">Download Whitepaper</a>
-			        		</div>
-			        	</aside>
-		        	</div>
+        	<article>
+        		<div class="inner">
+	        		<div class="row">
+		        		<div class="col-sm-16 col-lg-14">
+			        		<section class="standard-block">
+			        			<img src="images/avatar-test.jpg" class="avatar">
+			        			<div class="content">
+				        			<h5>h5 - Case Study (open sans bold 14pt #595959)</h5>
+				        			<h3><a href="#">Cornell Brings Online (open sans light 30pt/36pt #12a9db)</a></h3>
+				        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis (open sans regular 16pt/28pt #595959)</p>
+				        			<p class="details">June 10, 2016 &nbsp;|&nbsp; <a href="#">Under Case Studies, Student Success</a>&nbsp; |&nbsp; <a href="#">Comments&nbsp;(0)</a></p>
+			        			</div>
+			        		</section>
+			        		<section>
+				        		<div class="color-block" style="background-color: #0d9fd0;">$color-blue</div>
+				        		<div class="color-block" style="background-color: #e3573c;">$color-orange</div>
+				        		<div class="color-block" style="background-color: #1b7bac;">$color-navy</div>
+				        		<div class="color-block" style="background-color: #595959;">$color-darkGray</div>
+				        		<div class="color-block" style="background-color: #d7d7d7; color: #595959;">$color-gray</div>
+				        		<div class="color-block" style="background-color: #efefef; color: #595959;">$color-lightGray</div>
+				        		<div class="color-block" style="background-color: #f9f9f9; color: #595959;">$color-offWhite</div>
+			        		</section>
+		        		</div>
+		        		<div class="col-sm-8 col-lg-offset-2">
+			        		<aside class="side-nav">
+			        			<ul>
+			        				<li><h5>Insights</h5></li>
+			        				<li><a href="#">Case Studies</a></li>
+			        				<li><a href="#">Blog</a></li>
+			        				<li><a href="#">Events</a></li>
+			        				<li><a href="#">Press Releases</a></li>
+			        				<li><a href="#">Videos</a></li>
+			        			</ul>
+			        			<ul>
+			        				<li><h5>By Topic</h5></li>
+			        				<li><a href="#">Learning Relationship Managment</a></li>
+			        				<li><a href="#">Competency Based Education</a></li>
+			        				<li><a href="#">Salesforce</a></li>
+			        				<li><a href="#">Student Success</a></li>
+			        				<li><a href="#">In The News</a></li>
+			        			</ul>
+			        			<div class="featured-content" style="background-image: url('images/featured-aside.jpg');">
+				        			<h6>Featured content name (roboto slab bold 40px/60px #fff)</h6>
+					            	<a href="#" class="btn-solid-orange">Download Whitepaper</a>
+			        			</div>
+			        		</aside>
+		        		</div>
+	        		</div>
 	        	</div>
         	</article>
-        	<article class="full-width">
+        	<article>
 	        	<div class="inner">
 	        		<section>
 		        		<div class="row">
@@ -105,7 +107,7 @@
 		        	</section>
 	        	</div>
         	</article>
-        	<article class="full-width navy">
+        	<article class="navy">
 	        	<div class="inner">
 	        		<section>
 		        		<h4 class="open-space text-center">Learn About The Benefits Of (open sans bold 20pt/50pt #fff)</h4>
@@ -115,7 +117,7 @@
 	        		</section>
         		</div>
         	</article>
-        	<article class="full-width blue">
+        	<article class="blue">
 	        	<div class="inner">
 		        	<section class="standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
@@ -129,7 +131,7 @@
 	        	</div>
         	</article>
         	<div class="alternate-sides">
-	        	<article class="full-width image-dots">
+	        	<article class="image-dots">
 		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 			        	<img src="images/cornell.png">
 		        	</div>
@@ -142,7 +144,7 @@
 			        	</div>
 		        	</div>
 	        	</article>
-	        	<article class="full-width image-dots">
+	        	<article class="image-dots">
 		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 			        	<img src="images/cornell.png">
 		        	</div>
@@ -156,7 +158,7 @@
 		        	</div>
 	        	</article>
         	</div>
-        	<article class="full-width">
+        	<article>
 	        	<section class="featured-content" style="background-image: url('images/featured-section.jpg');">
 		        	<div class="inner">
 		        		<h1>Featured Gated Content<br>Displays here</h1>
@@ -164,63 +166,67 @@
 		            </div>
 	        	</section>
         	</article>
-        	<article class="full-width paint">
+        	<article class="paint">
 	        	<div class="inner">
 		        	<h1>H1 - Roboto Slab Bold 60pt #fff</h1>
 	        	</div>
         	</article>
-        	<article class="inner">
-        		<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>
-        		<div class="pagination text-center">
-	        		<a href="#"><i class="fa fa-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="fa fa-right-arrow"></i></a>
+        	<article>
+        		<div class="inner">
+        			<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>
+        			<div class="pagination text-center">
+	        			<a href="#"><i class="fa fa-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="fa fa-right-arrow"></i></a>
+        			</div>
         		</div>
         	</article>
         	<article class="inner">
-        		<section>
-        			<div class="row">
-        				<div class="text-center">
-        					<h2>Taking student centered learning to the next level</h2>
-        					<p>The Motivis LRM is the only technology available today that is able to support <br> the rapid growth and paradigm shift of competency-based education.</p>
+        		<div class="inner">
+        			<section>
+        				<div class="row">
+        					<div class="text-center">
+        						<h2>Taking student centered learning to the next level</h2>
+        						<p>The Motivis LRM is the only technology available today that is able to support <br> the rapid growth and paradigm shift of competency-based education.</p>
+        					</div>
         				</div>
-        			</div>
-        			<div class="row">
-        				<div class="col-md-8">
-        					<div class="card">
-        						<div class="card-cover">
-        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        				<div class="row">
+        					<div class="col-md-8">
+        						<div class="card">
+        							<div class="card-cover">
+        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        							</div>
+        							<div class="card-content">
+        								<h4>Support personalized learning in real time</h4>
+        								<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        							</div>
         						</div>
-        						<div class="card-content">
-        							<h4>Support personalized learning in real time</h4>
-        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        					</div>
+        					<div class="col-md-8">
+        						<div class="card">
+        							<div class="card-cover">
+        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        							</div>
+        							<div class="card-content">
+        								<h4>Support personalized learning in real time</h4>
+        								<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        							</div>
+        						</div>
+        					</div>
+        					<div class="col-md-8">
+        						<div class="card">
+        							<div class="card-cover">
+        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+        							</div>
+        							<div class="card-content">
+        								<h4>Support personalized learning in real time</h4>
+        								<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
+        							</div>
         						</div>
         					</div>
         				</div>
-        				<div class="col-md-8">
-        					<div class="card">
-        						<div class="card-cover">
-        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
-        						</div>
-        						<div class="card-content">
-        							<h4>Support personalized learning in real time</h4>
-        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
-        						</div>
-        					</div>
-        				</div>
-        				<div class="col-md-8">
-        					<div class="card">
-        						<div class="card-cover">
-        							<i class="fa fa-medal title-icon" aria-hidden="true"></i>
-        						</div>
-        						<div class="card-content">
-        							<h4>Support personalized learning in real time</h4>
-        							<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</section>
+        			</section>
+        		</div>
         	</article>
-        	<article class="full-width image-dots">
+        	<article class="image-dots">
         		<div class="inner">
         			<section>
         				<div class="row">

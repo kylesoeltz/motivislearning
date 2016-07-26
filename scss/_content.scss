@@ -236,7 +236,7 @@ i.fa.title-icon {
 	font-size: 108px;
 }
 
-.full-width {
+article {
 	width: 100%;
 	&.text-center {
 		text-align: center;
@@ -341,7 +341,7 @@ i.fa.title-icon {
 }
 
 .alternate-sides {
-	article.full-width.image-dots:nth-of-type(even) {
+	article.image-dots:nth-of-type(even) {
 		.image-half {
 			right: 0;
 			img {
