@@ -4,7 +4,7 @@
 
 	Section 1: Global styles
 	Section 2: Link and button styles
-	Section 3: Front-page slider
+	Section 3: Components
 	Section 4: Full width sections
 	Section 5: Card Styles
 	Section 6: Bullet Box
@@ -166,64 +166,58 @@ aside.side-nav {
 
 
 //
-//	Section 3: Front-page slider
+//	Section 3: Components
 //
 ///////////////////////////
 
 
-.front-page-slider {
-	height: 670px;
-	margin-bottom: $standard-bottomMargin*2;
+blockquote {
+	font-size: 35px;
+	@include font-roboto-light();
+	line-height: 1.5em;
+	padding: 35px 55px;
 	position: relative;
-	overflow: hidden;
-	background-image: url('images/left-hero-texture.jpg');
-	svg.paint-overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 50%;
-		margin-left: -1200px;
-		z-index: 20;
+	&:before, &:after {
+		@include iconFont();
+		font-size: 26px;
 	}
-	.slide-container {
-		width: 100%;
-		.slide {
-			display: none;
-			overflow: hidden;
-			position: relative;
-			width: 100%;
-			&[data-slide="1"] {
-				display: block;
-			}
-			img {
-				max-width: none;
-				position: relative;
-				z-index: 10;
-				left: 567px; //or 43%;
-			}
-			.slide-content {
-				max-width: 1350px;
-				padding: 110px 675px 0 50px;
-				margin: 0 auto;
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				z-index: 30;
-				text-align: left;
-				p {
-					color: $color-white;
-					margin-bottom: 34px;
-				}
-				a.btn-ghost-white:hover {
-					color: $color-green;
-				}
-			}
+	&:before {
+		position: absolute;
+		content: '\f00d';
+		left: 0;
+		top: 0;
+	}
+	&:after {
+		content: '\f00e';
+		position: relative;
+		bottom: -20px;
+		right: -20px;
+	}
+	+ cite {
+		padding-left: 55px;
+		margin-top: 10px;
+		display: block;
+		font-size: 16px;
+		line-height: 1em;
+		@include font-primary-bold();
+		text-transform: uppercase;
+		small {
+			display: block;
+			text-transform: none;
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 12px;
 		}
 	}
+	@media (max-width: 933px) {
+		font-size: 24px;
+		padding: 35px 0px;
+		+ cite {
+			padding-left: 0;
+		}
+	}
+
 }
-
-
 
 //
 //	Section 4: Full width sections
@@ -287,16 +281,6 @@ article {
 			color: $color-blue;
 		}
 	}
-	&.paint {
-		background-image: url('images/left-hero-texture.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding: 50px 0;
-		margin-bottom: 300px; //remove if needed, only for demo
-		h1 {
-			margin-bottom: 0;
-		}
-	}
 	&.image-dots {
 		background-image: url('images/dot-bg.jpg');
 		position: relative;
@@ -342,12 +326,6 @@ article {
 			}
 		}
 	}
-	section.featured-content {
-		padding: 90px 0;
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-bottom: 300px; //remove if needed, only for demo
-	}
 }
 
 .alternate-sides {
@@ -366,53 +344,6 @@ article {
 	}
 }
 
-blockquote {
-	font-size: 35px;
-	@include font-roboto-light();
-	line-height: 1.5em;
-	padding: 35px 55px;
-	position: relative;
-	&:before, &:after {
-		@include iconFont();
-		font-size: 26px;
-	}
-	&:before {
-		position: absolute;
-		content: '\f00d';
-		left: 0;
-		top: 0;
-	}
-	&:after {
-		content: '\f00e';
-		position: relative;
-		bottom: -20px;
-		right: -20px;
-	}
-	+ cite {
-		padding-left: 55px;
-		margin-top: 10px;
-		display: block;
-		font-size: 16px;
-		line-height: 1em;
-		@include font-primary-bold();
-		text-transform: uppercase;
-		small {
-			display: block;
-			text-transform: none;
-			font-size: 14px;
-			font-weight: 400;
-			margin-top: 12px;
-		}
-	}
-	@media (max-width: 933px) {
-		font-size: 24px;
-		padding: 35px 0px;
-		+ cite {
-			padding-left: 0;
-		}
-	}
-
-}
 
 //
 //	Section 5: Card Styling

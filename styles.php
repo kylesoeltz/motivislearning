@@ -13,7 +13,6 @@
     <body>
         <?php include 'includes/header.php'; ?>
         <main>
-	        <?php include 'includes/front-page-slider.php'; ?>
         	<article>
         		<div class="inner">
 	        		<div class="row">
@@ -66,54 +65,46 @@
         	</article>
         	<article>
 	        	<div class="inner">
-	        		<section>
+	        		<section class="text-center">
 		        		<div class="row">
-			        		<h2 class="text-center">H2- The Next Generation Learning Platform<br>(roboto slab light 40pt/60pt #595959)</h2>
+			        		<h2>The Next Generation Learning Platform<br>Built on Salesforce</h2>
 		        		</div>
 		        		<div class="row">
 			        		<div class="callouts">
 				        		<div class="col-md-8">
 					        		<i class="fa fa-medal title-icon"></i>
-					        		<h4 class="text-center">open sans bold 20pt/25pt<br>#595959</h4>
-					        		<p class="text-center">
+					        		<h4>Learning Relationship Management</h4>
+					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-					        		<div class="center-btn">
-							            <a href="#" class="btn-solid-orange">Learn More</a>
-						            </div>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 				        		<div class="col-md-8">
-					        		<i class="fa fa-medal title-icon"></i>
-					        		<h4 class="text-center">open sans bold 20pt/25pt<br>#595959</h4>
-					        		<p class="text-center">
+					        		<i class="fa fa-social title-icon"></i>
+					        		<h4>Social Networking &amp; School Community</h4>
+					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-					        		<div class="center-btn">
-							            <a href="#" class="btn-solid-orange">Learn More</a>
-						            </div>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 				        		<div class="col-md-8">
-					        		<i class="fa fa-medal title-icon"></i>
-					        		<h4 class="text-center">open sans bold 20pt/25pt<br>#595959</h4>
-					        		<p class="text-center">
+					        		<i class="fa fa-career-path title-icon"></i>
+					        		<h4>Career Pathing For Students &amp; Employers</h4>
+					        		<p>
 					        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
 					        		</p>
-					        		<div class="center-btn">
-							            <a href="#" class="btn-solid-orange">Learn More</a>
-						            </div>
+						            <a href="#" class="btn">Learn More</a>
 				        		</div>
 			        		</div>
 		        		</div>
 		        	</section>
 	        	</div>
         	</article>
-        	<article class="navy">
+        	<article class="navy text-center">
 	        	<div class="inner">
 	        		<section>
-		        		<h4 class="open-space text-center">Learn About The Benefits Of (open sans bold 20pt/50pt #fff)</h4>
-		        		<div class="center-btn">
-				        	<a href="#" class="btn-ghost-white">Learn More</a>
-			        	</div>
+		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
+			        	<a href="#" class="btn">Learn More</a>
 	        		</section>
         		</div>
         	</article>
@@ -122,10 +113,8 @@
 		        	<section class="standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
 		        		<div class="content">
-			        		<blockquote>
-				        		Quote from Paul about Saleforce and the future of education lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit tortor, aliquet a<br>(roboto slab light 35pt/50pt #fff)
-			        		</blockquote>
-			        		<cite>author or quote (open sans bold 16pt #fff all caps) <small>President/CEO SNHU (open sans regular 14pt #fff)</small></cite>
+			        		<blockquote>Quote from Paul about Saleforce and the future of education lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit tortor, aliquet a gravida vitae, venenatis vitae.</blockquote>
+			        		<cite>Dr. Paul LeBlanc <small>President/CEO SNHU</small></cite>
 		        		</div>
 		        	</section>
 	        	</div>
@@ -137,40 +126,27 @@
 		        	</div>
 		        	<div class="inner">
 			        	<div class="col-sm-11 col-sm-offset-13">
-			        		<h5>h5 - Case Study (open sans bold 14pt #595959)</h5>
-				        	<h3><a href="#">h3 - Cornell Brings Online Community (roboto slab light 30pt/36pt #e3573c)</a></h3>
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet (BODY)</p>
-				            <a href="#" class="btn-solid-orange">Learn More</a>
+			        		<h5>Case Study</h5>
+				        	<h3><a href="#">Cornell Brings Online Community Alive, Reduces Email Overload</a></h3>
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
+				            <a href="#" class="btn">Learn More</a>
 			        	</div>
 		        	</div>
 	        	</article>
 	        	<article class="image-dots">
-		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
-			        	<img src="images/cornell.png">
+		        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
+			        	<img src="images/harvard.png">
 		        	</div>
 		        	<div class="inner">
 			        	<div class="col-sm-11">
-			        		<h5>h5 - Case Study (open sans bold 14pt #595959)</h5>
-				        	<h3><a href="#">h3 - Cornell Brings Online Community (roboto slab light 30pt/36pt #e3573c)</a></h3>
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet (BODY)</p>
-				            <a href="#" class="btn-solid-orange">Learn More</a>
+			        		<h5>Case Study</h5>
+				        	<h3><a href="#">Harvard Brings Online Community Alive, Reduces Email Overload</a></h3>
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
+				            <a href="#" class="btn">Learn More</a>
 			        	</div>
 		        	</div>
 	        	</article>
         	</div>
-        	<article>
-	        	<section class="featured-content" style="background-image: url('images/featured-section.jpg');">
-		        	<div class="inner">
-		        		<h1>Featured Gated Content<br>Displays here</h1>
-			            <a href="#" class="btn-solid-orange">Download Whitepaper</a>
-		            </div>
-	        	</section>
-        	</article>
-        	<article class="paint">
-	        	<div class="inner">
-		        	<h1>H1 - Roboto Slab Bold 60pt #fff</h1>
-	        	</div>
-        	</article>
         	<article>
         		<div class="inner">
         			<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>

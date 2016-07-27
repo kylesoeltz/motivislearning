@@ -13,7 +13,21 @@
     <body>
         <?php include 'includes/header.php'; ?>
         <main>
-	        <?php include 'includes/front-page-slider.php'; ?>
+        	<header class="page-header image-header color-green background-dots callout-header">
+	        	<section class="inner">
+	        		<h1>Their Future is Our Mission</h1>
+	        		<p>A modern platform built by educational experts for a holistic student experience.</p>
+	        		<a href="#" class="btn">Learn More</a>
+	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
+						<defs>
+							<mask id="paintMask">
+							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask.png"></image>
+					 		</mask>
+						</defs>
+						<image mask="url(#paintMask)" id="image" width="1270" height="690" xlink:href="images/home/slide2.jpg"></image>
+					</svg>
+				</section>
+        	</header>
         	<article>
 	        	<div class="inner">
 	        		<section class="text-center">
