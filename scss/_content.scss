@@ -8,7 +8,8 @@
 	Section 4: Full width sections
 	Section 5: Card Styles
 	Section 6: Bullet Box
-	Section 7: Header Styles
+	Section 7: Headings
+	Section 8: Insight Details
 	-----*/
 
 //
@@ -407,7 +408,6 @@ i.fa.bullet-icon{
 	margin-right: 25px;
 }
 
-
 //
 //	Section 7: Header Styles
 //
@@ -587,16 +587,91 @@ header.page-header {
 			background-size: cover;
 			background-position: center center;
 			opacity: .2;
-			filter: blur(5px); /* Someday, sigh ... */
-			-webkit-filter: blur(5px); /* Prefixed CSS3 blur filters */
+			filter: blur(5px);
+			-webkit-filter: blur(5px);
 			-moz-filter: blur(5px);
 			-o-filter: blur(5px);
 			-ms-filter: blur(5px);
-			filter: url(#blur); /* Firefox needs SVG */
-			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5'); /* IE lte 9 */
+			filter: url(#blur);
+			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
 		}
 		section.inner {
 			position: relative;
+		}
+	}
+}
+
+//
+//	Section 8: Insight Detail Styling
+//
+///////////////////////////
+
+.about-author {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.insight-text {
+	margin-top: 40px;
+	cite {
+		margin-bottom: $standard-bottomMargin;
+	}
+
+	section {
+		margin-bottom: $standard-bottomMargin;
+	}
+
+	input {
+		width: 100%;
+		border: 1px solid $color-gray;
+		&[placeholder] {
+			padding-left: 10px;
+		}
+	}
+
+	.tag {
+		color: $color-orange;
+	}
+}
+
+.post-nav a{
+	cursor: hand;
+	&:last-child {
+		float: right;
+		i {
+			margin-left: 5px;
+		}
+	}
+}
+
+.about-author img{
+	position: absolute;
+    left: 0;
+}
+
+.about-author div{
+	padding-left: 50px;
+}
+
+.comments {
+	p {
+		border-bottom: 1px solid $color-gray;
+	}
+	span {
+		border-bottom: 1px solid $color-orange;
+		padding-bottom: 3px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.about-author .content {
+		padding-left: 0;
+		& h4 {
+			text-align: center;
+		}
+
+		& p {
+			margin: 0 auto;
 		}
 	}
 }
