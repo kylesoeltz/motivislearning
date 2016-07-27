@@ -89,7 +89,6 @@ p.details {
 			color: $color-darkGray;
 		}
 	}
-	margin-bottom: 300px; //delete if needed, only for demo purposes
 }
 
 
@@ -136,7 +135,7 @@ p.details {
 
 .navy a{
 	background-color: $color-navy;
-	border: 1px solid $color-white;
+	border: 2px solid $color-white;
 	&:hover {
 		background-color: $color-white;
 		color: $color-navy;
@@ -181,6 +180,7 @@ blockquote {
 	&:before, &:after {
 		@include iconFont();
 		font-size: 26px;
+		color: $color-blue;
 	}
 	&:before {
 		position: absolute;
@@ -202,6 +202,7 @@ blockquote {
 		line-height: 1em;
 		@include font-primary-bold();
 		text-transform: uppercase;
+		margin-bottom: $standard-bottomMargin;
 		small {
 			display: block;
 			text-transform: none;
@@ -217,8 +218,53 @@ blockquote {
 			padding-left: 0;
 		}
 	}
-
 }
+
+.image-highlight {
+	margin-top: $standard-bottomMargin;
+	img {
+		border: solid 1px $color-lightGray;
+		box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.21);
+		margin-bottom: $standard-bottomMargin * 2;
+	}
+}
+
+.team-members {
+	img {
+		margin-bottom: $standard-bottomMargin;
+	}
+	h4 {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		color: $color-orange;
+	}
+	small {
+		display: block;
+		text-align: center;
+		margin-bottom: $standard-bottomMargin;
+	}
+}
+
+.secondary-nav {
+	padding: $standard-padding;
+	ul {
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 18px;
+			a {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 14px;
+				&.active {
+					border-bottom: solid 2px $color-orange;
+				}
+			}
+		}
+	}
+}
+
 
 //
 //	Section 4: Full width sections
@@ -229,6 +275,11 @@ blockquote {
 	@include clearfix();
 	margin-bottom: $standard-bottomMargin *3;
 	text-align: center;
+
+	h4 {
+		font-size: 20px;
+		min-height: 2.5em;
+	}
 	p {
 		padding: 0 10px;
 	}
@@ -243,29 +294,23 @@ i.fa.title-icon {
 
 article {
 	width: 100%;
+	padding: 100px 0;
 	&.text-center {
 		text-align: center;
 		section {
 			text-align: center;
 		}
 	}
-	&.navy {
-		background-color: $color-navy;
+	&.solid-banner {
 		padding: 40px 0;
-		color: $color-white;
 		h4 {
 			margin-bottom: $standard-bottomMargin;
 			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-size: 20px;
 		}
-		a.btn-ghost-white:hover {
-			color: $color-navy;
-		}
-	}
-	&.blue {
-		background-color: $color-blue;
-		padding: 80px 0;
-		color: $color-white;
 		.standard-block {
+			margin: 40px auto;
 			padding-left: 210px;
 			@media (max-width: 933px) {
 				padding-left: 0;
@@ -278,14 +323,28 @@ article {
 				}
 			}
 		}
-		a.btn-ghost-white:hover {
-			color: $color-blue;
+	}
+	&.navy {
+		background-color: $color-navy;
+		color: $color-white;
+		blockquote {
+			&:before, &:after {
+				color: $color-white;
+			}
+		}
+	}
+	&.blue {
+		background-color: $color-blue;
+		color: $color-white;
+		blockquote {
+			&:before, &:after {
+				color: $color-white;
+			}
 		}
 	}
 	&.image-dots {
 		background-image: url('images/dot-bg.jpg');
 		position: relative;
-		padding: 118px 0;
 		.image-half {
 			position: absolute;
 			top: 0;
@@ -326,6 +385,9 @@ article {
 				}
 			}
 		}
+	}
+	&.gray-background {
+		background-color: $color-fadedGray;
 	}
 }
 
@@ -379,33 +441,36 @@ article {
 	background-color: $color-offWhite;
 	border-radius: 0 0 $border-radius $border-radius;
 	padding: $standard-padding;
+	margin-bottom: $standard-bottomMargin;
 }
 
 //
-//	Section 6: Bullet Styling
+//	Section 6: Bullet Box Styling
 //
 ///////////////////////////
 
 .bullet-header {
-	margin-bottom: $standard-bottomMargin;
 	p {
 		border-top: 1px solid $color-orange;
 		max-width: 600px;
 		margin: 0 auto;
 		padding: $standard-padding;
+		padding-bottom: 0;
     }
 }
 
-.bullet-box{
-	max-width: 80%;
-	margin: 0 auto;
-    vertical-align: top;
-}
-
-i.fa.bullet-icon{
-	float: left;
-	margin-top: 5px;
-	margin-right: 25px;
+.bullet-box {
+	position: relative;
+	margin-bottom: $standard-bottomMargin;
+	i.fa {
+		position: absolute;
+		top: 6px;
+		color: $color-navy;
+		font-size: 20px;
+		+ .content {
+			padding-left: 40px;
+		}
+	}
 }
 
 //
@@ -416,7 +481,6 @@ i.fa.bullet-icon{
 header.page-header {
 	width: 100%;
 	padding: 70px 0px;
-	margin-bottom: 80px;
 	section.inner {
 		text-align: center;
 	}

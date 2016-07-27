@@ -21,7 +21,7 @@
 	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
 						<defs>
 							<mask id="paintMask">
-							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask.png"></image>
+							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask-large.png"></image>
 					 		</mask>
 						</defs>
 						<image mask="url(#paintMask)" id="image" width="1270" height="690" xlink:href="images/home/slide2.jpg"></image>
@@ -32,7 +32,7 @@
 	        	<div class="inner">
 	        		<section class="text-center">
 		        		<div class="row">
-			        		<h2>The Next Generation Learning Platform<br>Built on Salesforce</h2>
+			        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
 		        		</div>
 		        		<div class="row">
 			        		<div class="callouts">
@@ -65,7 +65,7 @@
 		        	</section>
 	        	</div>
         	</article>
-        	<article class="navy text-center">
+        	<article class="solid-banner navy text-center">
 	        	<div class="inner">
 	        		<section>
 		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
@@ -73,7 +73,7 @@
 	        		</section>
         		</div>
         	</article>
-        	<article class="blue">
+        	<article class="solid-banner blue">
 	        	<div class="inner">
 		        	<section class="standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
