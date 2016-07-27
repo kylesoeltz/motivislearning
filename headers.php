@@ -21,7 +21,7 @@
 	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
 						<defs>
 							<mask id="paintMask">
-							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask.png"></image>
+							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask-large.png"></image>
 					 		</mask>
 						</defs>
 						<image mask="url(#paintMask)" id="image" width="1270" height="690" xlink:href="images/home/slide2.jpg"></image>
@@ -47,23 +47,23 @@
 	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
 						<defs>
 							<mask id="mask">
-							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask.png"></image>
+							<image width="920" height="680" xlink:href="images/home/paint-clip-mask-2-large.png"></image>
 					 		</mask>
 						</defs>
-						<image mask="url(#mask)" id="image" width="1270" height="690" xlink:href="images/home/slide3.jpg"></image>
+						<image mask="url(#mask)" id="image" width="920" height="680" xlink:href="images/home/slide3.jpg"></image>
 					</svg>
         		</section>
         	</header>
         	<header class="page-header image-header color-navy">
 	        	<section class="inner">
 	        		<h1>Process</h1>
-	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
+	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 680">
 						<defs>
 							<mask id="mask">
-							<image width="1270" height="690" xlink:href="images/home/paint-clip-mask.png"></image>
+							<image width="920" height="680" xlink:href="images/home/paint-clip-mask-2-large.png"></image>
 					 		</mask>
 						</defs>
-						<image mask="url(#mask)" id="image" width="1270" height="690" xlink:href="images/home/slide3.jpg"></image>
+						<image mask="url(#mask)" id="image" width="920" height="680" xlink:href="images/home/slide3.jpg"></image>
 					</svg>
         		</section>
         	</header>
