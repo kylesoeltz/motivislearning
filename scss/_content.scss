@@ -435,6 +435,7 @@ header.page-header {
 		display: block;
 		text-align: center;
 		margin: 15px auto;
+		font-size: 16px;
 		+ a.btn {
 			margin-top: 15px;
 		}
@@ -575,6 +576,27 @@ header.page-header {
 		}
 	}
 	&.featured-header {
-		background-size: cover;
+		background-color: $color-black;
+		position: relative;
+		div.background-image {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-size: cover;
+			background-position: center center;
+			opacity: .2;
+			filter: blur(5px); /* Someday, sigh ... */
+			-webkit-filter: blur(5px); /* Prefixed CSS3 blur filters */
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: url(#blur); /* Firefox needs SVG */
+			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5'); /* IE lte 9 */
+		}
+		section.inner {
+			position: relative;
+		}
 	}
 }

@@ -40,7 +40,7 @@
 	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nunc at tempus tincidunt, risus justo dapibus ante, ullamcorper finibus risus dolor id metus. Nunc et finibus erat.</p>
         		</section>
         	</header>
-        	<header class="page-header image-header color-navy background-dots">
+        	<header class="page-header image-header color-blue background-dots">
 	        	<section class="inner">
 	        		<h1>Learning Relationship Management</h1>
 	        		<p>Our Learning Relationship Management (LRM) platform is built specifically for education by experts in education. Both flexible and powerful, it ensures the solution you choose is an advantage today and in the future.</p>
@@ -57,7 +57,7 @@
         	<header class="page-header image-header color-navy">
 	        	<section class="inner">
 	        		<h1>Process</h1>
-	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 680">
+	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
 						<defs>
 							<mask id="mask">
 							<image width="920" height="680" xlink:href="images/home/paint-clip-mask-2-large.png"></image>
@@ -72,13 +72,15 @@
 	        		<h1>Process</h1>
         		</section>
         	</header>
-        	<header class="page-header featured-header" style="background-image: url(images/featured-section.jpg);">
+        	<header class="page-header featured-header">
+	        	<div class="background-image" style="background-image: url(images/home/insights-blog.jpg);"></div>
 	        	<section class="inner">
 		        	<address>Emily Dustin  |  June 10, 2016</address>
 	        		<h1>Cornell Brings Online Community Alive, Reduces Email Overload</h1>
         		</section>
         	</header>
-        	<header class="page-header featured-header" style="background-image: url(images/featured-section.jpg);">
+        	<header class="page-header featured-header">
+	        	<div class="background-image" style="background-image: url(images/home/insights-blog.jpg);"></div>
 	        	<section class="inner">
 		        	<address>Emily Dustin  |  June 10, 2016</address>
 	        		<h1>Artificial Roadblocks to Competency-Based Education</h1>
