@@ -60,74 +60,6 @@ nav.main-nav {
 				margin-right: 20px;
 			}
 		}
-		form.search {
-			display: inline-block;
-			position: relative;
-			margin-right: 20px;
-			input[type="text"] {
-				position: absolute;
-				right: 0;
-				top: -14px;
-				width: 44px;
-				background-color: $color-white;
-				opacity: 0;
-				border: solid 1px rgba(0,0,0,0);
-				transition: all .2s ease;
-				z-index: 20;
-				padding: 11px;
-				font-size: 18px;
-				@include placeholderColor($color-gray);
-				&:not(:focus):hover {
-					cursor: pointer;
-				}
-				&:focus {
-					width: 600px;
-					border-color: $color-lightGray;
-					z-index: 5;
-					outline: 0;
-					opacity: 1;
-				    @include font-primary-regular();
-					~ button[name="cancel"] {
-						left: -600px;
-						opacity: 1;
-					}
-					~ button[name="search"] {
-						border-color: rgba(0,0,0,0);
-					}
-				}
-			}
-			button[name="search"],
-			button[name="cancel"] {
-				position: absolute;
-				font-size: 1px;
-				color: rgba(0,0,0,0);
-				background: 0;
-				border: 0;
-				position: relative;
-				top: 2px;
-				z-index: 10;
-				padding: 0 20px 0 0;
-				&:after {
-					@include iconFont();
-					content: '\f002';
-					font-size: 16px;
-					color: $color-darkGray;
-				}
-			}
-			button[name="search"] {
-				border-right: solid 1px $color-gray;
-			}
-			button[name="cancel"] {
-				opacity: 0;
-				position: absolute;
-				left: 0;
-				top: 5px;
-				transition: all .2s ease;
-				&:after {
-					content: '\f003';
-				}
-			}
-		}
 		a.btn {
 			padding: 5px 15px;
 			color: $color-white;
@@ -144,37 +76,11 @@ nav.main-nav {
 	}
 }
 
-@media (max-width: 1250px) {
-	nav.main-nav {
-		.inner {
-			form.search {
-				input[type="text"] {
-					&:focus {
-						width: 550px;
-						~ button[name="cancel"] {
-							left: -550px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 @media (max-width: 1120px) {
 	nav.main-nav {
 		.inner {
 			padding: 0 5px;
-			form.search {
-				input[type="text"] {
-					&:focus {
-						width: 520px;
-						~ button[name="cancel"] {
-							left: -510px;
-						}
-					}
-				}
-			}
 		}
 	}
 }
@@ -203,16 +109,6 @@ nav.main-nav {
 			a.btn {
 				padding: 4px 10px;
 				font-size: 12px;
-			}
-			form.search {
-				input[type="text"] {
-					&:focus {
-						width: 450px;
-						~ button[name="cancel"] {
-							left: -438px;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -244,23 +140,6 @@ nav.main-nav {
 				padding: 3px 7px;
 				font-size: 11px;
 			}
-			form.search {
-				margin-right: 10px;
-				input[type="text"],
-				button[name="search"],
-				button[name="cancel"] {
-					margin-right: 10px;
-				}
-				input[type="text"] {
-					&:focus {
-						width: 400px;
-						~ button[name="cancel"] {
-							left: -382px;
-							padding: 0;
-						}
-					}
-				}
-			}
 		}
 	}
 }
@@ -271,154 +150,9 @@ nav.main-nav {
 		height: 50px;
 	}
 	nav.main-nav {
-		height: 50px;
-		&:before {
-			width: 100vw;
-			height: 100vh;
-			display: block;
-			background-color: rgba($color-black, .5);
-			z-index: -1;
-		}
-		.inner {
-			padding: 0;
-			width: 100%;
-			z-index: 100;
-			position: absolute;
-			right: 0;
-			top: -64px;
-			height: 114px;
-			overflow: hidden;
-			h1.logo {
-				position: relative;
-				top: 64px;
-				height: 50px;
-				width: 100%;
-				background-color: $color-white;
-				border-bottom: solid 1px $color-strokeGray;
-			}
-			button.mobileNavToggle {
-				display: block;
-				position: absolute;
-				right: 8px;
-				top: 74px;
-				color: $color-darkGray;
-				text-transform: uppercase;
-				font-size: 9px;
-				font-weight: 600;
-				border: none;
-				background-color: transparent;
-				&:before {
-					display: block;
-					content: '\f011';
-					@include iconFont();
-					font-size: 14px;
-					padding-bottom: 4px;
-				}
-			}
-			ul {
-				right: -260px;
-				transition: right .1s ease-out;
-				width: 250px;
-				position: relative;
-				margin-top: 14px;
-				z-index: 100;
-				border-left: solid 1px $color-strokeGray;
-				li {
-					display: block;
-					float: none;
-					width: 100%;
-					text-align: left;
-					a {
-						background-color: $color-white;
-						width: 100%;
-						display: block;
-						border: none;
-						padding: 5px 15px;
-						font-size: 12px;
-						&:hover {
-							background-color: $color-strokeGray;
-						}
-					}
-					&:not(:last-child) {
-						border-bottom: solid 1px $color-strokeGray;
-					}
-				}
-				&:after {
-					content: '';
-					z-index: -1;
-					position: absolute;
-					height: 100vh;
-					width: 100%;
-					background-color: $color-white;
-					display: block;
-					left: -1px;
-				    box-sizing: content-box;
-					border: solid 1px $color-white;
-				}
-			}
-			a.btn {
-				right: -250px;
-				display: block;
-				position: absolute;
-				bottom: -19px;
-				width: 250px;
-				border-radius: 0;
-				padding: 5px 15px;
-				font-size: 12px;
-				line-height: 2em;
-				text-align: left;
-				z-index: 100;
-				transition: right .1s ease-out;
-			}
-			form.search {
-				right: -250px;
-				display: block;
-				transition: right .1s ease-out;
-				margin-right: 0;
-				z-index: 100;
-				top: 48px;
-				input[type="text"] {
-					width: 250px;
-					opacity: 1;
-					border-color: $color-strokeGray;
-					border-right: none;
-					border-bottom: none;
-					margin-right: 0;
-					z-index: 5;
-					padding-left: 15px;
-					@include placeholderStyles(14px);
-					&:hover {
-						cursor: text !important;
-					}
-					&:focus {
-						width: 250px;
-					}
-				}
-				button[name="search"] {
-					margin-right: 0;
-					border: none;
-				}
-			}
-		}
+		//mobile code goes here
 	}
 	body.mobileNavVisible {
-		nav.main-nav {
-			&:before {
-				content: '';
-			}
-			.inner {
-				height: auto;
-				overflow: visible;
-				ul,
-				a.btn,
-				form.search {
-					right: 0;
-					transition: right .3s ease-out;
-				}
-			}
-			li:last-child{
-				margin-top: 10px;
-			}
-		}
+		//if visible
 	}
 }
