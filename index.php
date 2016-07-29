@@ -32,10 +32,12 @@
 	        	<div class="inner">
 	        		<section class="text-center">
 		        		<div class="row">
-			        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
+			        		<div class="col-xs-24">
+				        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
+			        		</div>
 		        		</div>
-		        		<div class="row">
-			        		<div class="callouts">
+		        		<div class="callouts">
+			        		<div class="row">
 				        		<div class="col-md-8">
 					        		<i class="fa fa-medal title-icon"></i>
 					        		<h4>Learning Relationship Management</h4>
