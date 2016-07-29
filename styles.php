@@ -17,9 +17,17 @@
         	<article>
         		<div class="inner">
 	        		<div class="row">
-		        		<div class="col-sm-16 col-lg-14">
+		        		<div class="col-sm-18">
 			        		<section class="standard-block">
 			        			<img src="images/avatar-test.jpg" class="avatar">
+			        			<h5>Author Name</h5>
+			        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis (open sans regular 16pt/28pt #595959)</p>
+		        			</section>
+	        			</div>
+	        		</div>
+	        		<div class="row">
+		        		<div class="col-sm-16 col-lg-14">
+			        		<section class="standard-block text-center">
 			        			<div class="content">
 				        			<h5>h5 - Case Study (open sans bold 14pt #595959)</h5>
 				        			<h3><a href="#">Cornell Brings Online (open sans light 30pt/36pt #12a9db)</a></h3>
@@ -215,9 +223,8 @@
         			<section>
         				<div class="row">
 	        				<div class="col-xs-24">
-	        					<div class="text-center bullet-header">
+	        					<div class="text-center">
 	        						<h2>Taking student-centered learning to the next level</h2>
-	        						<p>The Motivis LRM is the only technology available today that is able to support the rapid growth and paradigm shift of competency-based education.</p>
 	        					</div>
         					</div>
         				</div>
@@ -290,13 +297,13 @@
 		        	</section>
 		        	<section class="image-highlight">
 		        		<div class="row">
+			        		<div class="col-md-13 col-md-offset-1 pull-right">
+				        		<img src="images/product-screenshot.jpg">
+			        		</div>
 			        		<div class="col-md-10">
     							<h4>Centralized and holistic</h4>
     							<p>With Motivis, students can direct their learning based on prior experience, learning preferences, strengths, weaknesses, and ultimate goals. Motivis makes it easy to proactively support learners and improve outcomes with a holistic, real-time view of each student across courses and departments. Save time and effort with all data stored on a centralized student record.</p>
     							<p><a href="#">Learn more about LRM for students</a></p>
-			        		</div>
-			        		<div class="col-md-13 col-md-offset-1">
-				        		<img src="images/product-screenshot.jpg">
 			        		</div>
 		        		</div>
 		        	</section>
