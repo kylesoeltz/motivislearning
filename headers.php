@@ -8,8 +8,42 @@
         <title>Motivis</title>
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
+		<!--
+			each of these headers starts of with .page-headers
+
+			to specify whether or not it has an image use .image-header **
+				> default image size must be 920x680
+				> .callout-header specifies it as the main featured/bigger
+				  version, which takes an image size of 1270x690
+
+		    to change the COLOR you can use one of the following classes
+		    	> .color-blue
+		    	> .color-orange
+		    	> .color-navy
+		    	> .color-green
+		    	> .color-yellow
+
+		    to change the BACKGROUND you can use one of the following classes
+				> .background-dots
+				> .background-gears
+
+			to give it a full image background they can specify the class
+				> .featured-header
+				> this will override any color classes, but it will work in
+				  conjunction with the background classes. image size can be
+				  anything as it uses background-size: cover and applies a blur
+				  and overlay to all images
+
+			** the paint masking is compatible with IE down to 9. IE 8 and below
+			   does not support SVGs at all, so if they decide to support that we
+			   will need to provide a basic image fallback. according to caniuse.com
+			   all other older browsers support SVGs at the very least, so worst
+			   case scenario it would just show an image without the paint strokes
+			   masked over it.
+		-->
 
     </head>
+
     <body>
         <?php include 'includes/header.php'; ?>
         <main>

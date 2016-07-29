@@ -46,6 +46,7 @@
 			        		</section>
 		        		</div>
 		        		<div class="col-sm-8 col-lg-offset-2">
+		        		<?php /* Don't bother coding this .side-nav for the time being, it is being killed in its current form but may resurface as something else down the line... */ ?>
 			        		<aside class="side-nav">
 			        			<ul>
 			        				<li><h5>Insights</h5></li>
