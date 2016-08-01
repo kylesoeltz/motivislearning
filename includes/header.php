@@ -28,7 +28,19 @@ function getCurrentPage()
             <h1 class="logo"><a href="/">Motivis Learning</a></h1>
             <button class="mobileNavToggle">Menu</button>
             <ul>
-                <li><a href="/solutions.php">Solutions</a></li>
+                <li><small>close</small></li>
+                <li class="solutions">
+                    <p>Solutions</p>
+                    <ul class="sub-menu">
+                        <li><h5 class="allCaps">motivis platform</h5></li>
+                        <li><a href="#">Lerning Relationship Management</a></li>
+                        <li><a href="#">Social Networking & School Community</a></li>
+                        <li><a href="#">Career Pathing for Students & Employers</a></li>
+                        <li><a href="#">Student Information Systems</a></li>
+                        <li><a href="#">Student Admissions</a></li>
+                        <li><a href="#">Alumni Engagement</a></li>                    
+                    </ul>
+                </li>
                 <li><a href="/services.php">Services</a></li>
                 <li><a href="/about.php">About</a></li>
                 <li><a href="/insights.php">Insights</a></li>
