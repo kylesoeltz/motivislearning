@@ -11,39 +11,35 @@ var navJS = {
 			if($('body').hasClass('mobileNavVisible')){
 				$('body').removeClass('mobileNavVisible');
 			}
+		});
 
-			//Set up non-mobile drop down
-			$('.solutions').unbind().on('click', function(e){
-				e.stopPropagation();
-				var $elm = $(this);
-				if($elm.hasClass('sub-menu-vis')){
-					$elm.removeClass('sub-menu-vis');
-				}else{
-					$elm.addClass('sub-menu-vis');
-				}
-				$('.sub-menu').toggle();
-			});
+		//Set up non-mobile drop down
+		$('.solutions').unbind().on('click', function(e){
+			e.stopPropagation();
+			var $elm = $(this);
+			($elm.hasClass('sub-menu-vis')) ? $elm.removeClass('sub-menu-vis') : $elm.addClass('sub-menu-vis');
+			$('.sub-menu').toggle();
+		});
 
-			//Do nothing when you click on the sub-menu
-			$('.sub-menu').unbind().on('click', function(e){
-				e.stopPropagation();
-			});
+		//Do nothing when you click on the sub-menu
+		$('.sub-menu').unbind().on('click', function(e){
+			e.stopPropagation();
+		});
 
-			//Do nothing when you click on the mobile nav space
-			$('.main-nav ul').unbind().on('click', function(e){
-				e.stopPropagation();
-			});
+		//Do nothing when you click on the mobile nav space
+		$('.main-nav ul').unbind().on('click', function(e){
+			e.stopPropagation();
+		});
 
-			//Show the mobile nav
-			$('.mobileNavToggle').unbind().on('click', function(e){
-				e.stopPropagation();
-				$('body').addClass('mobileNavVisible');
-			});
+		//Show the mobile nav
+		$('.mobileNavToggle').unbind().on('click', function(e){
+			e.stopPropagation();
+			$('body').addClass('mobileNavVisible');
+		});
 
-			//Close button
-			$('.main-nav ul li:first').unbind().on('click', function(){
-				$('body').removeClass('mobileNavVisible');
-			});
+		//Close button
+		$('.main-nav ul li:first').unbind().on('click', function(){
+			$('body').removeClass('mobileNavVisible');
 		});
 	}
 }
