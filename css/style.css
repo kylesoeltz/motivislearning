@@ -6145,43 +6145,63 @@ header.page-header {
 /*-----
 	Footer Styles
 	-----*/
-footer {
-  padding: 68px 10px;
-  border-top: solid 1px #e8e9ec; }
-  footer small {
-    text-transform: uppercase; }
-
-p.social-icons a {
+footer a {
+  cursor: pointer; }
+footer article {
+  padding: 0; }
+footer section {
+  margin-top: 26px; }
+footer .footer-left {
+  background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center; }
+footer .footer-right {
+  background-color: #3f3f3f; }
+  footer .footer-right .right-content h4 {
+    text-transform: capitalize; }
+footer .footer-left, footer .footer-right {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: left;
+  height: 400px;
+  color: #ffffff; }
+  footer .footer-left h5, footer .footer-right h5 {
+    color: #ffffff; }
+  footer .footer-left h4, footer .footer-right h4 {
+    color: #e3573c; }
+footer .inner p {
+  vertical-align: top;
+  display: inline-block; }
+  footer .inner p:nth-child(2) {
+    padding-left: 65px; }
+footer .inner a:not(:last-child) {
+  margin-right: 15px; }
+footer .inner i {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #e3573c;
   color: #ffffff;
-  background-color: #595959;
-  border-radius: 600px;
-  border: none;
-  width: 36px;
-  height: 36px;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin: 0 7px 12px; }
-  p.social-icons a i {
-    vertical-align: middle;
-    top: 1px;
-    position: relative; }
-    p.social-icons a i.fa-facebook {
-      top: 2px;
-      left: 3px;
-      font-size: 19px; }
-    p.social-icons a i.fa-pinterest {
-      left: 2px;
-      top: 2px;
-      font-size: 22px; }
-    p.social-icons a i.fa-youtube {
-      left: 2px;
-      font-size: 22px; }
-    p.social-icons a i.fa-google-plus {
-      top: 2px;
-      left: 2px;
-      font-size: 18px; }
-  p.social-icons a:hover {
-    background-color: #727272; }
+  border-radius: 3px; }
+  footer .inner i:hover {
+    background-color: #e56349; }
+
+@media (max-width: 958px) {
+  footer .inner p:nth-child(2) {
+    padding-left: 0;
+    display: block; } }
+@media (min-width: 1380px) {
+  footer .left-content, footer .right-content {
+    padding-right: 50px; }
+  footer .left-content {
+    float: right; } }
+@media (max-width: 1380px) {
+  footer .left-content, footer .right-content {
+    max-width: 500px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+  footer .right-content {
+    float: none; } }
 
 /*# sourceMappingURL=style.css.map */

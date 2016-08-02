@@ -2,51 +2,108 @@
 	Footer Styles
 	-----*/
 footer {
-	padding: 68px 10px;
-	border-top: solid 1px $color-strokeGray;
-	small {
-		text-transform: uppercase;
+	a {
+		cursor: pointer;
+	}
+
+	article {
+		padding: 0;
+	}
+
+	section {
+		margin-top: $standard-bottomMargin;
+	}
+
+	.footer-left {
+		background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url('../images/footer-background.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: right center;
+	}
+
+	.footer-right {
+		background-color: $color-black;
+		.right-content {			
+			h4 {
+				text-transform: capitalize;
+			}
+		}
+	}
+
+	.footer-left, .footer-right {
+		padding-top: 90px;
+    	padding-bottom: 90px;
+    	text-align: left;
+    	height: 400px;
+    	color: $color-white;
+
+    	h5 {
+    		color: $color-white;
+    	}
+
+    	h4 {
+    		color: $color-orange;
+    	}
+	}
+
+	.inner {
+		p {
+			vertical-align: top;
+			display: inline-block;
+
+			&:nth-child(2) {
+				padding-left: 65px;
+			}
+		}
+
+		a:not(:last-child) {
+			margin-right: 15px;
+		}
+
+		i {
+			font-size: 20px;
+    		padding: 10px;
+    		background-color: $color-orange;
+    		color: $color-white;
+    		border-radius: 3px;
+
+    		&:hover {
+    			background-color: lighten($color-orange, 3);
+    		}
+		}
 	}
 }
 
-p.social-icons {
-	a {
-		color: $color-white;
-		background-color: $color-darkGray;
-		border-radius: 600px;
-		border: none;
-		width: 36px;
-		height: 36px;
-		position: relative;
-		display: inline-block;
-		text-align: center;
-		margin: 0 7px 12px;
-		i {
-			vertical-align: middle;
-			top: 1px;
-			position: relative;
-			&.fa-facebook {
-				top: 2px;
-				left: 3px;
-				font-size: 19px;
-			}
-			&.fa-pinterest {
-				left: 2px;
-				top: 2px;
-				font-size: 22px;
-			}
-			&.fa-youtube {
-				left: 2px;
-				font-size: 22px;
-			}
-			&.fa-google-plus {
-				top: 2px;
-				left: 2px;
-				font-size: 18px;
-			}
+@media (max-width: 958px) {
+	footer .inner p:nth-child(2) {
+		padding-left: 0;
+		display: block;
+	}
+}
+
+@media (min-width: 1380px) {
+	footer {
+		.left-content, .right-content {
+			padding-right: 50px;
 		}
-		&:hover {
-			background-color: lighten($color-darkGray, 10)
+
+		.left-content {
+			float: right;
+		}
+	}
+}
+
+@media (max-width: 1380px) {
+	footer {
+		.left-content, .right-content {
+			max-width: 500px;
+			margin: 0px auto;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.right-content {
+			float: none;
 		}
 	}
 }
