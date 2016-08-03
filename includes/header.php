@@ -29,8 +29,8 @@ function getCurrentPage()
             <button class="mobileNavToggle">Menu</button>
             <ul>
                 <li><small>close</small></li>
-                <li class="solutions">
-                    <p>Solutions</p>
+                <li class="solutions current-menu-item">
+                    <a href="/solutions.php">Solutions</a>
                     <ul class="sub-menu">
                         <li><h5 class="allCaps">motivis platform</h5></li>
                         <li><a href="#">Lerning Relationship Management</a></li>

@@ -162,7 +162,7 @@
 	        	</article>
         	</div>
 
-        	<article class="gray-background">
+        	<article class="gray">
         		<div class="inner">
         			<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>
         			<div class="pagination text-center">
@@ -272,7 +272,7 @@
         		</div>
         	</article>
 
-        	<article class="gray-background">
+        	<article class="gray">
 	        	<div class="inner">
 		        	<section>
 		        		<div class="row">

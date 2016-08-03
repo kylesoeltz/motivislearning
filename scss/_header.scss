@@ -43,17 +43,8 @@ nav.main-nav {
 			display: inline-block;
 			margin-top: 20px;
 			li {
-				&:first-child {
-					display: none;
-				}
 				display: inline-block;
-				p {
-					cursor: pointer;
-    				background-color: $color-white;
-    				display: block;
-    				padding-right: 10px;
-    				margin-bottom: 0px;
-				}
+				margin-right: 20px;
 				a {
 					text-transform: uppercase;
 					font-size: 14px;
@@ -66,8 +57,15 @@ nav.main-nav {
 						cursor: pointer;
 					}
 				}
-				margin-right: 20px;
-
+				
+				&.current-menu-item > a {
+					cursor: pointer;
+    				background-color: $color-white;
+    				display: block;
+    				padding-right: 10px;
+    				margin-bottom: 0px;
+				}
+				
 				> ul {
 					display: none;
 				}

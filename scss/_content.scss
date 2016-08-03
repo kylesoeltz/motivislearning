@@ -350,6 +350,9 @@ article {
 			}
 		}
 	}
+	&.gray {
+		background-color: $color-fadedGray;
+	}
 	&.image-dots {
 		background-image: url('images/dot-bg.jpg');
 		position: relative;
@@ -380,9 +383,6 @@ article {
 				}
 			}
 		}
-	}
-	&.gray-background {
-		background-color: $color-fadedGray;
 	}
 }
 
