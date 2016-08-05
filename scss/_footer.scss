@@ -2,6 +2,10 @@
 	Footer Styles
 	-----*/
 footer {
+	p, h4, a:not(.btn), small {
+		@include font-roboto-light();
+	}
+
 	clear: both;
 	a {
 		cursor: pointer;
@@ -17,6 +21,11 @@ footer {
 			background-size: 100%;
 			border: none;
 		}
+		text-transform: capitalize;
+	}
+
+	small:first-child { 
+    	text-transform: uppercase;
 	}
 
 	article {
@@ -27,6 +36,10 @@ footer {
 		margin-top: $standard-bottomMargin;
 		&.upper {
 			padding: 0 10px;
+		}
+
+		li {
+			margin-top: $standard-bottomMargin;
 		}
 	}
 
@@ -41,7 +54,7 @@ footer {
 	}
 
 	.footer-right {
-		background-color: $color-black;
+		background-color: $color-footerBackground;
 		.right-content {			
 			h4 {
 				text-transform: capitalize;
@@ -75,14 +88,24 @@ footer {
 		p {
 			vertical-align: top;
 			display: inline-block;
+			font-weight: 600;
+			margin-left: $standard-bottomMargin;
 
 			&:nth-child(2) {
 				padding-left: 65px;
 			}
 		}
 
+		div {
+			margin-top: $standard-bottomMargin;
+
+			&[class^="col"]:last-child {
+    			text-align: right;
+			}
+		}
+
 		a:not(:last-child) {
-			margin-right: 15px;
+			margin-right: 10px;
 		}
 
 		i {
@@ -100,10 +123,19 @@ footer {
 }
 
 @media (max-width: 958px) {
-	footer .inner p:nth-child(2) {
-		padding-left: 0;
-		display: block;
-	}
+	footer .inner {
+		div[class^="col"]:last-child {
+    		text-align: left;
+    		margin-left: $standard-bottomMargin;
+		}
+		p:nth-child(2) {
+			padding-left: 0;
+			display: block;
+			margin-top: -20px;
+		}
+	} 
+
+
 }
 
 @media (min-width: 1380px) {
