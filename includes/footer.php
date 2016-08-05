@@ -1,5 +1,5 @@
 <footer>
-	<section>
+	<section class="upper">
 		<div class="row">
 			<div class="col-sm-12 footer-left">
 				<div class="left-content">
@@ -27,9 +27,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="image-dots">
+	<section class="lower">
 		<div class="inner">
-			<h1 class="logo"><a href="/">Motivis Learning</a></h1>
+			<a href="/" class="logo">Motivis Learning</a>
+			<div class="row">
 				<div class="col-sm-16">
 						<p>Copyright 2016 Motivis Learning Systems<br />25 Pelham Road, Unit 204<br />Salem, NH 03079</p>
 						<p><tel>855-202-6500</tel><br />info@motivislearning.com</p>

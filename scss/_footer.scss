@@ -4,6 +4,18 @@
 footer {
 	a {
 		cursor: pointer;
+		&.logo {
+			display: block;
+			text-indent: -10000px;
+			text-align: left;
+			font-size: 0;
+			width: 290px;
+			height: 62px;
+			background-image: url('images/motivis-logo.svg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			border: none;
+		}
 	}
 
 	article {
@@ -12,6 +24,9 @@ footer {
 
 	section {
 		margin-top: $standard-bottomMargin;
+		&.upper {
+			padding: 0 10px;
+		}
 	}
 
 	.footer-left {

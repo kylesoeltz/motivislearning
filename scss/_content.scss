@@ -355,6 +355,8 @@ article {
 	}
 	&.image-dots {
 		background-image: url('images/dot-bg.jpg');
+	}
+	&.case-study {
 		position: relative;
 		.image-half {
 			position: absolute;
@@ -386,8 +388,8 @@ article {
 	}
 }
 
-.alternate-sides {
-	article.image-dots:nth-of-type(even) {
+article.case-study {
+	&.right {
 		.image-half {
 			right: 0;
 			img {
@@ -400,21 +402,19 @@ article {
 			}
 		}
 	}
-	article.image-dots {
-		@media (max-width: 768px) {
-	    	padding: 0 0 50px;
-			.image-half {
-		    	position: relative;
-		    	width: 100%;
-		    	height: 300px;
-		    	margin-bottom: 50px;
-		    	img {
-		    		right: 0;
-		    		left: 0;
-		    	}
+	@media (max-width: 768px) {
+    	padding: 0 0 50px;
+		.image-half {
+	    	position: relative;
+	    	width: 100%;
+	    	height: 300px;
+	    	margin-bottom: 50px;
+	    	img {
+	    		right: 0;
+	    		left: 0;
 	    	}
-	    }
-	}
+    	}
+    }
 }
 
 
