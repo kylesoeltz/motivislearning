@@ -3527,48 +3527,54 @@ header.page-header.featured-header section.inner { position: relative; }
 /*-----
 	Footer Styles
 	-----*/
-/* line 5, ../scss/_footer.scss */
+/* line 4, ../scss/_footer.scss */
+footer { clear: both; }
+/* line 6, ../scss/_footer.scss */
 footer a { cursor: pointer; }
-/* line 7, ../scss/_footer.scss */
+/* line 8, ../scss/_footer.scss */
 footer a.logo { display: block; text-indent: -10000px; text-align: left; font-size: 0; width: 290px; height: 62px; background-image: url("images/motivis-logo.svg"); background-repeat: no-repeat; background-size: 100%; border: none; }
-/* line 21, ../scss/_footer.scss */
+/* line 22, ../scss/_footer.scss */
 footer article { padding: 0; }
-/* line 25, ../scss/_footer.scss */
+/* line 26, ../scss/_footer.scss */
 footer section { margin-top: 26px; }
-/* line 27, ../scss/_footer.scss */
+/* line 28, ../scss/_footer.scss */
 footer section.upper { padding: 0 10px; }
-/* line 32, ../scss/_footer.scss */
+/* line 33, ../scss/_footer.scss */
 footer .footer-left { background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url("../images/footer-background.png"); background-repeat: no-repeat; background-size: cover; background-position: right center; }
-/* line 39, ../scss/_footer.scss */
+/* line 38, ../scss/_footer.scss */
+footer .footer-left article { margin-top: 26px; }
+/* line 43, ../scss/_footer.scss */
 footer .footer-right { background-color: #3f3f3f; }
-/* line 42, ../scss/_footer.scss */
+/* line 46, ../scss/_footer.scss */
 footer .footer-right .right-content h4 { text-transform: capitalize; }
-/* line 48, ../scss/_footer.scss */
+/* line 49, ../scss/_footer.scss */
+footer .footer-right .right-content ul li { font-size: 18px; line-height: 1.25em; font-family: 'Open Sans', arial, sans-serif; font-weight: 700; margin-bottom: 13px; }
+/* line 58, ../scss/_footer.scss */
 footer .footer-left, footer .footer-right { padding-top: 90px; padding-bottom: 90px; text-align: left; height: 400px; color: #ffffff; }
-/* line 55, ../scss/_footer.scss */
-footer .footer-left h5, footer .footer-right h5 { color: #ffffff; }
-/* line 59, ../scss/_footer.scss */
-footer .footer-left h4, footer .footer-right h4 { color: #e3573c; }
 /* line 65, ../scss/_footer.scss */
-footer .inner p { vertical-align: top; display: inline-block; }
+footer .footer-left h5, footer .footer-right h5 { color: #ffffff; }
 /* line 69, ../scss/_footer.scss */
+footer .footer-left h4, footer .footer-right h4 { color: #e3573c; }
+/* line 75, ../scss/_footer.scss */
+footer .inner p { vertical-align: top; display: inline-block; }
+/* line 79, ../scss/_footer.scss */
 footer .inner p:nth-child(2) { padding-left: 65px; }
-/* line 74, ../scss/_footer.scss */
+/* line 84, ../scss/_footer.scss */
 footer .inner a:not(:last-child) { margin-right: 15px; }
-/* line 78, ../scss/_footer.scss */
+/* line 88, ../scss/_footer.scss */
 footer .inner i { font-size: 20px; padding: 10px; background-color: #e3573c; color: #ffffff; border-radius: 3px; }
-/* line 85, ../scss/_footer.scss */
+/* line 95, ../scss/_footer.scss */
 footer .inner i:hover { background-color: #e56349; }
 
-@media (max-width: 958px) { /* line 93, ../scss/_footer.scss */
+@media (max-width: 958px) { /* line 103, ../scss/_footer.scss */
   footer .inner p:nth-child(2) { padding-left: 0; display: block; } }
-@media (min-width: 1380px) { /* line 101, ../scss/_footer.scss */
+@media (min-width: 1380px) { /* line 111, ../scss/_footer.scss */
   footer .left-content, footer .right-content { padding-right: 50px; }
-  /* line 105, ../scss/_footer.scss */
+  /* line 115, ../scss/_footer.scss */
   footer .left-content { float: right; } }
-@media (max-width: 1380px) { /* line 113, ../scss/_footer.scss */
+@media (max-width: 1380px) { /* line 123, ../scss/_footer.scss */
   footer .left-content, footer .right-content { max-width: 500px; margin: 0px auto; padding-left: 20px; padding-right: 20px; }
-  /* line 120, ../scss/_footer.scss */
+  /* line 130, ../scss/_footer.scss */
   footer .right-content { float: none; } }
 
 /*# sourceMappingURL=style.css.map */

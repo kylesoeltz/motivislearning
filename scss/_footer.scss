@@ -2,6 +2,7 @@
 	Footer Styles
 	-----*/
 footer {
+	clear: both;
 	a {
 		cursor: pointer;
 		&.logo {
@@ -34,6 +35,9 @@ footer {
 		background-repeat: no-repeat;
     	background-size: cover;
     	background-position: right center;
+    	article {
+			margin-top: $standard-bottomMargin;
+		}
 	}
 
 	.footer-right {
@@ -41,6 +45,12 @@ footer {
 		.right-content {			
 			h4 {
 				text-transform: capitalize;
+			}
+			ul li {
+			    font-size: 18px;
+			    line-height: 1.25em;
+			    @include font-primary-bold();
+			    margin-bottom: $standard-bottomMargin/2;
 			}
 		}
 	}
