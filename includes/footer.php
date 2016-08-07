@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-12 footer-left">
 				<div class="left-content">
-					<h5>motivis learning</h5>
+					<small>motivis learning</small>
 					<article>
 						<h4><a href='#'>From the Field: Clearing the Path for CBE Within the UNC System</a></h4>
 						<small>6/20/2016 | Emily Dustin</small>
@@ -16,13 +16,13 @@
 			</div>	
 			<div class="col-sm-12 footer-right">
 				<div class="right-content">
-					<h5>motivis platform</h5>
+					<small>motivis platform</small>
 					<ul>
 						<li><a href="#">learning relationship management</a></li>
 						<li><a href="#">networking &amp; school community</a></li>
 						<li><a href="#">student information systems</a></li>
+						<li><a href="/demo.php" class="btn">Request Demo</a></li>
 					</ul>
-					<a href="/demo.php" class="btn">Request Demo</a>
 				</div>
 			</div>
 		</div>
