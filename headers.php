@@ -47,7 +47,7 @@
     <body>
         <?php include 'includes/header.php'; ?>
         <main>
-        	<header class="page-header image-header color-green background-dots callout-header">
+        	<header class="page-header image-header green dots callout-header">
 	        	<section class="inner">
 	        		<h1>Their Future is Our Mission</h1>
 	        		<p>A modern platform built by educational experts for a holistic student experience.</p>
@@ -62,19 +62,19 @@
 					</svg>
 				</section>
         	</header>
-        	<header class="page-header color-navy background-gears">
+        	<header class="page-header navy gears">
 	        	<section class="inner">
 	        		<h1>CBE Best Practices</h1>
 	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nunc at tempus tincidunt, risus justo dapibus ante, ullamcorper finibus risus dolor id metus. Nunc et finibus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nunc at tempus tincidunt.</p>
         		</section>
         	</header>
-        	<header class="page-header color-green background-dots">
+        	<header class="page-header green dots">
 	        	<section class="inner">
 	        		<h1>Our mission is to make a real difference in the world</h1>
 	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nunc at tempus tincidunt, risus justo dapibus ante, ullamcorper finibus risus dolor id metus. Nunc et finibus erat.</p>
         		</section>
         	</header>
-        	<header class="page-header image-header color-blue background-dots">
+        	<header class="page-header image-header blue dots">
 	        	<section class="inner">
 	        		<h1>Learning Relationship Management</h1>
 	        		<p>Our Learning Relationship Management (LRM) platform is built specifically for education by experts in education. Both flexible and powerful, it ensures the solution you choose is an advantage today and in the future.</p>
@@ -88,7 +88,7 @@
 					</svg>
         		</section>
         	</header>
-        	<header class="page-header image-header color-navy">
+        	<header class="page-header image-header navy">
 	        	<section class="inner">
 	        		<h1>Process</h1>
 	        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
@@ -101,7 +101,7 @@
 					</svg>
         		</section>
         	</header>
-        	<header class="page-header color-navy background-gears">
+        	<header class="page-header navy gears">
 	        	<section class="inner">
 	        		<h1>Process</h1>
         		</section>

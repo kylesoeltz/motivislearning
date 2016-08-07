@@ -133,34 +133,32 @@
 	        	</div>
         	</article>
 
-        	<div class="alternate-sides">
-	        	<article class="image-dots">
-		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
-			        	<img src="images/cornell.png">
+        	<article class="case-study left dots">
+	        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
+		        	<img src="images/cornell.png">
+	        	</div>
+	        	<div class="inner">
+		        	<div class="col-sm-11 col-sm-offset-13">
+		        		<h5>Case Study</h5>
+			        	<h3><a href="#">Cornell Brings Online Community Alive, Reduces Email Overload</a></h3>
+			        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
+			            <a href="#" class="btn">Learn More</a>
 		        	</div>
-		        	<div class="inner">
-			        	<div class="col-sm-11 col-sm-offset-13">
-			        		<h5>Case Study</h5>
-				        	<h3><a href="#">Cornell Brings Online Community Alive, Reduces Email Overload</a></h3>
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
-				            <a href="#" class="btn">Learn More</a>
-			        	</div>
+	        	</div>
+        	</article>
+        	<article class="case-study right dots">
+	        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
+		        	<img src="images/harvard.png">
+	        	</div>
+	        	<div class="inner">
+		        	<div class="col-sm-11">
+		        		<h5>Case Study</h5>
+			        	<h3><a href="#">Harvard Brings Online Community Alive, Reduces Email Overload</a></h3>
+			        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
+			            <a href="#" class="btn">Learn More</a>
 		        	</div>
-	        	</article>
-	        	<article class="image-dots">
-		        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
-			        	<img src="images/harvard.png">
-		        	</div>
-		        	<div class="inner">
-			        	<div class="col-sm-11">
-			        		<h5>Case Study</h5>
-				        	<h3><a href="#">Harvard Brings Online Community Alive, Reduces Email Overload</a></h3>
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet.</p>
-				            <a href="#" class="btn">Learn More</a>
-			        	</div>
-		        	</div>
-	        	</article>
-        	</div>
+	        	</div>
+        	</article>
 
         	<article class="gray">
         		<div class="inner">
@@ -219,7 +217,7 @@
         		</div>
         	</article>
 
-        	<article class="image-dots">
+        	<article class="dots">
         		<div class="inner">
         			<section>
         				<div class="row">
@@ -311,7 +309,7 @@
 	        	</div>
         	</article>
 
-        	<article class="image-dots">
+        	<article class="dots">
 	        	<div class="inner">
 		        	<section>
 		        		<div class="row">
@@ -329,7 +327,7 @@
         		</div>
         	</article>
 
-        	<article class="image-dots">
+        	<article class="dots">
 	        	<div class="inner">
 		        	<section>
 		        		<div class="row">

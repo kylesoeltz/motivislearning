@@ -353,7 +353,7 @@ article {
 	&.gray {
 		background-color: $color-fadedGray;
 	}
-	&.image-dots {
+	&.dots {
 		background-image: url('images/dot-bg.jpg');
 	}
 	&.case-study {
@@ -519,40 +519,40 @@ header.page-header {
 			background-color: $color-white;
 		}
 	}
-	&.color-blue {
+	&.blue {
 		background-color: $color-blue;
 		a.btn:hover {
 			color: $color-blue;
 		}
 	}
-	&.color-orange {
+	&.orange {
 		background-color: $color-orange;
 		a.btn:hover {
 			color: $color-orange;
 		}
 	}
-	&.color-navy {
+	&.navy {
 		background-color: $color-navy;
 		a.btn:hover {
 			color: $color-navy;
 		}
 	}
-	&.color-green {
+	&.green {
 		background-color: $color-green;
 		a.btn:hover {
 			color: $color-green;
 		}
 	}
-	&.color-yellow {
+	&.yellow {
 		background-color: $color-yellow;
 		a.btn:hover {
 			color: $color-yellow;
 		}
 	}
-	&.background-dots {
+	&.dots {
 		background-image: url('images/dot-bg-transparent.png');
 	}
-	&.background-gears {
+	&.gears {
 		background-image: url('images/gearz.svg');
 		background-size: 2258px 688px;
 		background-position: center 20%;

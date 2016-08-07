@@ -86,7 +86,7 @@
 		        	</section>
 	        	</div>
         	</article>
-        	<article class="case-study image-dots">
+        	<article class="case-study">
 	        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 		        	<img src="images/cornell.png">
 	        	</div>
@@ -99,7 +99,7 @@
 		        	</div>
 	        	</div>
         	</article>
-        	<article class="case-study image-dots right">
+        	<article class="case-study dots right">
 	        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 		        	<img src="images/harvard.png">
 	        	</div>
