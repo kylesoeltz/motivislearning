@@ -17,6 +17,7 @@ $color-pageBg: #f9f9f9;
 
 // Standard Colors
 $color-black: #3f3f3f;
+$color-navyGray: #31363c;
 $color-darkGray: #595959;
 $color-gray: #d7d7d7;
 $color-lightGray: #efefef;
@@ -25,6 +26,8 @@ $color-strokeGray: #e8e9ec;
 $color-fadedGray: #f5f5f5;
 $color-offWhite: #f9f9f9;
 $color-white: #ffffff;
+
+
 
 $color-blue: #0d9fd0;
 $color-orange: #e3573c;
@@ -53,9 +56,6 @@ $color-progressStarted: #ffd6e0;
 // Link Colors
 $color-link: #12a9db;
 $color-linkHover: #12a9db;
-
-// Footer Colors
-$color-footerBackground: #31363c;
 
 // Break Points
 $break-mobileExtraSmall: 350px;
@@ -165,6 +165,16 @@ $bajillion: 9999px;
     }
 }
 
+@mixin absoluteCenter($width, $height) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    width: $width;
+    height: $height;
+}
 
 @mixin linkUnderlines($backgroundColor, $color) {
     color: $color;

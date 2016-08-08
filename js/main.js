@@ -7,7 +7,8 @@ var navJS = {
             //Hide the sub-menu
             if($('.solutions').hasClass('sub-menu-vis')){
                 $('.solutions').removeClass('sub-menu-vis');
-                $('.sub-menu, .fa-down, .fa-up').toggle();
+                $('.icon-up').removeClass('icon-up').addClass('icon-down');
+                $('.sub-menu').toggle();
             }
 
             //Hide the mobile nav
@@ -18,11 +19,18 @@ var navJS = {
 
         //When solutions or the arrow is clicked
         $('.solutions').unbind().on('click', function(e){
+            e.preventDefault();
             e.stopPropagation();
             var $elm = $(this);
-            ($elm.hasClass('sub-menu-vis')) ? $elm.removeClass('sub-menu-vis') : $elm.addClass('sub-menu-vis');
-            $('.sub-menu').slideToggle();
-            $('.fa-down, .fa-up').toggle();
+            if($elm.hasClass('sub-menu-vis')){
+                $elm.removeClass('sub-menu-vis');
+                $('.icon-up').removeClass('icon-up').addClass('icon-down');
+                $('.sub-menu').toggle();
+            }else{
+                $('.icon-down').removeClass('icon-down').addClass('icon-up');
+                $elm.addClass('sub-menu-vis');
+                $('.sub-menu').slideToggle();
+            }            
         });
 
         //Do nothing when sub-menu is clicked
@@ -47,7 +55,8 @@ var navJS = {
             $('body').removeClass('mobileNavVisible');
             if($('.solutions').hasClass('sub-menu-vis')){
                 $('.solutions').removeClass('sub-menu-vis');
-                $('.sub-menu, .fa-down, .fa-up').toggle();
+                $('.icon-up').removeClass('icon-up').addClass('icon-down');
+                $('.sub-menu').toggle();
             }
         });
     }

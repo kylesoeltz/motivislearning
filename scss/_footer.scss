@@ -54,8 +54,9 @@ footer {
 	}
 
 	.footer-right {
-		background-color: $color-footerBackground;
-		.right-content {			
+		background-color: $color-navyGray;
+		.right-content {
+			padding-left: 50px;	
 			h4 {
 				text-transform: capitalize;
 			}
@@ -84,23 +85,24 @@ footer {
     	}
 	}
 
+	.left-content {
+		padding-right: 50px;
+		float: right;
+	}
+
 	.inner {
 		p {
 			vertical-align: top;
 			display: inline-block;
 			font-weight: 600;
-			margin-left: $standard-bottomMargin;
-
-			&:nth-child(2) {
-				padding-left: 65px;
-			}
+			margin-left: $standard-bottomMargin;			
 		}
 
-		div {
+		.social-icon-container {
+			text-align: right;
 			margin-top: $standard-bottomMargin;
-
-			&[class^="col"]:last-child {
-    			text-align: right;
+			a {
+				border-bottom: none;
 			}
 		}
 
@@ -109,43 +111,26 @@ footer {
 		}
 
 		i {
-			font-size: 20px;
-    		padding: 10px;
+			width: 50px;
+			height: 50px;
+			position: relative;
+			font-size: 20px;    		
     		background-color: $color-orange;
     		color: $color-white;
     		border-radius: 3px;
+    		text-align: center;
+
+    		&:before {
+    			@include absoluteCenter(100%, 20px);
+    		}
 
     		&:hover {
     			background-color: lighten($color-orange, 3);
     		}
 		}
-	}
-}
 
-@media (max-width: 958px) {
-	footer .inner {
-		div[class^="col"]:last-child {
-    		text-align: left;
-    		margin-left: $standard-bottomMargin;
-		}
-		p:nth-child(2) {
-			padding-left: 0;
-			display: block;
-			margin-top: -20px;
-		}
-	} 
-
-
-}
-
-@media (min-width: 1380px) {
-	footer {
-		.left-content, .right-content {
-			padding-right: 50px;
-		}
-
-		.left-content {
-			float: right;
+		.contact-info {
+			margin-top: $standard-bottomMargin;
 		}
 	}
 }
@@ -162,5 +147,25 @@ footer {
 		.right-content {
 			float: none;
 		}
+	}
+}
+
+@media(max-width: 767px) {
+	footer {
+		.left-content {
+			float: none;
+			padding-left: 0px;
+		}
+
+		.footer-right .right-content {
+			padding-left: 0px;
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	footer .inner .social-icon-container {
+		text-align: center;
+		margin-bottom: $standard-bottomMargin;
 	}
 }

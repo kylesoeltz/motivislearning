@@ -27,12 +27,11 @@ function getCurrentPage()
         <div class="inner">
             <h1 class="logo"><a href="/">Motivis Learning</a></h1>
             <button class="mobileNavToggle">Menu</button>
+            <div class="overlay"></div>
             <ul>
                 <li><small>close</small></li>
                 <li class="solutions current-menu-item">
-                    <a href="#" role="button">Solutions</a>
-                    <i class="fa fa-down"></i>
-                    <i class="fa fa-up"></i>
+                    <a href="#" role="button" class="icon-down">Solutions</a>                    
                     <ul class="sub-menu">
                         <li><h5 class="allCaps">motivis platform</h5></li>
                         <li><a href="#">Lerning Relationship Management</a></li>

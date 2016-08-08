@@ -31,15 +31,20 @@
 		<div class="inner">
 			<a href="/" class="logo">Motivis Learning</a>
 			<div class="row">
-				<div class="col-sm-16">
-						<p>Copyright 2016 Motivis Learning Systems<br />25 Pelham Road, Unit 204<br />Salem, NH 03079</p>
-						<p><tel>855-202-6500</tel><br />info@motivislearning.com</p>
+				<div class="col-md-16 col-sm-12 contact-info">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Copyright 2016 Motivis Learning Systems<br />25 Pelham Road, Unit 204<br />Salem, NH 03079</p>
+						</div>
+						<div class="col-md-12">
+							<p><tel>855-202-6500</tel><br />info@motivislearning.com</p>
+						</div>
 					</div>
-					<div class="col-sm-8">
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</div>
+				</div>
+				<div class="col-md-8 col-sm-12 social-icon-container">
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-facebook"></i></a>
 				</div>
 			</div>
 		</div>
