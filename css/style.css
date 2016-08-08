@@ -5866,7 +5866,7 @@ article {
       color: #ffffff; }
   article.gray {
     background-color: #f5f5f5; }
-  article.image-dots {
+  article.dots {
     background-image: url("images/dot-bg.jpg"); }
   article.case-study {
     position: relative; }
@@ -5983,29 +5983,29 @@ header.page-header {
     color: #ffffff; }
     header.page-header:not(.featured-header) a.btn:hover {
       background-color: #ffffff; }
-  header.page-header.color-blue {
+  header.page-header.blue {
     background-color: #0d9fd0; }
-    header.page-header.color-blue a.btn:hover {
+    header.page-header.blue a.btn:hover {
       color: #0d9fd0; }
-  header.page-header.color-orange {
+  header.page-header.orange {
     background-color: #e3573c; }
-    header.page-header.color-orange a.btn:hover {
+    header.page-header.orange a.btn:hover {
       color: #e3573c; }
-  header.page-header.color-navy {
+  header.page-header.navy {
     background-color: #1b7bac; }
-    header.page-header.color-navy a.btn:hover {
+    header.page-header.navy a.btn:hover {
       color: #1b7bac; }
-  header.page-header.color-green {
+  header.page-header.green {
     background-color: #4ebb73; }
-    header.page-header.color-green a.btn:hover {
+    header.page-header.green a.btn:hover {
       color: #4ebb73; }
-  header.page-header.color-yellow {
+  header.page-header.yellow {
     background-color: #f5bb51; }
-    header.page-header.color-yellow a.btn:hover {
+    header.page-header.yellow a.btn:hover {
       color: #f5bb51; }
-  header.page-header.background-dots {
+  header.page-header.dots {
     background-image: url("images/dot-bg-transparent.png"); }
-  header.page-header.background-gears {
+  header.page-header.gears {
     background-image: url("images/gearz.svg");
     background-size: 2258px 688px;
     background-position: center 20%;
@@ -6184,7 +6184,7 @@ footer {
     footer section li {
       margin-top: 26px; }
   footer .footer-left {
-    background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url("../images/footer-background.png");
+    background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url("images/footer-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center; }
