@@ -8,7 +8,6 @@ header.nav-header {
 	z-index: 200;
 }
 
-
 h1.logo {
 	a {
 		display: block;
@@ -45,7 +44,23 @@ nav.main-nav {
 			li {
 				display: inline-block;
 				margin-right: 20px;
-				a {
+				&:first-child {
+					display: none;
+				}	
+
+
+				
+				i {
+					font-size: 10px;
+    				margin-left: -10px;
+    				cursor: pointer;
+
+    				&.fa-up {
+    					display: none;
+    				}
+				}
+
+				a {					
 					text-transform: uppercase;
 					font-size: 14px;
 					font-weight: 700;
@@ -70,6 +85,9 @@ nav.main-nav {
 					display: none;
 				}
 
+				&.solutions > a {
+					display: inline;
+				}
 
 				/*For drop-down menus*/
 				> .sub-menu {		

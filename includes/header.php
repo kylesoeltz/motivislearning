@@ -30,7 +30,9 @@ function getCurrentPage()
             <ul>
                 <li><small>close</small></li>
                 <li class="solutions current-menu-item">
-                    <a href="/solutions.php">Solutions</a>
+                    <a href="#" role="button">Solutions</a>
+                    <i class="fa fa-down"></i>
+                    <i class="fa fa-up"></i>
                     <ul class="sub-menu">
                         <li><h5 class="allCaps">motivis platform</h5></li>
                         <li><a href="#">Lerning Relationship Management</a></li>
