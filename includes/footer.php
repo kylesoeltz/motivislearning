@@ -44,7 +44,7 @@
 							<p>
 								<a href="tel:+1855-202-6500">855-202-6500</a>
 								<br />
-								<a mailto:"info@motivislearning.com">info@motivislearning.com</a>
+								<a href="mailto:info@motivislearning.com">info@motivislearning.com</a>
 							</p>
 						</div>
 					</div>
