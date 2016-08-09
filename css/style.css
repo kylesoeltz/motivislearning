@@ -5000,7 +5000,8 @@ body {
   font-weight: 400;
   color: #595959;
   font-size: 14px;
-  text-align: center; }
+  text-align: center;
+  background-image: url("images/dot-bg.jpg"); }
 
 h1 {
   font-family: 'Roboto Slab', arial, sans-serif;
@@ -5390,7 +5391,6 @@ h1.logo a {
   border: none; }
 
 nav.main-nav {
-  position: fixed;
   background-color: #ffffff;
   padding-top: 8px;
   width: 100%;
@@ -5629,12 +5629,12 @@ nav.main-nav {
             font-weight: 600; }
         body.mobileNavVisible nav.main-nav .inner li:first-child {
           display: block; }
-          body.mobileNavVisible nav.main-nav .inner li:first-child small {
-            cursor: pointer;
-            background-color: #ffffff;
-            display: block;
+          body.mobileNavVisible nav.main-nav .inner li:first-child button {
+            width: 100%;
             text-align: right;
-            padding-right: 10px; } }
+            background: transparent;
+            border: none;
+            font-size: 12px; } }
 /*-----
 	Content Styles
 	TOC
@@ -6188,12 +6188,35 @@ header.page-header {
 	-----*/
 footer {
   clear: both; }
-  footer p, footer h4, footer a:not(.btn), footer small {
+  footer h1.logo a {
+    display: block;
+    text-indent: -10000px;
+    text-align: left;
+    font-size: 0;
+    width: 290px;
+    height: 62px;
+    background-image: url("images/motivis-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none; }
+  footer p, footer small {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400; }
+  footer h4 {
     font-family: 'Roboto Slab', arial, sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 25px; }
+  footer .sub-menu {
+    margin-bottom: 35px; }
+    footer .sub-menu li:first-of-type h5 {
+      font-family: 'Open Sans', arial, sans-serif;
+      font-weight: 400; }
+    footer .sub-menu li a {
+      font-family: 'Roboto Slab', arial, sans-serif;
+      font-weight: 300;
+      font-size: 20px; }
   footer a {
-    cursor: pointer;
-    text-transform: capitalize; }
+    cursor: pointer; }
     footer a.logo {
       display: block;
       text-indent: -10000px;
@@ -6213,8 +6236,6 @@ footer {
     margin-top: 26px; }
     footer section.upper {
       padding: 0 10px; }
-    footer section li {
-      margin-top: 26px; }
   footer .footer-left {
     background: linear-gradient(rgba(49, 54, 60, 0.8), rgba(49, 54, 60, 0.8)), url("images/footer-background.png");
     background-repeat: no-repeat;
@@ -6233,12 +6254,16 @@ footer {
         line-height: 1.25em;
         font-family: 'Open Sans', arial, sans-serif;
         font-weight: 700;
-        margin-bottom: 13px; }
+        margin-bottom: 15px;
+        margin-top: -4px; }
+        footer .footer-right .right-content ul li:first-child {
+          margin-bottom: 26px; }
+      footer .footer-right .right-content a.btn {
+        padding: 8px 24px; }
   footer .footer-left, footer .footer-right {
     padding-top: 90px;
     padding-bottom: 90px;
     text-align: left;
-    height: 400px;
     color: #ffffff; }
     footer .footer-left h5, footer .footer-right h5 {
       color: #ffffff; }
@@ -6247,28 +6272,33 @@ footer {
   footer .left-content {
     padding-right: 50px;
     float: right; }
-  footer .inner p {
+  footer .lower p {
     vertical-align: top;
-    display: inline-block;
     font-weight: 600;
-    margin-left: 26px; }
-  footer .inner .social-icon-container {
+    text-align: left; }
+    footer .lower p a {
+      color: #595959; }
+      footer .lower p a:hover {
+        border-bottom: transparent; }
+  footer .lower .social-icon-container {
     text-align: right;
     margin-top: 26px; }
-    footer .inner .social-icon-container a {
+    footer .lower .social-icon-container a {
       border-bottom: none; }
-  footer .inner a:not(:last-child) {
-    margin-right: 10px; }
-  footer .inner i {
-    width: 50px;
-    height: 50px;
+      footer .lower .social-icon-container a:not(:last-child) {
+        margin-right: 10px; }
+      footer .lower .social-icon-container a:last-child {
+        margin-right: 26px; }
+  footer .lower i {
+    width: 45px;
+    height: 45px;
     position: relative;
     font-size: 20px;
     background-color: #e3573c;
     color: #ffffff;
     border-radius: 3px;
     text-align: center; }
-    footer .inner i:before {
+    footer .lower i:before {
       top: 0;
       left: 0;
       bottom: 0;
@@ -6277,9 +6307,9 @@ footer {
       margin: auto;
       width: 100%;
       height: 20px; }
-    footer .inner i:hover {
+    footer .lower i:hover {
       background-color: #e56349; }
-  footer .inner .contact-info {
+  footer .lower .contact-info {
     margin-top: 26px; }
 
 @media (max-width: 1380px) {
@@ -6290,14 +6320,28 @@ footer {
     padding-right: 20px; }
   footer .right-content {
     float: none; } }
+@media (max-width: 1036px) {
+  footer .lower h1.logo {
+    margin-bottom: 0; }
+    footer .lower h1.logo a {
+      width: 230px; } }
+@media (max-width: 880px) {
+  footer .lower h1.logo {
+    margin-bottom: 0; }
+    footer .lower h1.logo a {
+      width: 200px; } }
 @media (max-width: 767px) {
+  footer .lower p {
+    text-align: center; }
   footer .left-content {
     float: none;
     padding-left: 0px; }
   footer .footer-right .right-content {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  footer .logo a {
+    margin: 0 auto; } }
 @media (max-width: 768px) {
-  footer .inner .social-icon-container {
+  footer .lower .social-icon-container {
     text-align: center;
     margin-bottom: 26px; } }
 

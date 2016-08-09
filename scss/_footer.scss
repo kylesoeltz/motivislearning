@@ -2,9 +2,38 @@
 	Footer Styles
 	-----*/
 footer {
-	p, h4, a:not(.btn), small {
-		@include font-roboto-light();
+	h1.logo a{
+		display: block;
+    	text-indent: -10000px;
+    	text-align: left;
+    	font-size: 0;
+    	width: 290px;
+    	height: 62px;
+    	background-image: url("images/motivis-logo.svg");
+    	background-repeat: no-repeat;
+    	background-size: 100%;
+    	border: none;
 	}
+	p, small {
+		@include font-primary-regular();
+	}
+
+	h4 {
+		@include font-roboto-light();
+		font-size: 25px;
+	}
+
+	.sub-menu {
+		margin-bottom: 35px;
+			li:first-of-type h5{
+				@include font-primary-regular();
+			}
+
+			li a {
+				@include font-roboto-light();
+				font-size: 20px;
+			}
+		}
 
 	clear: both;
 	a {
@@ -21,7 +50,6 @@ footer {
 			background-size: 100%;
 			border: none;
 		}
-		text-transform: capitalize;
 	}
 
 	small:first-child { 
@@ -36,10 +64,6 @@ footer {
 		margin-top: $standard-bottomMargin;
 		&.upper {
 			padding: 0 10px;
-		}
-
-		li {
-			margin-top: $standard-bottomMargin;
 		}
 	}
 
@@ -61,10 +85,18 @@ footer {
 				text-transform: capitalize;
 			}
 			ul li {
+				&:first-child {
+					margin-bottom: $standard-bottomMargin;
+				}
 			    font-size: 18px;
 			    line-height: 1.25em;
 			    @include font-primary-bold();
-			    margin-bottom: $standard-bottomMargin/2;
+			    margin-bottom: 15px;
+			    margin-top: -4px;
+			}
+
+			a.btn {
+				padding: 8px 24px;
 			}
 		}
 	}
@@ -73,7 +105,6 @@ footer {
 		padding-top: 90px;
     	padding-bottom: 90px;
     	text-align: left;
-    	height: 400px;
     	color: $color-white;
 
     	h5 {
@@ -90,12 +121,17 @@ footer {
 		float: right;
 	}
 
-	.inner {
+	.lower {
 		p {
 			vertical-align: top;
-			display: inline-block;
-			font-weight: 600;
-			margin-left: $standard-bottomMargin;			
+			font-weight: 600;	
+			text-align: left;	
+			a {
+				color: $color-darkGray;
+				&:hover {
+					border-bottom: transparent;
+				}
+			}
 		}
 
 		.social-icon-container {
@@ -103,16 +139,19 @@ footer {
 			margin-top: $standard-bottomMargin;
 			a {
 				border-bottom: none;
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+
+				&:last-child {
+					margin-right: $standard-bottomMargin;
+				}
 			}
 		}
 
-		a:not(:last-child) {
-			margin-right: 10px;
-		}
-
 		i {
-			width: 50px;
-			height: 50px;
+			width: 45px;
+			height: 45px;
 			position: relative;
 			font-size: 20px;    		
     		background-color: $color-orange;
@@ -130,7 +169,7 @@ footer {
 		}
 
 		.contact-info {
-			margin-top: $standard-bottomMargin;
+			margin-top: $standard-bottomMargin;			
 		}
 	}
 }
@@ -150,8 +189,28 @@ footer {
 	}
 }
 
+@media (max-width: 1036px) {
+	footer .lower h1.logo {
+				margin-bottom: 0;
+				a {
+					width: 230px;
+				}
+			}
+	}
+@media (max-width: 880px) {
+	footer .lower h1.logo {
+				margin-bottom: 0;
+				a {
+					width: 200px;
+				}
+			}
+}
+
 @media(max-width: 767px) {
 	footer {
+		.lower p {
+			text-align: center;
+		}
 		.left-content {
 			float: none;
 			padding-left: 0px;
@@ -160,12 +219,18 @@ footer {
 		.footer-right .right-content {
 			padding-left: 0px;
 		}
+
+		.logo a {
+			margin: 0 auto;
+		}
 	}
 }
 
 @media(max-width: 768px) {
-	footer .inner .social-icon-container {
+	footer .lower {
+		.social-icon-container {
 		text-align: center;
 		margin-bottom: $standard-bottomMargin;
+	}
 	}
 }

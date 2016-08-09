@@ -1,5 +1,22 @@
 'use strict';
 
+/*
+ * TOC:
+ *    Section 1: Page load JS
+ *    Section 2: Navigation JS
+ *    Section 3: Footer JS
+ *    Section ?: On Ready
+ */
+
+//Section 1
+var mainJS = {
+    init: function(){
+        navJS.init();
+        footerJS.init();
+    }
+}
+
+//Section 2
 var navJS = {
     init: function(){
         //Handle when the document is clicked
@@ -62,6 +79,14 @@ var navJS = {
     }
 }
 
+//Section 3
+var footerJS = {
+    init: function(){
+        $('.matchHeight').matchHeight();
+    }
+}
+
+//Section ?
 $(function(){
-    navJS.init();
+    mainJS.init();
 });

@@ -99,7 +99,7 @@
 		        	</div>
 	        	</div>
         	</article>
-        	<article class="case-study dots right">
+        	<article class="case-study right">
 	        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 		        	<img src="images/harvard.png">
 	        	</div>
