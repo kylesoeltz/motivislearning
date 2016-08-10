@@ -5427,8 +5427,10 @@ nav.main-nav {
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            font-size: 10px;
-            margin-left: 5px; }
+            margin-left: 5px;
+            float: right;
+            font-size: 5px;
+            margin-top: 13px; }
           nav.main-nav .inner ul li a.icon-down:after {
             content: '\f014'; }
           nav.main-nav .inner ul li a.icon-up:after {
@@ -5465,7 +5467,7 @@ nav.main-nav {
               background-color: transparent;
               border-bottom: 1px solid transparent; }
               nav.main-nav .inner ul li > .sub-menu li a:hover {
-                border-bottom: 1px solid #e3573c; }
+                text-decoration: underline; }
     nav.main-nav .inner a.btn {
       padding: 5px 15px;
       color: #ffffff;
@@ -5577,8 +5579,6 @@ nav.main-nav {
             font-size: 14px; }
             nav.main-nav .inner ul li a:hover {
               background-color: #e8e9ec; }
-          nav.main-nav .inner ul li:not(:last-child) {
-            border-bottom: solid 1px #e8e9ec; }
       nav.main-nav .inner a.btn {
         right: -250px;
         display: block;
@@ -5613,28 +5613,42 @@ nav.main-nav {
           -moz-box-shadow: none;
           -webkit-box-shadow: none;
           box-shadow: none; }
+          body.mobileNavVisible nav.main-nav .inner > ul li > ul h5 {
+            padding-left: 4px; }
+          body.mobileNavVisible nav.main-nav .inner > ul li > ul:last-child {
+            margin-bottom: 5px; }
       body.mobileNavVisible nav.main-nav .inner ul,
       body.mobileNavVisible nav.main-nav .inner a.btn {
         right: 0;
         transition: right 0.2s ease-in; }
       body.mobileNavVisible nav.main-nav .inner li {
+        border-bottom: 1px solid #efefef;
         padding-bottom: 0px; }
         body.mobileNavVisible nav.main-nav .inner li a {
-          transition: none; }
+          transition: none;
+          padding: 10px 15px; }
         body.mobileNavVisible nav.main-nav .inner li > .sub-menu {
-          padding-top: 0;
+          margin-top: 0px;
+          padding: 0;
           position: relative;
-          display: none; }
+          display: none;
+          line-height: 2em; }
+          body.mobileNavVisible nav.main-nav .inner li > .sub-menu li {
+            border-bottom: none; }
           body.mobileNavVisible nav.main-nav .inner li > .sub-menu a {
-            font-weight: 600; }
+            font-weight: 600;
+            line-height: 1.5em; }
         body.mobileNavVisible nav.main-nav .inner li:first-child {
+          padding: 10px 10px;
           display: block; }
           body.mobileNavVisible nav.main-nav .inner li:first-child button {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-weight: 600;
             width: 100%;
             text-align: right;
             background: transparent;
             border: none;
-            font-size: 12px; } }
+            font-size: 10px; } }
 /*-----
 	Content Styles
 	TOC
@@ -6276,10 +6290,9 @@ footer {
     vertical-align: top;
     font-weight: 600;
     text-align: left; }
-    footer .lower p a {
-      color: #595959; }
-      footer .lower p a:hover {
-        border-bottom: transparent; }
+  footer .lower .address a {
+    color: #595959;
+    border-bottom: transparent; }
   footer .lower .social-icon-container {
     text-align: right;
     margin-top: 26px; }

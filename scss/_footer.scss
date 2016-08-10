@@ -126,12 +126,11 @@ footer {
 			vertical-align: top;
 			font-weight: 600;	
 			text-align: left;	
-			a {
-				color: $color-darkGray;
-				&:hover {
-					border-bottom: transparent;
-				}
-			}
+		}
+
+		.address a {
+			color: $color-darkGray;
+			border-bottom: transparent;
 		}
 
 		.social-icon-container {

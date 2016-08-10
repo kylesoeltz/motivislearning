@@ -29,7 +29,7 @@ function getCurrentPage()
             <button class="mobileNavToggle">Menu</button>
             <div class="overlay"></div>
             <ul>
-                <li><button>close</button></li>
+                <li><button class="allCaps">close</button></li>
                 <li class="solutions current-menu-item">
                     <a href="#" role="button" class="icon-down">Solutions</a>
                     <ul class="sub-menu">

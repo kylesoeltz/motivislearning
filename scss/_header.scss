@@ -52,8 +52,10 @@ nav.main-nav {
 				a {
 					&.icon-down:after, &.icon-up:after {
 						@include iconFont();
-						font-size: 10px;
-    					margin-left: 5px;
+						margin-left: 5px;
+    					float: right;
+    					font-size: 5px;
+    					margin-top: 13px;
 					}
 
 					&.icon-down:after {
@@ -110,7 +112,7 @@ nav.main-nav {
 							background-color: transparent;
 							border-bottom: 1px solid transparent;
 							&:hover {
-								border-bottom: 1px solid $color-orange;
+								text-decoration: underline;
 							}
 						}						
 					}
@@ -272,9 +274,6 @@ nav.main-nav {
 							background-color: $color-strokeGray;
 						}
 					}
-					&:not(:last-child) {
-						border-bottom: solid 1px $color-strokeGray;
-					}
 				}
 			}
 			a.btn {
@@ -317,6 +316,12 @@ nav.main-nav {
 						-moz-box-shadow:    none;
   						-webkit-box-shadow: none;
   						box-shadow:         none;
+  						h5 {
+  							padding-left: 4px;
+  						}
+  						&:last-child {
+  							margin-bottom: 5px;
+  						}
 					}
 				}
 				ul,
@@ -324,28 +329,39 @@ nav.main-nav {
 					right: 0;
 					transition: right 0.2s ease-in;
 				}
-				li {					
+				li {
+					border-bottom: 1px solid $color-lightGray;						
 					a {
 						transition: none;
+						padding: 10px 15px;
+						
 					}
 					
 					> .sub-menu {
-						padding-top: 0;
+						margin-top: 0px;
+						padding: 0;
 						position: relative;
 						display: none;
-						a {
-							font-weight: 600;							
+						line-height: 2em;
+						li {
+							border-bottom: none;
 						}
+						a {
+							font-weight: 600;
+							line-height: 1.5em;							
+						}						
 					}
 					padding-bottom: 0px;
 					&:first-child {
+						padding: 10px 10px;
 						display: block;
 						button {
+							@include font-primary-semibold();
 							width: 100%;
     						text-align: right;
     						background: transparent;
     						border: none;
-    						font-size: 12px;
+    						font-size: 10px;
 						}
 					}
 				}

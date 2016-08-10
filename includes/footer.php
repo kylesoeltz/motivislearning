@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col-md-16 col-sm-12 contact-info">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 address">
 							<p>
 								<a href="https://www.google.com/maps/place/25+Pelham+Rd,+Salem,+NH+03079/@42.7756873,-71.2473937,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3abceed38b001:0x8f7069972017030b!8m2!3d42.7756873!4d-71.2473937">Copyright 2016 Motivis Learning Systems<br />25 Pelham Road, Unit 204<br />Salem, NH 03079</a>
 							</p>
