@@ -172,14 +172,14 @@ aside.side-nav {
 
 
 blockquote {
-	font-size: 35px;
+	font-size: 25px;
 	@include font-roboto-light();
 	line-height: 1.5em;
-	padding: 35px 55px;
+	padding: 15px 40px;
 	position: relative;
 	&:before, &:after {
 		@include iconFont();
-		font-size: 26px;
+		font-size: 18px;
 		color: $color-blue;
 	}
 	&:before {
@@ -195,8 +195,8 @@ blockquote {
 		right: -20px;
 	}
 	+ cite {
-		padding-left: 55px;
-		margin-top: 10px;
+		padding-left: 45px;
+		margin-top: $standard-bottomMargin;
 		display: block;
 		font-size: 16px;
 		line-height: 1em;
@@ -213,7 +213,7 @@ blockquote {
 	}
 	@media (max-width: 933px) {
 		font-size: 24px;
-		padding: 35px 0px;
+		padding: 25px 0px;
 		+ cite {
 			padding-left: 0;
 		}

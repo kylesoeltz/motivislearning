@@ -5783,11 +5783,11 @@ aside.side-nav .featured-content {
   margin-bottom: 52px; }
 
 blockquote {
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'Roboto Slab', arial, sans-serif;
   font-weight: 300;
   line-height: 1.5em;
-  padding: 35px 55px;
+  padding: 15px 40px;
   position: relative; }
   blockquote:before, blockquote:after {
     font: normal normal normal 14px/1 'MotivisWebsite';
@@ -5795,7 +5795,7 @@ blockquote {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 26px;
+    font-size: 18px;
     color: #0d9fd0; }
   blockquote:before {
     position: absolute;
@@ -5808,8 +5808,8 @@ blockquote {
     bottom: -20px;
     right: -20px; }
   blockquote + cite {
-    padding-left: 55px;
-    margin-top: 10px;
+    padding-left: 45px;
+    margin-top: 26px;
     display: block;
     font-size: 16px;
     line-height: 1em;
@@ -5826,7 +5826,7 @@ blockquote {
   @media (max-width: 933px) {
     blockquote {
       font-size: 24px;
-      padding: 35px 0px; }
+      padding: 25px 0px; }
       blockquote + cite {
         padding-left: 0; } }
 
