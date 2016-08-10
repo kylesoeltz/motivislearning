@@ -13,7 +13,7 @@
     <body>
         <?php include 'includes/header.php'; ?>
         <main>
-        	<header class="page-header image-header color-green background-dots callout-header">
+        	<header class="page-header image-header green dots callout-header">
 	        	<section class="inner">
 	        		<h1>Their Future is Our Mission</h1>
 	        		<p>A modern platform built by educational experts for a holistic student experience.</p>
@@ -28,16 +28,14 @@
 					</svg>
 				</section>
         	</header>
-        	<article>
+        	<section>
 	        	<div class="inner">
-	        		<section class="text-center">
+	        		<div class="section text-center">
 		        		<div class="row">
-			        		<div class="col-xs-24">
-				        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
-			        		</div>
+			        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
 		        		</div>
-		        		<div class="callouts">
-			        		<div class="row">
+		        		<div class="row">
+			        		<div class="callouts">
 				        		<div class="col-md-8">
 					        		<i class="fa fa-medal title-icon"></i>
 					        		<h4>Learning Relationship Management</h4>
@@ -64,29 +62,29 @@
 				        		</div>
 			        		</div>
 		        		</div>
-		        	</section>
+		        	</div>
 	        	</div>
-        	</article>
-        	<article class="solid-banner navy text-center">
+        	</section>
+        	<section class="solid-banner navy text-center">
 	        	<div class="inner">
-	        		<section>
+	        		<div class="section">
 		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
 			        	<a href="#" class="btn">Learn More</a>
-	        		</section>
+	        		</div>
         		</div>
-        	</article>
-        	<article class="solid-banner blue">
+        	</section>
+        	<section class="solid-banner blue">
 	        	<div class="inner">
-		        	<section class="standard-block">
+		        	<div class="section standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
 		        		<div class="content">
 			        		<blockquote>Quote from Paul about Saleforce and the future of education lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit tortor, aliquet a gravida vitae, venenatis vitae.</blockquote>
 			        		<cite>Dr. Paul LeBlanc <small>President/CEO SNHU</small></cite>
 		        		</div>
-		        	</section>
+		        	</div>
 	        	</div>
-        	</article>
-        	<article class="case-study">
+        	</section>
+        	<section class="case-study left dots">
 	        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 		        	<img src="images/cornell.png">
 	        	</div>
@@ -98,8 +96,8 @@
 			            <a href="#" class="btn">Learn More</a>
 		        	</div>
 	        	</div>
-        	</article>
-        	<article class="case-study right">
+        	</section>
+        	<section class="case-study right dots">
 	        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 		        	<img src="images/harvard.png">
 	        	</div>
@@ -111,7 +109,7 @@
 			            <a href="#" class="btn">Learn More</a>
 		        	</div>
 	        	</div>
-        	</article>
+        	</section>
         </main>
         <?php include 'includes/footer.php'; ?>
     </body>
