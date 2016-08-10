@@ -4,16 +4,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-
         <title>Motivis</title>
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
-
     </head>
     <body>
         <?php include 'includes/header.php'; ?>
         <main>
-
         	<article>
         		<div class="inner">
 	        		<div class="row">
@@ -74,9 +71,9 @@
 	        	</div>
         	</article>
 
-        	<article>
+        	<section>
 	        	<div class="inner">
-	        		<section class="text-center">
+	        		<div class="section text-center">
 		        		<div class="row">
 			        		<h2>The Next Generation Learning Platform Built on Salesforce</h2>
 		        		</div>
@@ -108,32 +105,32 @@
 				        		</div>
 			        		</div>
 		        		</div>
-		        	</section>
+		        	</div>
 	        	</div>
-        	</article>
+        	</section>
 
-        	<article class="solid-banner navy text-center">
+        	<section class="solid-banner navy text-center">
 	        	<div class="inner">
-	        		<section>
+	        		<div class="section">
 		        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
 			        	<a href="#" class="btn">Learn More</a>
-	        		</section>
+	        		</div>
         		</div>
-        	</article>
+        	</section>
 
-        	<article class="solid-banner blue">
+        	<section class="solid-banner blue">
 	        	<div class="inner">
-		        	<section class="standard-block">
+		        	<div class="section standard-block">
 		        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
 		        		<div class="content">
 			        		<blockquote>Quote from Paul about Saleforce and the future of education lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit tortor, aliquet a gravida vitae, venenatis vitae.</blockquote>
 			        		<cite>Dr. Paul LeBlanc <small>President/CEO SNHU</small></cite>
 		        		</div>
-		        	</section>
+		        	</div>
 	        	</div>
-        	</article>
+        	</section>
 
-        	<article class="case-study left dots">
+        	<section class="case-study left dots">
 	        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 		        	<img src="images/cornell.png">
 	        	</div>
@@ -145,8 +142,8 @@
 			            <a href="#" class="btn">Learn More</a>
 		        	</div>
 	        	</div>
-        	</article>
-        	<article class="case-study right dots">
+        	</section>
+        	<section class="case-study right dots">
 	        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 		        	<img src="images/harvard.png">
 	        	</div>
@@ -158,20 +155,20 @@
 			            <a href="#" class="btn">Learn More</a>
 		        	</div>
 	        	</div>
-        	</article>
+        	</section>
 
-        	<article class="gray">
+        	<section class="gray">
         		<div class="inner">
         			<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>
         			<div class="pagination text-center">
 	        			<a href="#"><i class="fa fa-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="fa fa-right-arrow"></i></a>
         			</div>
         		</div>
-        	</article>
+        	</section>
 
-        	<article>
+        	<section>
         		<div class="inner">
-        			<section>
+        			<div class="section">
         				<div class="row">
         					<div class="col-xs-24 text-center">
         						<h2>Taking student centered learning to the next level</h2>
@@ -213,13 +210,13 @@
         						</div>
         					</div>
         				</div>
-        			</section>
+        			</div>
         		</div>
-        	</article>
+        	</section>
 
-        	<article class="dots">
+        	<section class="dots">
         		<div class="inner">
-        			<section>
+        			<div class="section">
         				<div class="row">
 	        				<div class="col-xs-24">
 	        					<div class="text-center">
@@ -266,20 +263,20 @@
         						</div>
         					</div>
         				</div>
-        			</section>
+        			</div>
         		</div>
-        	</article>
+        	</section>
 
-        	<article class="gray">
+        	<section class="gray">
 	        	<div class="inner">
-		        	<section>
+		        	<div class="section">
 		        		<div class="row">
 			        		<div class="col-xs-24 text-center">
 				        		<h2>Supports competency-based learning (CBE) models, course-based curriculums, as well as hybrids in traditional and online environments.</h2>
 			        		</div>
 		        		</div>
-	        		</section>
-		        	<section class="image-highlight">
+	        		</div>
+		        	<div class="section image-highlight">
 		        		<div class="row">
 			        		<div class="col-md-13">
 				        		<img src="images/product-screenshot.jpg">
@@ -293,8 +290,8 @@
     							<p><a href="#">Learn more about LRM for educators.</a></p>
 			        		</div>
 		        		</div>
-		        	</section>
-		        	<section class="image-highlight">
+		        	</div>
+		        	<div class="section image-highlight">
 		        		<div class="row">
 			        		<div class="col-md-13 col-md-offset-1 pull-right">
 				        		<img src="images/product-screenshot.jpg">
@@ -305,13 +302,13 @@
     							<p><a href="#">Learn more about LRM for students</a></p>
 			        		</div>
 		        		</div>
-		        	</section>
+		        	</div>
 	        	</div>
-        	</article>
+        	</section>
 
-        	<article class="dots">
+        	<section class="dots">
 	        	<div class="inner">
-		        	<section>
+		        	<div class="section">
 		        		<div class="row">
 			        		<div class="col-xs-24 text-center">
 				        		<h2>Lifelong learning and student support from a single platform and experience</h2>
@@ -323,21 +320,21 @@
 				        		<img src="images/infographic.png">
 			        		</div>
 		        		</div>
-	        		</section>
+	        		</div>
         		</div>
-        	</article>
+        	</section>
 
-        	<article class="dots">
+        	<section class="dots">
 	        	<div class="inner">
-		        	<section>
+		        	<div class="section">
 		        		<div class="row">
 			        		<div class="col-xs-24 text-center">
 				        		<h2>Our team is powered by vision, inspiration, and dedication</h2>
 				        		<p>Building relationships is fundamental to what we do.  We treat people well and create true relationships with open communication, trust and respect.</p>
 			        		</div>
 		        		</div>
-	        		</section>
-	        		<section class="team-members">
+	        		</div>
+	        		<div class="team-members">
 		        		<div class="row">
 			        		<div class="col-md-6 col-sm-8 col-xs-B-6">
 				        		<img src="images/team-photos/brian.png">
@@ -360,9 +357,9 @@
 				        		<small>Vice President of Partnerships</small>
 			        		</div>
 		        		</div>
-	        		</section>
+	        		</div>
         		</div>
-        	</article>
+        	</section>
 
         	<nav class="secondary-nav">
 	        	<div class="inner">
@@ -375,9 +372,9 @@
 	        	</div>
         	</nav>
 
-        	<article>
+        	<section>
 	        	<div class="inner">
-	        		<section>
+	        		<div class="section">
 	        			<div class="row">
 	        				<div class="col-lg-18 col-lg-offset-3 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.</p>
@@ -390,9 +387,9 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.</p>
 	        				</div>
 	        			</div>
-	        		</section>
+	        		</div>
 	        	</div>
-        	</article>
+        	</section>
         </main>
         <?php include 'includes/footer.php'; ?>
     </body>
