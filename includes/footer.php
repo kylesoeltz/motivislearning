@@ -18,7 +18,7 @@
 				<div class="right-content">
 					<ul class="sub-menu">
                         <li><h5 class="allCaps">motivis platform</h5></li>
-                        <li><a href="#">Lerning Relationship Management</a></li>
+                        <li><a href="#">Learning Relationship Management</a></li>
                         <li><a href="#">Social Networking & School Community</a></li>
                         <li><a href="#">Career Pathing for Students & Employers</a></li>
                         <li><a href="#">Student Information Systems</a></li>
