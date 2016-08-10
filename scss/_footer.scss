@@ -56,10 +56,6 @@ footer {
     	text-transform: uppercase;
 	}
 
-	article {
-		padding: 0;
-	}
-
 	section {
 		margin-top: $standard-bottomMargin;
 		&.upper {
@@ -71,10 +67,7 @@ footer {
 		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('images/footer-background.png');
 		background-repeat: no-repeat;
     	background-size: cover;
-    	background-position: right center;
-    	article {
-			margin-top: $standard-bottomMargin;
-		}
+    	background-position: right center;    	
 	}
 
 	.footer-right {
@@ -190,19 +183,19 @@ footer {
 
 @media (max-width: 1036px) {
 	footer .lower h1.logo {
-				margin-bottom: 0;
-				a {
-					width: 230px;
-				}
-			}
+		margin-bottom: 0;
+		a {
+			width: 230px;
+		}
 	}
+}
 @media (max-width: 880px) {
 	footer .lower h1.logo {
-				margin-bottom: 0;
-				a {
-					width: 200px;
-				}
-			}
+		margin-bottom: 0;
+		a {
+			width: 200px;
+		}
+	}
 }
 
 @media(max-width: 767px) {
@@ -216,7 +209,7 @@ footer {
 		}
 
 		.footer-right .right-content {
-			padding-left: 0px;
+			padding-left: 5px;
 		}
 
 		.logo a {
@@ -228,8 +221,8 @@ footer {
 @media(max-width: 768px) {
 	footer .lower {
 		.social-icon-container {
-		text-align: center;
-		margin-bottom: $standard-bottomMargin;
-	}
+			text-align: center;
+			margin-bottom: $standard-bottomMargin;
+		}
 	}
 }

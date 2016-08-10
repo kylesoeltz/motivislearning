@@ -3,33 +3,25 @@
 		<div class="row">
 			<div class="col-sm-12 footer-left matchHeight">
 				<div class="left-content">
-					<div class="inner">
-						<ul class="sub-menu">
-                        	<li><h5 class="allCaps">motivis platform</h5></li>
-                        	<li><a href="#">Lerning Relationship Management</a></li>
-                        	<li><a href="#">Social Networking & School Community</a></li>
-                        	<li><a href="#">Career Pathing for Students & Employers</a></li>
-                        	<li><a href="#">Student Information Systems</a></li>
-                        	<li><a href="#">Student Admissions</a></li>
-                        	<li><a href="#">Alumni Engagement</a></li>                   
-                    	</ul>
-                    	<a href="/demo.php" class="btn">Request Demo</a>
-					</div>
+					<ul class="sub-menu">
+                       	<li><h5 class="allCaps">motivis platform</h5></li>
+                       	<li><a href="#">Lerning Relationship Management</a></li>
+                       	<li><a href="#">Social Networking & School Community</a></li>
+                       	<li><a href="#">Career Pathing for Students & Employers</a></li>
+                       	<li><a href="#">Student Information Systems</a></li>
+                       	<li><a href="#">Student Admissions</a></li>
+                       	<li><a href="#">Alumni Engagement</a></li>                   
+                    </ul>
+                    <a href="/demo.php" class="btn">Request Demo</a>					
 				</div>
-			</div>	
+			</div>
 			<div class="col-sm-12 footer-right matchHeight">
 				<div class="right-content">
-					<div class="inner">
-						<small>motivis learning</small>
-						<article>
-							<h4><a href='#'>From the Field: Clearing the Path for CBE Within the UNC System</a></h4>
-							<small>6/20/2016 | Emily Dustin</small>
-						</article>
-						<article>
-							<h4><a href='#'>Artificial Roadblocks to Competency-Based Education</a></h4>
-							<small>6/20/2016 | AJ Dellicicchi</small>
-						</article>
-                    </div>
+					<small>motivis learning</small>
+					<h4><a href='#'>From the Field: Clearing the Path for CBE Within the UNC System</a></h4>
+					<small>6/20/2016 | Emily Dustin</small>
+					<h4><a href='#'>Artificial Roadblocks to Competency-Based Education</a></h4>
+					<small>6/20/2016 | AJ Dellicicchi</small>                    
 				</div>
 			</div>
 		</div>

@@ -6260,8 +6260,6 @@ footer {
       border: none; }
   footer small:first-child {
     text-transform: uppercase; }
-  footer article {
-    padding: 0; }
   footer section {
     margin-top: 26px; }
     footer section.upper {
@@ -6271,8 +6269,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center; }
-    footer .footer-left article {
-      margin-top: 26px; }
   footer .footer-right {
     background-color: #31363c; }
     footer .footer-right .right-content {
@@ -6366,7 +6362,7 @@ footer {
     float: none;
     padding-left: 0px; }
   footer .footer-right .right-content {
-    padding-left: 0px; }
+    padding-left: 5px; }
   footer .logo a {
     margin: 0 auto; } }
 @media (max-width: 768px) {
