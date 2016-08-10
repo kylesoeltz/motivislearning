@@ -5412,6 +5412,10 @@ nav.main-nav {
         margin-right: 20px;
         /*For drop-down menus*/
         /*End drop down*/ }
+        nav.main-nav .inner ul li.solutions {
+          line-height: 1.2em; }
+          nav.main-nav .inner ul li.solutions > a {
+            padding-right: 0px !important; }
         nav.main-nav .inner ul li:first-child {
           display: none; }
         nav.main-nav .inner ul li a {
@@ -5430,7 +5434,7 @@ nav.main-nav {
             margin-left: 5px;
             float: right;
             font-size: 5px;
-            margin-top: 13px; }
+            margin-top: 9px; }
           nav.main-nav .inner ul li a.icon-down:after {
             content: '\f014'; }
           nav.main-nav .inner ul li a.icon-up:after {
@@ -5493,6 +5497,10 @@ nav.main-nav {
     margin-top: 15px; }
     nav.main-nav .inner ul li {
       margin-right: 15px; }
+      nav.main-nav .inner ul li.solutions {
+        line-height: 1.1em; }
+        nav.main-nav .inner ul li.solutions a.icon-down:after, nav.main-nav .inner ul li.solutions a.icon-up:after {
+          margin-top: 7px; }
       nav.main-nav .inner ul li > .sub-menu {
         margin-top: 13px; }
       nav.main-nav .inner ul li a {
@@ -5512,6 +5520,10 @@ nav.main-nav {
     margin-top: 10px; }
     nav.main-nav .inner ul li {
       margin-right: 10px; }
+      nav.main-nav .inner ul li.solutions {
+        line-height: 0.9em; }
+        nav.main-nav .inner ul li.solutions a.icon-down:after, nav.main-nav .inner ul li.solutions a.icon-up:after {
+          margin-top: 5px; }
       nav.main-nav .inner ul li > .sub-menu {
         margin-top: 18px; }
       nav.main-nav .inner ul li a {
@@ -5570,6 +5582,10 @@ nav.main-nav {
         nav.main-nav .inner ul li {
           width: 100%;
           text-align: left; }
+          nav.main-nav .inner ul li.solutions {
+            line-height: 1.1em; }
+            nav.main-nav .inner ul li.solutions a.icon-down:after, nav.main-nav .inner ul li.solutions a.icon-up:after {
+              padding-right: 15px; }
           nav.main-nav .inner ul li a {
             background-color: #ffffff;
             width: 100%;

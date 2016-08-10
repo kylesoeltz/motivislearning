@@ -40,22 +40,28 @@ nav.main-nav {
 		.overlay {
 			display: none;
 		}
-		ul {
+		ul {			
 			display: inline-block;
-			margin-top: 20px;
+			margin-top: 20px;						
 			li {
+				&.solutions {
+					line-height: 1.2em;	
+					> a {
+						padding-right: 0px !important;
+					}				
+				}
 				display: inline-block;
 				margin-right: 20px;
 				&:first-child {
 					display: none;
-				}
+				}				
 				a {
 					&.icon-down:after, &.icon-up:after {
 						@include iconFont();
 						margin-left: 5px;
     					float: right;
     					font-size: 5px;
-    					margin-top: 13px;
+    					margin-top: 9px;
 					}
 
 					&.icon-down:after {
@@ -160,6 +166,14 @@ nav.main-nav {
 			ul {
 				margin-top: 15px;
 				li {
+					&.solutions {
+						line-height: 1.1em;
+						a {
+							&.icon-down:after, &.icon-up:after {
+								margin-top: 7px;
+							}
+						}
+					}
 					> .sub-menu {
 						margin-top: 13px;
 					}
@@ -194,6 +208,14 @@ nav.main-nav {
 			ul {
 				margin-top: 10px;
 				li {
+					&.solutions {
+						line-height: 0.9em;
+						a {
+							&.icon-down:after, &.icon-up:after {
+								margin-top: 5px;
+							}
+						}
+					}
 					> .sub-menu {
 						margin-top: 18px;
 					}
@@ -261,6 +283,14 @@ nav.main-nav {
 				position: relative;
 				border-left: solid 1px $color-strokeGray;
 				li {
+					&.solutions {
+						line-height: 1.1em;
+						a {
+							&.icon-down:after, &.icon-up:after {
+								padding-right: 15px;
+							}
+						}
+					}
 					width: 100%;
 					text-align: left;
 					a {
