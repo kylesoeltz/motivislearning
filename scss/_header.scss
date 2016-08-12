@@ -74,6 +74,7 @@ nav.main-nav {
 					font-weight: 700;
 					letter-spacing: 1px;
 					color: $color-darkGray;
+    				display: block;
 					border-bottom: solid 1px rgba($color-darkGray,0);
 					&:hover {
 						border-color: rgba($color-darkGray, 1);
@@ -84,8 +85,6 @@ nav.main-nav {
 				&.current-menu-item > a {
 					cursor: pointer;
     				background-color: $color-white;
-    				display: block;
-    				padding-right: 10px;
     				margin-bottom: 0px;
 				}
 				
