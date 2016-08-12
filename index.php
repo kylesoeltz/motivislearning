@@ -15,7 +15,7 @@
         <main>
         	<article>
 	        	<header class="page-header image-header green dots callout-header">
-		        	<section class="inner">
+		        	<div class="inner">
 		        		<h1>Their Future is Our Mission</h1>
 		        		<p>A modern platform built by educational experts for a holistic student experience.</p>
 		        		<a href="#" class="btn">Learn More</a>
@@ -27,7 +27,7 @@
 							</defs>
 							<image mask="url(#paintMask)" id="image" width="1270" height="690" xlink:href="images/home/slide2.jpg"></image>
 						</svg>
-					</section>
+					</div>
 	        	</header>
 	        	<section>
 		        	<div class="inner">

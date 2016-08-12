@@ -29,11 +29,11 @@ function getCurrentPage()
             <button class="mobileNavToggle">Menu</button>
             <div class="overlay"></div>
             <ul>
-                <li><button class="allCaps">close</button></li>
-                <li class="solutions current-menu-item">
-                    <a href="#" role="button" class="icon-down">Solutions</a>
+                <li><a href="#">Close</a></li>
+                <li class="current-menu-item menu-item-has-children">
+                    <a href="#">Solutions</a>
                     <ul class="sub-menu">
-                        <li><h5 class="allCaps">motivis platform</h5></li>
+                        <li><a href="#">Motivis Platform</a></li>
                         <li><a href="#">Learning Relationship Management</a></li>
                         <li><a href="#">Social Networking & School Community</a></li>
                         <li><a href="#">Career Pathing for Students & Employers</a></li>

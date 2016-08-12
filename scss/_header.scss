@@ -54,24 +54,21 @@ nav.main-nav {
 				margin-right: 20px;
 				&:first-child {
 					display: none;
-				}				
-				a {
-					&.icon-down:after, &.icon-up:after {
+				}
+				&.menu-item-has-children {
+					> a:after {
 						@include iconFont();
 						margin-left: 5px;
     					float: right;
     					font-size: 5px;
     					margin-top: 9px;
-					}
-
-					&.icon-down:after {
 						content: '\f014';
 					}
-
-					&.icon-up:after {
+					> a.icon-up:after {
 						content: '\f015';	
 					}
-
+				}
+				a {
 					text-transform: uppercase;
 					font-size: 14px;
 					font-weight: 700;

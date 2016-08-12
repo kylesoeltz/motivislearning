@@ -28,7 +28,7 @@
 	</section>
 	<section class="lower">
 		<div class="inner">
-			<h1 class="logo"><a href="/">Motivis Learning</a></h1>
+			<a href="/" class="logo">Motivis Learning</a>
 			<div class="row">
 				<div class="col-md-16 col-sm-12 contact-info">
 					<div class="row">

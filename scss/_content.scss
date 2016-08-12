@@ -486,7 +486,7 @@ section.case-study {
 header.page-header {
 	width: 100%;
 	padding: 70px 0px;
-	section.inner {
+	div.inner {
 		text-align: center;
 	}
 	h1 {
@@ -566,7 +566,7 @@ header.page-header {
 	}
 	&.image-header {
 		overflow: hidden;
-		section.inner {
+		div.inner {
 			text-align: left;
 			position: relative;
 			@media (max-width: 720px) {
@@ -668,7 +668,7 @@ header.page-header {
 			filter: url(#blur);
 			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
 		}
-		section.inner {
+		div.inner {
 			position: relative;
 		}
 	}
