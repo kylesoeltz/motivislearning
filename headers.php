@@ -47,6 +47,11 @@
         <?php include 'includes/header.php'; ?>
         <main>
         	<article>
+	        	<header class="page-header full-background-image" style="background-image: url(images/home/insights-blog.jpg);">
+		        	<section class="inner">
+		        		<h1>Background Image Header</h1>
+					</section>
+	        	</header>
 	        	<header class="page-header image-header green dots callout-header">
 		        	<section class="inner">
 		        		<h1>Their Future is Our Mission</h1>
