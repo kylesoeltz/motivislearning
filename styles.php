@@ -131,7 +131,7 @@
 		        	</div>
 	        	</section>
 
-	        	<section class="case-study left dots">
+	        	<section class="case-study content-left dots">
 		        	<div class="image-half" style="background-image: url('images/cornell-bg.jpg');">
 			        	<img src="images/cornell.png">
 		        	</div>
@@ -144,7 +144,7 @@
 			        	</div>
 		        	</div>
 	        	</section>
-	        	<section class="case-study right dots">
+	        	<section class="case-study content-right dots">
 		        	<div class="image-half" style="background-image: url('images/harvard-bg.jpg');">
 			        	<img src="images/harvard.png">
 		        	</div>

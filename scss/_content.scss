@@ -352,6 +352,9 @@ section {
 	&.gray {
 		background-color: $color-fadedGray;
 	}
+	&.white {
+		background-color: $color-white;
+	}
 	&.dots {
 		background-image: url('images/dot-bg.jpg');
 	}
@@ -388,7 +391,7 @@ section {
 }
 
 section.case-study {
-	&.right {
+	&.content-right {
 		.image-half {
 			right: 0;
 			img {
