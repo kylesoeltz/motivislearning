@@ -35,8 +35,8 @@ function getCurrentPage()
                     <ul class="sub-menu">
                         <li><a href="#">Motivis Platform</a></li>
                         <li><a href="#">Learning Relationship Management</a></li>
-                        <li><a href="#">Social Networking & School Community</a></li>
-                        <li><a href="#">Career Pathing for Students & Employers</a></li>
+                        <li><a href="#">Social Networking &amp; School Community</a></li>
+                        <li><a href="#">Career Pathing for Students &amp; Employers</a></li>
                         <li><a href="#">Student Information Systems</a></li>
                         <li><a href="#">Student Admissions</a></li>
                         <li><a href="#">Alumni Engagement</a></li>                    
