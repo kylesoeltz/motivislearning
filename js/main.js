@@ -18,15 +18,15 @@ var mainJS = {
 
 //Section 2
 var navJS = {
-    init: function(){
-        //Handle when the document is clicked
-        ( function( $ ) {
+    init: function(){        
+        ( function( $ ) { 
+            var $subMenus = $('.menu-item-has-children').children('ul');
+            //Handle when the document is clicked
             $(document).unbind().on('click', function(e){
                 //Hide the sub-menu
-                if($('.solutions').hasClass('sub-menu-vis')){
-                    $('.solutions').removeClass('sub-menu-vis');
+                if($subMenus.css('display') == 'block'){                    
                     $('.icon-up').removeClass('icon-up').addClass('icon-down');
-                    $('.sub-menu').toggle();
+                    $('.menu-item-has-children').children('ul').toggle();
                 }
 
                 //Hide the mobile nav
@@ -36,23 +36,22 @@ var navJS = {
             });
 
             //When solutions or the arrow is clicked
-            $('.solutions').unbind().on('click', function(e){
+            $('.menu-item-has-children').unbind().on('click', function(e){
                 e.preventDefault();
                 e.stopPropagation();
                 var $elm = $(this);
-                if($elm.hasClass('sub-menu-vis')){
-                    $elm.removeClass('sub-menu-vis');
-                    $('.icon-up').removeClass('icon-up').addClass('icon-down');
-                    $('.sub-menu').toggle();
+                if($elm.children('ul').css('display') == 'none'){
+                    console.log('ok');
+                    $elm.children('a').removeClass('icon-down').addClass('icon-up');
+                    $elm.children('ul').slideToggle();
                 }else{
-                    $('.icon-down').removeClass('icon-down').addClass('icon-up');
-                    $elm.addClass('sub-menu-vis');
-                    $('.sub-menu').slideToggle();
+                    $elm.children('a').removeClass('icon-up').addClass('icon-down');
+                    $elm.children('ul').toggle();
                 }            
             });
 
             //Do nothing when sub-menu is clicked
-            $('.sub-menu').unbind().on('click', function(e){
+            $subMenus.unbind().on('click', function(e){
                 e.stopPropagation();
             });
 
@@ -71,10 +70,9 @@ var navJS = {
             $('.main-nav li:first').unbind().on('click', function(e){
                 e.stopPropagation();
                 $('body').removeClass('mobileNavVisible');
-                if($('.solutions').hasClass('sub-menu-vis')){
-                    $('.solutions').removeClass('sub-menu-vis');
+                if($subMenus.css('display') == 'block'){
                     $('.icon-up').removeClass('icon-up').addClass('icon-down');
-                    $('.sub-menu').toggle();
+                    $subMenus.toggle();
                 }
             });
         } )( jQuery );
