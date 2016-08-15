@@ -10,6 +10,9 @@
 	Section 6: Bullet Box
 	Section 7: Headings
 	Section 8: Insight Details
+	Section 9: 404 Page
+	Section 10: Contact Page
+	Section 11: Demo Page
 	-----*/
 
 //
@@ -745,6 +748,103 @@ header.page-header {
 
 		& p {
 			margin: 0 auto;
+		}
+	}
+}
+
+
+//
+//	Section 9: 404 Page
+//
+///////////////////////////
+
+.page-not-found {
+	h2 {
+		font-size: 120px;
+		color: $color-iceCreamBlue;
+	}
+
+	p {
+		font-size: 30px;
+		&:nth-of-type(2) {
+			color: $color-iceCreamBlue;
+		}
+	}
+
+	li {
+		font-size: 20px;
+		cursor: pointer;
+	}
+}
+
+//
+//	Section 10: Contact Page
+//
+///////////////////////////
+
+.contact-page {
+	li:before {
+		
+	}
+}
+
+//
+//	Section 11: Demo Page
+//
+///////////////////////////
+
+.demo-page {
+	li {
+		display: inline-block;
+		border: 1px solid $color-lightGray;
+		min-width: 100px;
+		p:first-child {
+			border-bottom: 1px solid $color-lightGray;
+			background-color: $color-lightGray;
+		}
+	}
+
+	.row {
+		text-align: left;
+		.time {
+			label {
+				padding: 30px;
+			}
+			.time-label {
+				display: inline;
+			}
+		}
+
+		input {
+			display: inline-block;
+		}
+
+		fieldset:nth-of-type(1) {
+			input {
+				position: absolute;
+    			margin-top: 50px;
+			}
+		}
+
+		fieldset:nth-of-type(2) {
+			select {
+				display: block;
+				width: 100%;
+			}
+
+			input {
+				display: block;
+				width: 100%;
+
+				&:nth-of-type(4) {
+					width: 30%;				
+					display: inline-block;
+					+ input {
+						width: 10%;
+						display: inline-block;
+					}
+				}
+			}
 		}
 	}
 }
