@@ -6248,8 +6248,9 @@ header.page-header {
 @media (max-width: 991px) {
   .demo-page article {
     text-align: center; }
-    .demo-page article .row div[class^="col-md-"]:first-child {
-      border-right: none; }
+    .demo-page article .row div[class^="col-md-"]:nth-of-type(2) {
+      border-left: none;
+      padding-left: 15px; }
     .demo-page article .row p {
       padding-right: 0; } }
 .thanks-page article div.section {

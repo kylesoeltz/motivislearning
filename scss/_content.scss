@@ -845,8 +845,9 @@ header.page-header {
 	.demo-page article {
 		text-align: center;
 		.row {
-			div[class^="col-md-"]:first-child {
-				border-right: none;
+			div[class^="col-md-"]:nth-of-type(2) {
+				border-left: none;
+				padding-left: 15px;
 			}
 			p {
 				padding-right: 0;
