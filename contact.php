@@ -26,7 +26,7 @@
         		<section class="white">
 	        		<div class="inner">
 			        	<div class="row">
-			        		<div class="col-md-6 matchHeight">				        		
+			        		<div class="col-md-6">				        		
 								<a href="https://www.google.com/maps/place/25+Pelham+Rd,+Salem,+NH+03079/@42.7756873,-71.2473937,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3abceed38b001:0x8f7069972017030b!8m2!3d42.7756873!4d-71.2473937" target="_blank"><h2>Salem, NH</h2><p>25 Pelham Road, 03079</p></a>
 								<p><span class="bold">Phone</span>
 									<br />
@@ -38,7 +38,7 @@
 									<a href="mailto:info@motivislearning.com">info@motivislearning.com</a>
 								</p>        			
 			        		</div>
-			        		<div class="col-md-12 matchHeight">
+			        		<div class="col-md-12 form-container">
 			        			<script>
 									hbspt.forms.create({ 
 								    	css: '',
