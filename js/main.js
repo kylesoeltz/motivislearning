@@ -59,6 +59,11 @@ var navJS = {
             $('.main-nav ul').unbind().on('click', function(e){
                 e.stopPropagation();
             });
+
+            // show page subnav only if this page is a child of main nav
+            if($('.secondary-nav .current_page_ancestor').length > 0){
+                $('.secondary-nav').show();
+            }
         } )( jQuery );
     }
 }
