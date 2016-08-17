@@ -333,13 +333,14 @@ nav.main-nav {
 					transition: right 0.2s ease-in;
 				}
 				li {
-					border-bottom: 1px solid $color-lightGray;						
+					border-bottom: 1px solid $color-lightGray;
+					padding-bottom: 0px;				
 					a {
 						transition: none;
 						padding: 10px 15px;
 						
 					}
-					
+
 					> .sub-menu {
 						margin-top: 0px;
 						padding: 0;
@@ -353,18 +354,12 @@ nav.main-nav {
 							font-weight: 600;
 							line-height: 1.5em;							
 						}						
-					}
-					padding-bottom: 0px;
+					}					
 					&:first-child {
-						padding: 10px 10px;
 						display: block;
-						button {
-							@include font-primary-semibold();
-							width: 100%;
-    						text-align: right;
-    						background: transparent;
-    						border: none;
-    						font-size: 10px;
+						text-align: right;
+						a {
+							font-size: 10px;
 						}
 					}
 				}

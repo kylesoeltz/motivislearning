@@ -61,74 +61,40 @@
         <title>Motivis</title>
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
-    </head>
-    <body>
+        <!--HubSpot Forms-->
+        <!--[if lte IE 8]>
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+		<![endif]-->
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+	</head>
+    <body class="demo-page">
     	<?php include 'includes/header.php'; ?>
     	<main>
-    		<article class="demo-page">
+    		<article>
 	    		<header class="page-header orange dots">
 			        <section class="inner">
 			        	<h1>Schedule a Demo</h1>
 		        	</section>
 		        </header>
 		        <section class="white">
-		        	<h3>Pick a Date</h3>
-		        	<ul>
-		        		<?php foreach($dates as $date){?>
-		        			<li role="button">
-		        				<div class="day">
-		        					<p><?php echo date('D', strtotime($date))?></p>
-		        					<p><?php echo date('m/d', strtotime($date))?></p>
-		        				</div>
-		        			</li>
-		        		<?php } ?>
-		        	</ul>		        	
-		        </section>
-		        <section class="white">
-		        	<div class="row">
-		        		<div class="col-md-12">
-		        			<form>
-		        				<fieldset class="time">
-		        					<h3>Pick a time</h3>
-		        					<div class="row">
-		        						<div class="col-md-12">
-				        					<input type="radio" name="time" id="morning-input" value="0">
-				        					<label for="time">
-				        						<p class="time-label">Morning<br /><span class="time-of-day">7AM - 12PM EST</span></p>
-				        					</label>
-			        					</div>
-			        					<div class="col-md-12">
-				        					<input type="radio" name="time" id="afternoon-input" value="1">
-				        					<label for="time">	
-				        						<p class="time-label">Afternoon<br /><span class="time-of-day">1PM - 5PM EST</span></p>
-				        					</label>
-			        					</div>
-		        					</div>
-		        				</fieldset>
-		        				<fieldset>
-		        					<label for="first-name">First Name</label>
-		        						<input type="text" name="first-name" required placeholder="John" />
-		        					<label for="last-name">Last Name</label>
-		        					<input type="text" name="last-name" required placeholder="Doe" />
-		        					<label for="email">Email Address</label>
-		        					<input type="email" name="email" required placeholder="JohnDoe@example.com" />
-		        					<label for="solution">Solution</label>					
-		        					<select name="solution" required>
-		        						<option>Partnership</option>
-		        					</select>
-		        					<label for="tel-num">Phone</label>
-		        					<input type="tel" name="tel-num" required placeholder="888-888-8888" />
-		        					<input type="tel" name="ext" placeholder="Ext" />
-		        				</fieldset>
-		        				<button type="submit">Send Request</button>
-		        			</form>
-		        		</div>
-		        		<div class="col-md-12">
-		        			<h3>What to Expect</h3>
-		        			<p>The Motivis LRM is student-centric and delivers personalized learning, support and assessment for each student.</p>
-		        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond, with customizable dashboards that reflect users’ roles.</p>
-		        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond.	</p>
-		        		</div>
+		        	<div class="inner">
+			        	<div class="row">
+			        		<div class="col-md-8">
+			        		<h3>What to Expect</h3>
+			        			<p>The Motivis LRM is student-centric and delivers personalized learning, support and assessment for each student.</p>
+			        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond, with customizable dashboards that reflect users’ roles.</p>
+			        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond.	</p>		        			
+			        		</div>
+			        		<div class="col-md-12">
+			        			<script>
+									hbspt.forms.create({ 
+								    	css: '',
+								    	portalId: '1625919',
+								    	formId: '927622a7-6092-4234-b59f-ae052b53a778'
+								  	});
+								</script>
+			        		</div>
+			        	</div>
 		        	</div>
 		        </section>
 		    </article>

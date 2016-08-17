@@ -8,14 +8,14 @@
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
     </head>
-    <body>
+    <body class="page-not-found">
         <?php include 'includes/header.php'; ?>
         <main>
         	<article>
-        		<section class="page-not-found">
+        		<section>
         			<div class="inner">
 		        		<div class="row">
-		        			<div class="col-md-11 matchHeight">
+		        			<div class="col-md-10 matchHeight">
 		        				<h2>Oops!</h2>
 		        				<p>The page you are looking for is currently unavailable.</p>
 		        				<p>Were you looking for one of these?</p>
@@ -26,8 +26,8 @@
 		        					<li><a href="#">Contact</a></li>
 		        				</ul>
 		        			</div>
-		        			<div class="col-md-13 matchHeight">
-		        				<img src="images/blue-icecream.png" />
+		        			<div class="col-md-14 matchHeight">
+		        				<img src="images/icecream.png" />
 		        			</div>
 		        		</div>
 	        		</div>

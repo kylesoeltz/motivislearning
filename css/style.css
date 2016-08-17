@@ -5161,69 +5161,72 @@ input[type="text"],
 input[type="search"],
 input[type="password"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+input[type="tel"] {
   color: #3f3f3f;
   font-size: 16px;
-  line-height: 50px;
-  height: 50px;
+  line-height: 40px;
+  height: 40px;
+  background-color: #f9f9f9;
+  padding-left: 10px;
   font-family: 'Open Sans', arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  /*@media screen and (min-width: $break-tabletSmall) {
+      font-size: 18px;
+  }
+  @media screen and (min-width: $break-desktopSmall) {
+      font-size: 21px;
+  }*/ }
   input[type="text"].whiteBg,
   input[type="search"].whiteBg,
   input[type="password"].whiteBg,
   input[type="email"].whiteBg,
-  input[type="number"].whiteBg {
+  input[type="number"].whiteBg,
+  input[type="tel"].whiteBg {
     background: #ffffff !important; }
   input[type="text"].inputWhite,
   input[type="search"].inputWhite,
   input[type="password"].inputWhite,
   input[type="email"].inputWhite,
-  input[type="number"].inputWhite {
+  input[type="number"].inputWhite,
+  input[type="tel"].inputWhite {
     background: #ffffff !important;
     height: 65px;
     padding: 0 25px !important; }
-  @media screen and (min-width: 767px) {
-    input[type="text"],
-    input[type="search"],
-    input[type="password"],
-    input[type="email"],
-    input[type="number"] {
-      font-size: 18px; } }
-  @media screen and (min-width: 1025px) {
-    input[type="text"],
-    input[type="search"],
-    input[type="password"],
-    input[type="email"],
-    input[type="number"] {
-      font-size: 21px; } }
   input[type="text"]::-webkit-input-placeholder,
   input[type="search"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
-  input[type="number"]::-webkit-input-placeholder {
+  input[type="number"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #595959; }
+    color: #d7d7d7;
+    font-size: 16px;
+    height: 40px; }
   input[type="text"]:-moz-placeholder,
   input[type="search"]:-moz-placeholder,
   input[type="password"]:-moz-placeholder,
   input[type="email"]:-moz-placeholder,
-  input[type="number"]:-moz-placeholder {
+  input[type="number"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #595959; }
+    color: #d7d7d7; }
   input[type="text"]::-moz-placeholder,
   input[type="search"]::-moz-placeholder,
   input[type="password"]::-moz-placeholder,
   input[type="email"]::-moz-placeholder,
-  input[type="number"]::-moz-placeholder {
+  input[type="number"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #595959; }
+    color: #d7d7d7; }
   input[type="text"]:-ms-input-placeholder,
   input[type="search"]:-ms-input-placeholder,
   input[type="password"]:-ms-input-placeholder,
   input[type="email"]:-ms-input-placeholder,
-  input[type="number"]:-ms-input-placeholder {
+  input[type="number"]:-ms-input-placeholder,
+  input[type="tel"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #595959; }
+    color: #d7d7d7; }
 
 button {
   cursor: pointer; }
@@ -5641,15 +5644,9 @@ nav.main-nav {
             font-weight: 600;
             line-height: 1.5em; }
         body.mobileNavVisible nav.main-nav .inner li:first-child {
-          padding: 10px 10px;
-          display: block; }
-          body.mobileNavVisible nav.main-nav .inner li:first-child button {
-            font-family: 'Open Sans', arial, sans-serif;
-            font-weight: 600;
-            width: 100%;
-            text-align: right;
-            background: transparent;
-            border: none;
+          display: block;
+          text-align: right; }
+          body.mobileNavVisible nav.main-nav .inner li:first-child a {
             font-size: 10px; } }
 /*-----
 	Content Styles
@@ -5666,6 +5663,7 @@ nav.main-nav {
 	Section 9: 404 Page
 	Section 10: Contact Page
 	Section 11: Demo Page
+	Section 12: Thanks Page
 	-----*/
 .avatar {
   border-radius: 600px;
@@ -6207,47 +6205,71 @@ header.page-header {
       text-align: center; }
     .about-author .content p {
       margin: 0 auto; } }
-.page-not-found h2 {
+.page-not-found article h2 {
   font-size: 120px;
   color: #59c1e0; }
-.page-not-found p {
+.page-not-found article p {
   font-size: 30px; }
-  .page-not-found p:nth-of-type(2) {
+  .page-not-found article p:nth-of-type(2) {
     color: #59c1e0; }
-.page-not-found li {
+.page-not-found article li {
   font-size: 20px;
   cursor: pointer; }
 
-.demo-page li {
+.contact-page article .row div[class^="col-md-"]:nth-of-type(2) {
+  padding-left: 50px;
+  border-left: 1px solid #d7d7d7; }
+.contact-page article .row h2, .contact-page article .row p, .contact-page article .row a {
+  color: #595959; }
+.contact-page article .row h2 {
+  font-family: 'Roboto Slab', arial, sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin-bottom: 0; }
+  .contact-page article .row h2 ~ p {
+    margin-bottom: 26px; }
+.contact-page article .row a:hover {
+  border-bottom: transparent; }
+.contact-page article .row span.bold {
+  font-weight: bold; }
+
+@media (max-width: 991px) {
+  .contact-page article .row h2, .contact-page article .row p {
+    text-align: center; } }
+.demo-page article h3 {
+  font-weight: bold;
+  font-size: 20px; }
+.demo-page article .row div[class^="col-md-"]:nth-of-type(2) {
+  padding-left: 50px;
+  border-left: 1px solid #d7d7d7; }
+.demo-page article .row p {
+  padding-right: 25px; }
+
+@media (max-width: 991px) {
+  .demo-page article {
+    text-align: center; }
+    .demo-page article .row div[class^="col-md-"]:first-child {
+      border-right: none; }
+    .demo-page article .row p {
+      padding-right: 0; } }
+.thanks-page article div.section {
   display: inline-block;
-  border: 1px solid #efefef;
-  min-width: 100px; }
-  .demo-page li p:first-child {
-    border-bottom: 1px solid #efefef;
-    background-color: #efefef; }
-.demo-page .row {
-  text-align: left; }
-  .demo-page .row .time label {
-    padding: 30px; }
-  .demo-page .row .time .time-label {
-    display: inline; }
-  .demo-page .row input {
-    display: inline-block; }
-  .demo-page .row fieldset:nth-of-type(1) input {
-    position: absolute;
-    margin-top: 50px; }
-  .demo-page .row fieldset:nth-of-type(2) select {
-    display: block;
-    width: 100%; }
-  .demo-page .row fieldset:nth-of-type(2) input {
-    display: block;
-    width: 100%; }
-    .demo-page .row fieldset:nth-of-type(2) input:nth-of-type(4) {
-      width: 30%;
-      display: inline-block; }
-      .demo-page .row fieldset:nth-of-type(2) input:nth-of-type(4) + input {
-        width: 10%;
-        display: inline-block; }
+  vertical-align: top; }
+  .thanks-page article div.section span.orange {
+    color: #e3573c; }
+  .thanks-page article div.section .share-btns a {
+    color: #ffffff;
+    border-radius: 9999px; }
+    .thanks-page article div.section .share-btns a:first-child {
+      background-color: #55acee; }
+    .thanks-page article div.section .share-btns a:nth-of-type(2) {
+      background-color: #0076b4; }
+    .thanks-page article div.section .share-btns a:nth-of-type(3) {
+      background-color: #3c579e; }
+    .thanks-page article div.section .share-btns a i {
+      font-size: 20px;
+      height: 45px;
+      width: 45px; }
 
 /*-----
 	Footer Styles
@@ -6298,10 +6320,8 @@ footer {
       border: none; }
   footer small:first-child {
     text-transform: uppercase; }
-  footer section {
-    margin-top: 26px; }
-    footer section.upper {
-      padding: 0 10px; }
+  footer section.upper {
+    padding: 0 10px; }
   footer .footer-left {
     background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url("images/footer-background.png");
     background-repeat: no-repeat;
@@ -6407,5 +6427,42 @@ footer {
   footer .lower .social-icon-container {
     text-align: center;
     margin-bottom: 26px; } }
+/*
+ * Styling for hubspot forms
+ */
+.hs-form label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px; }
+.hs-form .hs-error-msgs label {
+  text-transform: none;
+  font-weight: normal; }
+.hs-form .hs-form-required {
+  color: #e3573c;
+  margin-left: 5px; }
+.hs-form .hs-form-field {
+  margin-bottom: 26px; }
+.hs-form input[type="text"],
+.hs-form input[type="email"],
+.hs-form input[type="tel"] {
+  width: 100%;
+  border: 1px solid #d7d7d7; }
+  .hs-form input[type="text"]:focus,
+  .hs-form input[type="email"]:focus,
+  .hs-form input[type="tel"]:focus {
+    border: 1px solid #e3573c;
+    outline: none; }
+.hs-form input[type="submit"] {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e3573c;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #ffffff;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

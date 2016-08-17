@@ -1,0 +1,48 @@
+/*
+ * Styling for hubspot forms
+ */
+
+.hs-form {
+	label {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	.hs-error-msgs label{
+		text-transform: none;
+		font-weight: normal;
+	}
+
+	.hs-form-required {
+    	color: $color-orange;
+    	margin-left: 5px;
+	}
+
+	.hs-form-field {
+		margin-bottom: $standard-bottomMargin;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"] {
+		width: 100%;
+		border: 1px solid $color-gray;
+		&:focus {
+			border: 1px solid $color-orange;
+			outline: none;
+		}
+	}
+	input[type="submit"] {
+		@include font-primary-bold();
+		font-size: 12px;
+		border: none;
+		border-radius: $border-radius;
+		background-color: $color-orange;
+		text-transform: uppercase;
+		padding: 10px 15px;
+		color: $color-white;
+		cursor: pointer;	
+	}
+}

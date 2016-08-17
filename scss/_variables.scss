@@ -4,69 +4,72 @@
 /*-----
 	Variables & Mixins
 	-----*/
-$border-radius: 4px;
-$standard-bottomMargin: 26px;
+$border-radius:              4px;
+$standard-bottomMargin:      26px;
 $standard-horizontalPadding: 23px;
-$standard-verticalPadding: 20px;
+$standard-verticalPadding:   20px;
 $standard-padding: $standard-verticalPadding $standard-horizontalPadding;
 
 
 // Structural Colors
 $color-headerFooterBg: #3f3f3f;
-$color-pageBg: #f9f9f9;
+$color-pageBg:         #f9f9f9;
 
 // Standard Colors
-$color-black: #3f3f3f;
-$color-navyGray: #31363c;
-$color-darkGray: #595959;
-$color-gray: #d7d7d7;
-$color-lightGray: #efefef;
-$color-charcoal: #9d9d9d;
+$color-black:      #3f3f3f;
+$color-navyGray:   #31363c;
+$color-darkGray:   #595959;
+$color-gray:       #d7d7d7;
+$color-lightGray:  #efefef;
+$color-charcoal:   #9d9d9d;
 $color-strokeGray: #e8e9ec;
-$color-fadedGray: #f5f5f5;
-$color-offWhite: #f9f9f9;
-$color-white: #ffffff;
+$color-fadedGray:  #f5f5f5;
+$color-offWhite:   #f9f9f9;
+$color-white:      #ffffff;
 
 
 
-$color-blue: #0d9fd0;
+$color-blue:         #0d9fd0;
 $color-iceCreamBlue: #59c1e0;
-$color-orange: #e3573c;
-$color-navy: #1b7bac;
-$color-green: #4ebb73;
-$color-yellow: #f5bb51;
-$color-red: #d53030;
-$color-paleYellow: #fcf8e3;
+$color-orange:       #e3573c;
+$color-navy:         #1b7bac;
+$color-green:        #4ebb73;
+$color-yellow:       #f5bb51;
+$color-red:          #d53030;
+$color-paleYellow:   #fcf8e3;
 
-$color-primary: #bababc; //deprecated, don't use
+$color-primary:   #bababc; //deprecated, don't use
 $color-secondary: #bababc; //deprecated, don't use
 
-$color-caution: #c89c4a;
+$color-caution:      #c89c4a;
 $color-caution-fade: #dfc79c;
-$color-error: #af1813;
-$color-error-fade: #d99c9a;
-$color-success: #3a773a;
+$color-error:        #af1813;
+$color-error-fade:   #d99c9a;
+$color-success:      #3a773a;
 $color-success-fade: #98b798;
 
-
+//Social Media Colours
+$color-twitter:  #55acee;
+$color-linkedin: #0076b4;
+$color-facebook: #3c579e;
 
 // Progress Bar Colors
 $color-progressCompleted: #ff3366;
-$color-progressStarted: #ffd6e0;
+$color-progressStarted:   #ffd6e0;
 
 // Link Colors
-$color-link: #12a9db;
+$color-link:      #12a9db;
 $color-linkHover: #12a9db;
 
 // Break Points
 $break-mobileExtraSmall: 350px;
-$break-mobileSmall: 500px;
-$break-mobileMedium: 600px;
-$break-tabletSmall: 767px;
-$break-tabletMedium: 900px;
-$break-desktopSmall: 1025px;
-$break-desktopMedium: 1300px;
-$break-desktopLarge: 1400px;
+$break-mobileSmall:      500px;
+$break-mobileMedium:     600px;
+$break-tabletSmall:      767px;
+$break-tabletMedium:     900px;
+$break-desktopSmall:     1025px;
+$break-desktopMedium:    1300px;
+$break-desktopLarge:     1400px;
 
 // Extras
 $bajillion: 9999px;

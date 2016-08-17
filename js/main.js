@@ -19,61 +19,45 @@ var mainJS = {
 //Section 2
 var navJS = {
     init: function(){        
-        ( function( $ ) { 
-            var $subMenus = $('.menu-item-has-children').children('ul');
-            //Handle when the document is clicked
+        ( function( $ ) {
+            //On document click
             $(document).unbind().on('click', function(e){
-                //Hide the sub-menu
-                if($subMenus.css('display') == 'block'){                    
-                    $('.icon-up').removeClass('icon-up').addClass('icon-down');
-                    $('.menu-item-has-children').children('ul').toggle();
-                }
-
-                //Hide the mobile nav
-                if($('body').hasClass('mobileNavVisible')){
-                    $('body').removeClass('mobileNavVisible');
-                }
+                $('.sub-menu-vis').removeClass('sub-menu-vis').children('ul').toggle();
+                $('.icon-up').removeClass();               
+                $('.mobileNavVisible').removeClass('mobileNavVisible');
             });
 
-            //When solutions or the arrow is clicked
+            //Toggle the sub-menu when link is clicked
             $('.menu-item-has-children').unbind().on('click', function(e){
                 e.preventDefault();
                 e.stopPropagation();
                 var $elm = $(this);
-                if($elm.children('ul').css('display') == 'none'){
-                    console.log('ok');
-                    $elm.children('a').removeClass('icon-down').addClass('icon-up');
-                    $elm.children('ul').slideToggle();
-                }else{
-                    $elm.children('a').removeClass('icon-up').addClass('icon-down');
-                    $elm.children('ul').toggle();
-                }            
+                $elm.children('a').toggleClass('icon-up');
+                $elm.hasClass('sub-menu-vis') ? $elm.removeClass('sub-menu-vis').children('ul').toggle() : $elm.addClass('sub-menu-vis').children('ul').slideToggle();
             });
 
-            //Do nothing when sub-menu is clicked
-            $subMenus.unbind().on('click', function(e){
-                e.stopPropagation();
-            });
-
-            //Show the mobile nav
+            //Show mobile nav when toggle is clicked
             $('.mobileNavToggle').unbind().on('click', function(e){
                 e.stopPropagation();
                 $('body').addClass('mobileNavVisible');
             });
 
-            //Do nothing when mobile nav is clicked
-            $('.main-nav ul').unbind().on('click', function(e){
-                e.stopPropagation();
+            //Do nothing when sub-menu is clicked
+            $('.sub-menu').unbind().on('click', function(e){
+                e.stopPropagation();    
             });
 
             //Close menu when close is clicked
             $('.main-nav li:first').unbind().on('click', function(e){
                 e.stopPropagation();
-                $('body').removeClass('mobileNavVisible');
-                if($subMenus.css('display') == 'block'){
-                    $('.icon-up').removeClass('icon-up').addClass('icon-down');
-                    $subMenus.toggle();
-                }
+                $('.mobileNavVisible').removeClass('mobileNavVisible');
+                $('.sub-menu-vis').removeClass('sub-menu-vis').children('ul').toggle();
+                $('.icon-up').removeClass();
+            });
+
+            //Do nothing when mobile nav is clicked
+            $('.main-nav ul').unbind().on('click', function(e){
+                e.stopPropagation();
             });
         } )( jQuery );
     }

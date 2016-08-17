@@ -58,11 +58,8 @@ footer {
     	text-transform: uppercase;
 	}
 
-	section {
-		margin-top: $standard-bottomMargin;
-		&.upper {
-			padding: 0 10px;
-		}
+	section.upper {
+		padding: 0 10px;		
 	}
 
 	.footer-left {
