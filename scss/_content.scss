@@ -831,7 +831,7 @@ header.page-header {
     	font-size: 20px;
 	}
 	.row {		
-		div[class^="col-md-"]:nth-of-type(2) {
+		div.form-container {
 			padding-left: 50px;
 			border-left: 1px solid $color-gray;
 		}
@@ -845,7 +845,7 @@ header.page-header {
 	.demo-page article {
 		text-align: center;
 		.row {
-			div[class^="col-md-"]:nth-of-type(2) {
+			div.form-container {
 				border-left: none;
 				padding-left: 15px;
 			}

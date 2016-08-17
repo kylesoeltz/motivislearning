@@ -1,4 +1,4 @@
-<?php 
+<?php /*
 	$currDate = date('Y-m-d');
 	$validDay = false;
 	$validDateCount = 10;
@@ -49,7 +49,7 @@
 
 		array_push($dates, $currDate);
 		$currDate = date('Y-m-d', strtotime($currDate. ' + 1 days'));
-	};
+	};*/
 ?>
 
 <!doctype html>
@@ -85,7 +85,7 @@
 			        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond, with customizable dashboards that reflect users’ roles.</p>
 			        			<p>Motivis provides a modern easy-to-use and accessible user experience for mobile and beyond.	</p>		        			
 			        		</div>
-			        		<div class="col-md-12">
+			        		<div class="col-md-12 form-container">
 			        			<script>
 									hbspt.forms.create({ 
 								    	css: '',

@@ -6239,7 +6239,7 @@ header.page-header {
 .demo-page article h3 {
   font-weight: bold;
   font-size: 20px; }
-.demo-page article .row div[class^="col-md-"]:nth-of-type(2) {
+.demo-page article .row div.form-container {
   padding-left: 50px;
   border-left: 1px solid #d7d7d7; }
 .demo-page article .row p {
@@ -6248,7 +6248,7 @@ header.page-header {
 @media (max-width: 991px) {
   .demo-page article {
     text-align: center; }
-    .demo-page article .row div[class^="col-md-"]:nth-of-type(2) {
+    .demo-page article .row div.form-container {
       border-left: none;
       padding-left: 15px; }
     .demo-page article .row p {
