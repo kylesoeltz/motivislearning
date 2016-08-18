@@ -303,6 +303,16 @@ i.fa.title-icon {
 	font-size: 108px;
 }
 
+article.text-center {
+	text-align: center;
+}
+
+div {
+	&.white {
+		background-color: $color-white;
+	}
+}
+
 section {
 	width: 100%;
 	padding: 50px 0;
@@ -869,5 +879,45 @@ header.page-header {
 	display: inline-block;
 	span.orange {
 		color: $color-orange;
+	}
+}
+
+//
+//	Section 13: Insights Listing
+//
+///////////////////////////
+
+.insightslisting article {
+	font-size: 16px;
+	padding: 50px;
+	border-bottom: 1px solid $color-gray;
+	background-color: $color-white;
+	text-align: center;
+	> a:first-of-type{
+		margin-bottom: $standard-bottomMargin;
+		color: $color-blue;
+		text-transform: uppercase;
+		&:hover {
+			border-bottom: 1px solid $color-blue;
+		}
+	}
+	& * {
+		margin: 0px auto;
+	}	
+	h3 {
+		max-width: 650px;
+		margin-top: $standard-bottomMargin;
+		a {
+			color: $color-orange;
+			cursor: pointer;
+			&:hover {
+				border-bottom: 1px solid $color-orange;
+			}
+		}
+	}
+	p {
+		max-width: 750px;
+		font-size: 18px;
+		margin-top: $standard-bottomMargin;
 	}
 }

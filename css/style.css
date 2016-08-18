@@ -5881,6 +5881,12 @@ i.fa.title-icon {
   margin: 26px auto;
   font-size: 108px; }
 
+article.text-center {
+  text-align: center; }
+
+div.white {
+  background-color: #ffffff; }
+
 section {
   width: 100%;
   padding: 50px 0; }
@@ -6264,6 +6270,33 @@ header.page-header {
   display: inline-block; }
   .thanks-page article div.section span.orange {
     color: #e3573c; }
+
+.insightslisting article {
+  font-size: 16px;
+  padding: 50px;
+  border-bottom: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  text-align: center; }
+  .insightslisting article > a:first-of-type {
+    margin-bottom: 26px;
+    color: #0d9fd0;
+    text-transform: uppercase; }
+    .insightslisting article > a:first-of-type:hover {
+      border-bottom: 1px solid #0d9fd0; }
+  .insightslisting article * {
+    margin: 0px auto; }
+  .insightslisting article h3 {
+    max-width: 650px;
+    margin-top: 26px; }
+    .insightslisting article h3 a {
+      color: #e3573c;
+      cursor: pointer; }
+      .insightslisting article h3 a:hover {
+        border-bottom: 1px solid #e3573c; }
+  .insightslisting article p {
+    max-width: 750px;
+    font-size: 18px;
+    margin-top: 26px; }
 
 /*-----
 	Footer Styles
