@@ -28,7 +28,8 @@ var navJS = {
             });
 
             //Toggle the sub-menu when link is clicked
-            $('.menu-item-has-children').first().unbind().on('click', function(e){
+            var ddmenu = document.getElementsByClassName('menu-item-has-children')[0];
+            $(ddmenu).unbind().on('click', function(e){
                 e.preventDefault();
                 e.stopPropagation();
                 var $elm = $(this);
