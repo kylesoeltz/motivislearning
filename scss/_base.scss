@@ -186,7 +186,8 @@ input[type="search"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input[type="tel"] {
+input[type="tel"],
+input[type="url"] {
     color: $color-black;
     font-size: 16px;
     line-height: 40px;
@@ -233,6 +234,7 @@ textarea {
     color: $color-black;
     font-size: 16px;
     line-height: 1.7;
+    padding: 10px;
     @include font-primary-regular();
     @media screen and (min-width: $break-tabletSmall) {
         font-size: 18px;
