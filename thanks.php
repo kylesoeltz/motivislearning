@@ -6,7 +6,8 @@
 	<head>
         <title>Motivis</title>
         <meta name="description" content="">
-        <?php include 'includes/head.php'; ?>        
+        <?php include 'includes/head.php'; ?> 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a88670c4c74cc7"></script>       
 	</head>
 	<body class="thanks-page">
     	<?php include 'includes/header.php'; ?>
@@ -19,19 +20,15 @@
 		        </header>
 		        <section class="white">
 		        	<div class="inner">
-			        	<div class="section">
-			        		<img src="images/book-cover.png" />
-			        	</div>
-			        	<div class="section">
-			        		<h3>You now have access to download: "<span class="orange">Community How to Help College Students Succeed</span>"</h3>
-			        		<a href="#" class="btn">download ebook</a>
-			        		<div class="share-btns">
-			        			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-								<p>Share this book</p>
-			        		</div>
-			        	</div>
+		        		<div class="row">
+				        	<div class="section col-sm-4">
+				        		<img src="images/book-cover.png" />
+				        	</div>
+				        	<div class="section col-sm-20">
+				        		<h3>You now have access to download: "<span class="orange">Community How to Help College Students Succeed</span>"</h3>
+				        		<a href="#" class="btn">download ebook</a>	
+				        	</div>
+				        </div>
 		        	</div>
 		        </section>
     		</article>
