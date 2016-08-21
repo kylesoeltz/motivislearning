@@ -13,6 +13,7 @@ var mainJS = {
     init: function(){
         navJS.init();
         footerJS.init();
+        categoryFilterJS.init();
     }
 }
 
@@ -73,6 +74,17 @@ var footerJS = {
     init: function(){
         ( function( $ ) {
             $('.matchHeight').matchHeight();
+        } )( jQuery );
+    }
+}
+
+//Section 4
+var categoryFilterJS = {
+    init: function(){
+        ( function( $ ) {
+            $('select', '#category-select').on('change', function(e) {
+                $(this).siblings('input[type=submit]').click();
+            });
         } )( jQuery );
     }
 }

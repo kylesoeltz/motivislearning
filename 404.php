@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
     </head>
-    <body class="page-not-found">
+    <body class="error404">
         <?php include 'includes/header.php'; ?>
         <main>
         	<article>

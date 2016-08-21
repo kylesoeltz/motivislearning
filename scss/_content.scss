@@ -94,7 +94,44 @@ p.details {
 		}
 	}
 }
-
+section.pagination {
+    div.inner {
+    	text-align: center;
+    }
+    h2 {
+    	display: none;
+    }
+    span.meta-nav {
+    	display: none;
+    }
+	div.nav-links {
+	    @media screen and (min-width: 767px) {
+	    	padding: 0 30px;
+	    }
+	    span.current {
+    	    font-weight: 700;
+	    }
+	    a.prev,
+	    a.next {
+	    	content: "";
+	    	display: inline-block;
+		    font: normal normal normal 14px/1 'MotivisWebsite';
+		    font-size: inherit;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+	    	span {
+	    		display: none;
+	    	}
+	    	&:before {
+	    		content: '\f000';
+	    	}
+	    }
+	    a.next:before {
+	    	content: '\f001';
+	    }
+	}
+}
 
 //
 //	Section 2: Link and button styles
@@ -769,7 +806,7 @@ header.page-header {
 //
 ///////////////////////////
 
-.page-not-found article{
+.error404 article{
 	h2 {
 		font-size: 120px;
 		color: $color-iceCreamBlue;

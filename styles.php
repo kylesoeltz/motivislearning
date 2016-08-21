@@ -166,6 +166,22 @@
 	        			</div>
 	        		</div>
 	        	</section>
+	        	<section class="gray pagination">
+		        	<div class="inner">
+			        	<nav class="navigation pagination" role="navigation">
+							<h2 class="screen-reader-text">Posts navigation</h2>
+							<div class="nav-links">
+								<a class="prev page-numbers" href="http://www.motivis.dev/insights/"><span>Previous page</span></a>
+								<a class="page-numbers" href="http://www.motivis.dev/insights/"><span class="meta-nav screen-reader-text">Page </span>1</a>
+								<span class="page-numbers current"><span class="meta-nav screen-reader-text">Page </span>2</span>
+								<a class="page-numbers" href="http://www.motivis.dev/insights/page/3/"><span class="meta-nav screen-reader-text">Page </span>3</a>
+								<span class="page-numbers dots">…</span>
+								<a class="page-numbers" href="http://www.motivis.dev/insights/page/8/"><span class="meta-nav screen-reader-text">Page </span>8</a>
+								<a class="next page-numbers" href="http://www.motivis.dev/insights/page/3/"><span>Next page</span></a>
+							</div>
+						</nav>
+					</div>
+				</section>
 
 	        	<section>
 	        		<div class="inner">
