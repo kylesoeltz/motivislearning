@@ -213,10 +213,6 @@ aside.side-nav {
 //
 ///////////////////////////
 
-nav.secondary-nav {
-	background-color: $color-white;
-}
-
 blockquote {
 	font-size: 25px;
 	@include font-roboto-light();
@@ -300,7 +296,9 @@ blockquote {
 }
 
 .secondary-nav {
+	background-color: $color-white;
 	padding: $standard-padding;
+	z-index: 1000;
 	ul {
 		text-align: center;
 		li {
@@ -316,6 +314,12 @@ blockquote {
 			}
 		}
 	}
+}
+
+.fixed-secondary-nav {
+	position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 

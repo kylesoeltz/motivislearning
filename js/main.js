@@ -65,6 +65,20 @@ var navJS = {
             if($('.secondary-nav .current_page_ancestor').length > 0){
                 $('.secondary-nav').show();
             }
+
+            //Handle the sticky secondary nav            
+            $(window).unbind().on('scroll', function(e){
+                var calculatedHeight = $('.nav-header').outerHeight() + $('.page-header').outerHeight();
+                var $elm = $('.secondary-nav');
+                var isPositionFixed = ($elm.css('position') == 'fixed');
+                
+                if($(this).scrollTop() > calculatedHeight && !isPositionFixed) {
+                    $($elm).addClass('fixed-secondary-nav');
+                }
+                if($(this).scrollTop() < calculatedHeight && isPositionFixed) {
+                    $($elm).removeClass('fixed-secondary-nav');
+                }
+            });
         } )( jQuery );
     }
 }
