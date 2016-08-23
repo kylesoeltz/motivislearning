@@ -47,9 +47,9 @@
 					</div>
 				</div>
 				<div class="col-md-8 col-sm-12 social-icon-container">
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="motivis motivis-twitter"></i></a>
+					<a href="#"><i class="motivis motivis-linkedin"></i></a>
+					<a href="#"><i class="motivis motivis-facebook"></i></a>
 				</div>
 			</div>
 	</section>
