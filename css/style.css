@@ -5913,7 +5913,7 @@ blockquote {
   .callouts p {
     padding: 0 25px; }
 
-i.fa.title-icon {
+i.motivis.title-icon {
   color: #0d9fd0;
   text-align: center;
   display: block;
@@ -6021,7 +6021,7 @@ section.case-study.content-right .image-half {
   height: 300px;
   padding: 20px 23px;
   position: relative; }
-  .card-cover i.fa.title-icon {
+  .card-cover i.motivis.title-icon {
     background-color: #1b7bac;
     color: #ffffff;
     position: absolute;
@@ -6033,7 +6033,7 @@ section.case-study.content-right .image-half {
     width: 200px;
     height: 200px;
     border-radius: 9999px; }
-    .card-cover i.fa.title-icon:before {
+    .card-cover i.motivis.title-icon:before {
       position: relative;
       top: 25%; }
 
@@ -6048,12 +6048,12 @@ section.case-study.content-right .image-half {
   margin-bottom: 26px; }
   .bullet-box .content {
     padding: 15px; }
-  .bullet-box i.fa {
+  .bullet-box i.motivis {
     position: absolute;
     top: 6px;
     color: #1b7bac;
     font-size: 20px; }
-    .bullet-box i.fa + .content {
+    .bullet-box i.motivis + .content {
       padding-left: 50px; }
 
 header.page-header {

@@ -38,7 +38,7 @@
 			        		<div class="row">
 				        		<div class="callouts">
 					        		<div class="col-md-8">
-						        		<i class="fa fa-medal title-icon"></i>
+						        		<i class="motivis motivis-medal title-icon"></i>
 						        		<h4>Learning Relationship Management</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
@@ -46,7 +46,7 @@
 							            <a href="#" class="btn">Learn More</a>
 					        		</div>
 					        		<div class="col-md-8">
-						        		<i class="fa fa-social title-icon"></i>
+						        		<i class="motivis motivis-social title-icon"></i>
 						        		<h4>Social Networking &amp; School Community</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
@@ -54,7 +54,7 @@
 							            <a href="#" class="btn">Learn More</a>
 					        		</div>
 					        		<div class="col-md-8">
-						        		<i class="fa fa-career-path title-icon"></i>
+						        		<i class="motivis motivis-career-path title-icon"></i>
 						        		<h4>Career Pathing For Students &amp; Employers</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.

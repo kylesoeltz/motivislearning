@@ -81,7 +81,7 @@
 			        		<div class="row">
 				        		<div class="callouts">
 					        		<div class="col-md-8">
-						        		<i class="fa fa-medal title-icon"></i>
+						        		<i class="motivis motivis-medal title-icon"></i>
 						        		<h4>Learning Relationship Management</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
@@ -89,7 +89,7 @@
 							            <a href="#" class="btn">Learn More</a>
 					        		</div>
 					        		<div class="col-md-8">
-						        		<i class="fa fa-social title-icon"></i>
+						        		<i class="motivis motivis-social title-icon"></i>
 						        		<h4>Social Networking &amp; School Community</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
@@ -97,7 +97,7 @@
 							            <a href="#" class="btn">Learn More</a>
 					        		</div>
 					        		<div class="col-md-8">
-						        		<i class="fa fa-career-path title-icon"></i>
+						        		<i class="motivis motivis-career-path title-icon"></i>
 						        		<h4>Career Pathing For Students &amp; Employers</h4>
 						        		<p>
 						        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ligula malesuada, efficitur sem id, ultricies eros. Ut blandit nulla turpis, sit amet tempor massa iaculis nec. Praesent imperdiet lacus vel nunc fermentum egestas.
@@ -162,7 +162,7 @@
 	        		<div class="inner">
 	        			<p class="text-center"><small>Showing 9 of 31 (Open Sans Light 14pt #595959)</small></p>
 	        			<div class="pagination text-center">
-		        			<a href="#"><i class="fa fa-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="fa fa-right-arrow"></i></a>
+		        			<a href="#"><i class="motivis motivis-left-arrow"></i></a> <a href="#"><strong>1</strong></a> <a href="#">2</a> <a href="#">3</a> ... <a href="#">7</a> <a href="#">8</a> <a href="#"><i class="motivis motivis-right-arrow"></i></a>
 	        			</div>
 	        		</div>
 	        	</section>
@@ -196,7 +196,7 @@
 	        					<div class="col-md-8">
 	        						<div class="card">
 	        							<div class="card-cover">
-	        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+	        								<i class="motivis motivis-medal title-icon" aria-hidden="true"></i>
 	        							</div>
 	        							<div class="card-content">
 	        								<h4>Support personalized learning in real time</h4>
@@ -207,7 +207,7 @@
 	        					<div class="col-md-8">
 	        						<div class="card">
 	        							<div class="card-cover">
-	        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+	        								<i class="motivis motivis-medal title-icon" aria-hidden="true"></i>
 	        							</div>
 	        							<div class="card-content">
 	        								<h4>Support personalized learning in real time</h4>
@@ -218,7 +218,7 @@
 	        					<div class="col-md-8">
 	        						<div class="card">
 	        							<div class="card-cover">
-	        								<i class="fa fa-medal title-icon" aria-hidden="true"></i>
+	        								<i class="motivis motivis-medal title-icon" aria-hidden="true"></i>
 	        							</div>
 	        							<div class="card-content">
 	        								<h4>Support personalized learning in real time</h4>
@@ -244,7 +244,7 @@
 	        				<div class="row">
 	        					<div class="col-md-12">
 	        						<div class="bullet-box">
-		        						<i class="fa fa-delete" aria-hidden="true"></i>
+		        						<i class="motivis motivis-delete" aria-hidden="true"></i>
 		        						<div class="content">
 		        							<h4>Break down the silos of campus technology systems with a unified platform </h4>
 		        							<p>We combined the elements of a traditional Learning Management System (LMS), Student Information System (SIS) and Campus Communication into a holistic platform that provides the communication, content, planning and assessment information that students and faculty need in one place with a simple, intuitive user interface. </p>
@@ -253,7 +253,7 @@
 	        					</div>
 	        					<div class="col-md-12">
 	        						<div class="bullet-box">
-		        						<i class="fa fa-delete" aria-hidden="true"></i>
+		        						<i class="motivis motivis-delete" aria-hidden="true"></i>
 		        						<div class="content">
 		        							<h4>Student-focused and skill-centered to ensure real progress</h4>
 		        							<p>The Motivis LRM is student-centric and delivers personalized learning, support and assessment for each student.  It’s a true platform that allows you to not just collect data, but actually use it to support your programs and students across the lifecycle from prospective students to active learners and alumni. </p>
