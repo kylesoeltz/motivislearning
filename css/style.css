@@ -5940,6 +5940,10 @@ article section ul, article[class^="post-"] ul {
       background-color: #0d9fd0;
       border-radius: 9999px; }
 
+article section.text-left h2 {
+  max-width: 800px;
+  padding: 0; }
+
 article.text-center {
   text-align: center; }
 
@@ -6238,10 +6242,8 @@ article div.entry-content {
   padding: 25px; }
   article div.entry-content p {
     font-size: 18px; }
-  article div.entry-content figure {
-    max-width: 950px; }
-  article div.entry-content ul {
-    max-width: 950px; }
+  article div.entry-content p, article div.entry-content figure, article div.entry-content ul, article div.entry-content h2 {
+    max-width: 100%; }
 
 nav.post-navigation, footer.entry-footer {
   line-height: 1.8em;

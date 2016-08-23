@@ -345,23 +345,32 @@ i.motivis.title-icon {
 	font-size: 108px;
 }
 
-article section ul, article[class ^= "post-"] ul {
-	list-style: none;	
-	max-width: 800px;
-	margin: $standard-bottomMargin auto;	
-	li {
-		padding-left: 15px;
-		position: relative;
-		&:before {
-			margin-top: 14px;
-    		margin-left: -15px;
-			content: "";
-			height: 5px;
-			width: 5px;
-			position: absolute;
-			background-color: $color-blue;
-			border-radius: $bajillion;
+article section, article[class ^= "post-"] {	
+	ul {
+		list-style: none;	
+		max-width: 800px;
+		margin: $standard-bottomMargin auto;	
+		li {
+			padding-left: 15px;
+			position: relative;
+			&:before {
+				margin-top: 14px;
+	    		margin-left: -15px;
+				content: "";
+				height: 5px;
+				width: 5px;
+				position: absolute;
+				background-color: $color-blue;
+				border-radius: $bajillion;
+			}
 		}
+	}
+}
+
+article section.text-left {
+	h2 {
+		max-width: 800px;
+		padding: 0;
 	}
 }
 
@@ -766,11 +775,8 @@ article div.entry-content {
 	p {
 		font-size: 18px;
 	}
-	figure {
-		max-width: 950px;
-	}
-	ul {
-		max-width: 950px;
+	p, figure, ul, h2 {
+		max-width: 100%;		
 	}
 }
 
