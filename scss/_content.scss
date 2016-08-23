@@ -369,7 +369,8 @@ article section, article[class ^= "post-"] {
 }
 
 article section.text-left {
-	h2 {
+	h2, h3 {
+		margin: 0 auto;
 		max-width: 800px;
 		padding: 0;
 	}
