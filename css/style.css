@@ -6531,9 +6531,6 @@ footer {
     vertical-align: top;
     font-weight: 600;
     text-align: left; }
-  footer .lower .address a {
-    color: #595959;
-    border-bottom: transparent; }
   footer .lower .social-icon-container {
     text-align: right;
     margin-top: 26px; }
