@@ -5676,6 +5676,8 @@ nav.main-nav {
 	Section 10: Contact Page
 	Section 11: Demo Page
 	Section 12: Thanks Page
+	Section 13: Insights Listing
+	Section 14: Gated Content
 	-----*/
 .avatar {
   border-radius: 600px;
@@ -5735,6 +5737,35 @@ p.details {
   border: none; }
   .pagination a:not(:first-child):not(:last-child) {
     color: #595959; }
+
+section.pagination div.inner {
+  text-align: center; }
+section.pagination h2 {
+  display: none; }
+section.pagination span.meta-nav {
+  display: none; }
+@media screen and (min-width: 767px) {
+  section.pagination div.nav-links {
+    padding: 0 30px; } }
+section.pagination div.nav-links span.current {
+  font-weight: 700; }
+section.pagination div.nav-links a.prev,
+section.pagination div.nav-links a.next {
+  content: "";
+  display: inline-block;
+  font: normal normal normal 14px/1 'MotivisWebsite';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  section.pagination div.nav-links a.prev span,
+  section.pagination div.nav-links a.next span {
+    display: none; }
+  section.pagination div.nav-links a.prev:before,
+  section.pagination div.nav-links a.next:before {
+    content: '\f000'; }
+section.pagination div.nav-links a.next:before {
+  content: '\f001'; }
 
 [class*="btn-ghost-"] {
   border-width: 2px;
@@ -6295,14 +6326,14 @@ footer.entry-footer .screen-reader-text {
     max-width: 100%; }
   .comments-area textarea {
     max-width: 100%; } }
-.page-not-found article h2 {
+.error404 article h2 {
   font-size: 120px;
   color: #59c1e0; }
-.page-not-found article p {
+.error404 article p {
   font-size: 30px; }
-  .page-not-found article p:nth-of-type(2) {
+  .error404 article p:nth-of-type(2) {
     color: #59c1e0; }
-.page-not-found article li {
+.error404 article li {
   font-size: 20px;
   cursor: pointer; }
 
@@ -6378,6 +6409,19 @@ footer.entry-footer .screen-reader-text {
     font-size: 18px;
     margin-top: 26px; }
 
+.gated-content div[class^="col-md-"]:nth-of-type(2) {
+  padding-left: 60px;
+  padding-right: 60px; }
+  .gated-content div[class^="col-md-"]:nth-of-type(2) p:first-child {
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 300;
+    font-size: 25px; }
+
+@media (max-width: 991px) {
+  .gated-content div[class^="col-md-"]:nth-of-type(2) {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 52px 0; } }
 /*-----
 	Footer Styles
 	-----*/

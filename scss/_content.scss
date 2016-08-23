@@ -14,6 +14,8 @@
 	Section 10: Contact Page
 	Section 11: Demo Page
 	Section 12: Thanks Page
+	Section 13: Insights Listing
+	Section 14: Gated Content
 	-----*/
 
 //
@@ -1055,5 +1057,29 @@ footer.entry-footer {
 		max-width: 750px;
 		font-size: 18px;
 		margin-top: $standard-bottomMargin;
+	}
+}
+
+//
+//	Section 13: Insights Listing
+//
+///////////////////////////
+
+.gated-content {
+	div[class ^= "col-md-"]:nth-of-type(2) {
+		padding-left: 60px;
+		padding-right: 60px;
+		p:first-child {
+			@include font-roboto-light();
+			font-size: 25px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.gated-content div[class ^= "col-md-"]:nth-of-type(2) {
+		padding-left: 0;
+		padding-right: 0;
+		margin: $standard-bottomMargin*2 0;
 	}
 }
