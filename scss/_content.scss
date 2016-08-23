@@ -352,16 +352,16 @@ article section, article[class ^= "post-"] {
 		max-width: 800px;
 		margin: $standard-bottomMargin auto;	
 		li {
-			padding-left: 15px;
+			padding-left: 20px;
 			position: relative;
 			&:before {
 				margin-top: 14px;
-	    		margin-left: -15px;
+	    		margin-left: -20px;
 				content: "";
 				height: 5px;
 				width: 5px;
 				position: absolute;
-				background-color: $color-blue;
+				background-color: $color-darkGray;
 				border-radius: $bajillion;
 			}
 		}

@@ -5928,16 +5928,16 @@ article section ul, article[class^="post-"] ul {
   max-width: 800px;
   margin: 26px auto; }
   article section ul li, article[class^="post-"] ul li {
-    padding-left: 15px;
+    padding-left: 20px;
     position: relative; }
     article section ul li:before, article[class^="post-"] ul li:before {
       margin-top: 14px;
-      margin-left: -15px;
+      margin-left: -20px;
       content: "";
       height: 5px;
       width: 5px;
       position: absolute;
-      background-color: #0d9fd0;
+      background-color: #595959;
       border-radius: 9999px; }
 
 article section.text-left h2, article section.text-left h3 {
