@@ -5812,6 +5812,9 @@ aside.side-nav .featured-content {
   background-position: center center;
   margin-bottom: 52px; }
 
+nav.secondary-nav {
+  background-color: #ffffff; }
+
 blockquote {
   font-size: 25px;
   font-family: 'Roboto Slab', arial, sans-serif;
