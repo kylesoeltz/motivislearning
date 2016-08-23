@@ -5003,6 +5003,9 @@ body {
   text-align: center;
   background-image: url("images/dot-bg.jpg"); }
 
+h1 a, h2 a, h3 a {
+  border: none; }
+
 h1 {
   font-family: 'Roboto Slab', arial, sans-serif;
   font-weight: 300;
@@ -5045,10 +5048,8 @@ h3 {
   margin-bottom: 8px; }
   h3 a {
     color: #12a9db;
-    border-bottom: solid 1px rgba(18, 169, 219, 0);
+    border: none;
     transition: all .2s ease; }
-    h3 a:hover {
-      border-color: #12a9db; }
   @media (max-width: 933px) {
     h3 {
       font-size: 24px; } }
@@ -5914,8 +5915,6 @@ blockquote {
     padding: 0 25px; }
   .callouts h3 a {
     color: #e3573c; }
-    .callouts h3 a:hover {
-      border-bottom: 1px solid #e3573c; }
 
 i.motivis.title-icon {
   color: #0d9fd0;
@@ -6013,8 +6012,6 @@ section {
       margin-bottom: 26px; }
     section.case-study h3 a {
       color: #e3573c; }
-      section.case-study h3 a:hover {
-        border-color: #e3573c; }
 
 section.case-study.content-right .image-half {
   right: 0; }

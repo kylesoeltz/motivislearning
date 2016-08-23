@@ -334,10 +334,7 @@ blockquote {
 	}
 
 	h3 a {
-		color: $color-orange;
-		&:hover {
-			border-bottom: 1px solid $color-orange;
-		}
+		color: $color-orange;		
 	}
 }
 
@@ -470,10 +467,7 @@ section {
 		}
 		h3 {
 			a {
-				color: $color-orange;
-				&:hover {
-					border-color: $color-orange;
-				}
+				color: $color-orange;				
 			}
 		}
 	}
