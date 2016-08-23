@@ -5910,11 +5910,12 @@ blockquote {
     display: table; }
   .callouts:after {
     clear: both; }
-  .callouts h4 {
-    font-size: 20px;
-    min-height: 2.5em; }
   .callouts p {
     padding: 0 25px; }
+  .callouts h3 a {
+    color: #e3573c; }
+    .callouts h3 a:hover {
+      border-bottom: 1px solid #e3573c; }
 
 i.motivis.title-icon {
   color: #0d9fd0;
