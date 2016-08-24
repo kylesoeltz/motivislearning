@@ -176,12 +176,48 @@ section.pagination {
 	}
 }
 
-.navy a{
+.navy a.btn{
 	background-color: $color-navy;
 	border: 2px solid $color-white;
 	&:hover {
 		background-color: $color-white;
 		color: $color-navy;
+	}
+}
+
+.blue a.btn{
+	background-color: $color-blue;
+	border: 2px solid $color-white;
+	&:hover {
+		background-color: $color-white;
+		color: $color-blue;
+	}
+}
+
+.orange a.btn{
+	background-color: $color-orange;
+	border: 2px solid $color-white;
+	&:hover {
+		background-color: $color-white;
+		color: $color-orange;
+	}
+}
+
+.green a.btn{
+	background-color: $color-green;
+	border: 2px solid $color-white;
+	&:hover {
+		background-color: $color-white;
+		color: $color-green;
+	}
+}
+
+.yellow a.btn{
+	background-color: $color-yellow;
+	border: 2px solid $color-white;
+	&:hover {
+		background-color: $color-white;
+		color: $color-yellow;
 	}
 }
 
@@ -213,6 +249,28 @@ aside.side-nav {
 //
 ///////////////////////////
 
+nav.secondary-nav {
+	background-color: $color-white;
+}
+
+div.single-column {
+	width: 800px;
+	margin: 0 auto;
+	@media (max-width: 850px) {
+		width: 100%;
+	}
+}
+
+div.blockquote {
+	width: 350px;
+	float: right;
+	padding-left: 20px;
+	@media (max-width: 768px) {
+		padding-left: 0;
+		width: 100%;
+	}
+}
+
 blockquote {
 	font-size: 25px;
 	@include font-roboto-light();
@@ -236,7 +294,7 @@ blockquote {
 		bottom: -20px;
 		right: -20px;
 	}
-	+ cite {
+	+ p cite {
 		padding-left: 45px;
 		margin-top: $standard-bottomMargin;
 		display: block;
@@ -256,7 +314,7 @@ blockquote {
 	@media (max-width: 933px) {
 		font-size: 24px;
 		padding: 25px 0px;
-		+ cite {
+		+ p cite {
 			padding-left: 0;
 		}
 	}
@@ -353,14 +411,13 @@ i.motivis.title-icon {
 article section, article[class ^= "post-"] {
 	ul {
 		list-style: none;
-		max-width: 800px;
 		margin: $standard-bottomMargin auto;
 		li {
 			padding-left: 20px;
 			position: relative;
 			&:before {
-				margin-top: 14px;
-	    		margin-left: -20px;
+				top: 14px;
+	    		left: 0;
 				content: "";
 				height: 5px;
 				width: 5px;
@@ -375,7 +432,6 @@ article section, article[class ^= "post-"] {
 article section.text-left {
 	h2, h3 {
 		margin: 0 auto;
-		max-width: 800px;
 		padding: 0;
 	}
 }
@@ -433,6 +489,33 @@ section {
 	}
 	&.blue {
 		background-color: $color-blue;
+		color: $color-white;
+		blockquote {
+			&:before, &:after {
+				color: $color-white;
+			}
+		}
+	}
+	&.green {
+		background-color: $color-green;
+		color: $color-white;
+		blockquote {
+			&:before, &:after {
+				color: $color-white;
+			}
+		}
+	}
+	&.orange {
+		background-color: $color-green;
+		color: $color-white;
+		blockquote {
+			&:before, &:after {
+				color: $color-white;
+			}
+		}
+	}
+	&.yellow {
+		background-color: $color-yellow;
 		color: $color-white;
 		blockquote {
 			&:before, &:after {
@@ -583,7 +666,6 @@ header.page-header {
 	}
 	p {
 		color: $color-white;
-		max-width: 800px;
 		margin: 20px auto;
 		font-size: 20px;
 	}
