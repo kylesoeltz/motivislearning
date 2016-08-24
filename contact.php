@@ -13,10 +13,10 @@
 		<![endif]-->
 		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     </head>
-    <body class="contact-page">
+    <body>
     	<?php include 'includes/header.php'; ?>
     	<main>
-        	<article>
+        	<article class="contactdemo-page">
         		<header class="page-header navy dots">
 		        	<div class="inner">
 		        		<h1>Questions or Comments?</h1>
@@ -27,14 +27,12 @@
 	        		<div class="inner">
 			        	<div class="row">
 			        		<div class="col-md-6">				        		
-								<a href="https://www.google.com/maps/place/25+Pelham+Rd,+Salem,+NH+03079/@42.7756873,-71.2473937,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3abceed38b001:0x8f7069972017030b!8m2!3d42.7756873!4d-71.2473937" target="_blank"><h2>Salem, NH</h2><p>25 Pelham Road, 03079</p></a>
-								<p><span class="bold">Phone</span>
-									<br />
+								<h2><a href="https://www.google.com/maps/place/25+Pelham+Rd,+Salem,+NH+03079/@42.7756873,-71.2473937,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3abceed38b001:0x8f7069972017030b!8m2!3d42.7756873!4d-71.2473937" target="_blank">Salem, NH</a></h2>
+								<p><a href="https://www.google.com/maps/place/25+Pelham+Rd,+Salem,+NH+03079/@42.7756873,-71.2473937,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3abceed38b001:0x8f7069972017030b!8m2!3d42.7756873!4d-71.2473937" target="_blank">25 Pelham Road, 03079</a></p>
+								<p><strong>Phone</strong><br/>
 									<a href="tel:+1855-202-6500">855-202-6500</a>
 								</p>
-								<p>
-									<span class="bold">Email</span>
-									<br />
+								<p><strong>Email</strong><br/>
 									<a href="mailto:info@motivislearning.com">info@motivislearning.com</a>
 								</p>        			
 			        		</div>

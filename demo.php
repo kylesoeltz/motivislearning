@@ -67,10 +67,10 @@
 		<![endif]-->
 		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 	</head>
-    <body class="demo-page">
+    <body>
     	<?php include 'includes/header.php'; ?>
     	<main>
-    		<article>
+    		<article class="contactdemo-page">
 	    		<header class="page-header orange dots">
 			        <section class="inner">
 			        	<h1>Schedule a Demo</h1>
