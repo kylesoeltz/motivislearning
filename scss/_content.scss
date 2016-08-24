@@ -338,7 +338,7 @@ blockquote {
 	}
 
 	h3 a {
-		color: $color-orange;		
+		color: $color-orange;
 	}
 }
 
@@ -350,11 +350,11 @@ i.motivis.title-icon {
 	font-size: 108px;
 }
 
-article section, article[class ^= "post-"] {	
+article section, article[class ^= "post-"] {
 	ul {
-		list-style: none;	
+		list-style: none;
 		max-width: 800px;
-		margin: $standard-bottomMargin auto;	
+		margin: $standard-bottomMargin auto;
 		li {
 			padding-left: 20px;
 			position: relative;
@@ -472,7 +472,7 @@ section {
 		}
 		h3 {
 			a {
-				color: $color-orange;				
+				color: $color-orange;
 			}
 		}
 	}
@@ -768,9 +768,9 @@ header.page-header {
 ///////////////////////////
 
 .entry-content, nav.post-navigation, footer.entry-footer, .comments-area {
-	max-width: 950px;	
+	max-width: 950px;
 	margin: 0 auto;
-	text-align: left;	
+	text-align: left;
 }
 
 article div.entry-content {
@@ -779,7 +779,7 @@ article div.entry-content {
 		font-size: 18px;
 	}
 	p, figure, ul, h2 {
-		max-width: 100%;		
+		max-width: 100%;
 	}
 }
 
@@ -806,7 +806,7 @@ footer.entry-footer {
 			margin-right: $standard-bottomMargin;
 			max-height: 90px;
 			max-width: 90px;
-			//Hack for styling purposes, please remove in final 
+			//Hack for styling purposes, please remove in final
 			height: 90px;
     		width: 90px;
     		+ span {
@@ -814,7 +814,7 @@ footer.entry-footer {
     			font-weight: bold;
     			+ a {
     				font-size: 14px;
-    				font-weight: bold;    				
+    				font-weight: bold;
     			}
     		}
 		}
@@ -888,7 +888,7 @@ footer.entry-footer {
 			}
 		}
 
-		.comment-form-comment {			
+		.comment-form-comment {
 			textarea {
 				width: 500px;
     			height: 100px;
@@ -985,7 +985,7 @@ footer.entry-footer {
 			border-bottom: transparent;
 		}
 
-		span.bold {		
+		span.bold {
 			font-weight: bold;
 		}
 	}
@@ -998,7 +998,7 @@ footer.entry-footer {
 		}
 		div.form-container {
 			border-left: none;
-			padding-left: 15px; 
+			padding-left: 15px;
 		}
 	}
 }
@@ -1013,7 +1013,7 @@ footer.entry-footer {
 		font-weight: bold;
     	font-size: 20px;
 	}
-	.row {		
+	.row {
 		div.form-container {
 			padding-left: 50px;
 			border-left: 1px solid $color-gray;
@@ -1072,7 +1072,7 @@ footer.entry-footer {
 	}
 	& * {
 		margin: 0px auto;
-	}	
+	}
 	h3 {
 		max-width: 650px;
 		margin-top: $standard-bottomMargin;
