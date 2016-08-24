@@ -338,6 +338,7 @@ blockquote {
 	max-width: 1050px;
 	margin: 0 auto;
 	img {
+		border-radius: $bajillion;
 		margin-bottom: $standard-bottomMargin;
 	}
 	h4 {
@@ -629,9 +630,14 @@ section.case-study {
 
 .bullet-box {
 	position: relative;
-	margin-bottom: $standard-bottomMargin;
 	.content {
-		padding: 15px;
+		padding: 15px 15px 0 15px;
+		p {
+			margin-bottom: 5px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	i.motivis {
 		position: absolute;
@@ -652,7 +658,7 @@ section.case-study {
 header.page-header {
 	width: 100%;
 	padding: 70px 0px;
-	div.inner {
+	div.inner, section.inner {
 		text-align: center;
 	}
 	h1 {
@@ -1039,7 +1045,7 @@ footer.entry-footer {
 //
 ///////////////////////////
 
-.contact-page article {
+article.contact-page {
 	.row {
 		div.form-container {
 			padding-left: 50px;
@@ -1069,7 +1075,7 @@ footer.entry-footer {
 }
 
 @media (max-width: 991px) {
-	.contact-page article .row {
+	article.contact-page .row {
 		h2, p {
 			text-align: center;
 		}

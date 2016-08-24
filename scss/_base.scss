@@ -132,6 +132,15 @@ dl dd{
         font-size: 16px;
     }
 }
+ul.no-bullets, ol.no-bullets {
+    list-style: none;
+    li {
+        padding-left: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
 dl {
     dt {
         line-height: 1.4;
@@ -343,6 +352,7 @@ label.radio {
     max-width: 1350px;
     margin: 0 auto;
     text-align: left;
+    position: relative;
     @include clearfix();
     @media screen and (min-width: $break-tabletSmall) {
         padding: 0 30px;
