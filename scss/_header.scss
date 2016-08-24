@@ -40,15 +40,15 @@ nav.main-nav {
 		.overlay {
 			display: none;
 		}
-		ul {			
+		ul {
 			display: inline-block;
-			margin-top: 20px;						
+			margin-top: 20px;
 			li {
 				&.solutions {
-					line-height: 1.2em;	
+					line-height: 1.2em;
 					> a {
 						padding-right: 0px !important;
-					}				
+					}
 				}
 				/*This is for solutions, fragile*/
 				&:nth-of-type(2) {
@@ -61,7 +61,7 @@ nav.main-nav {
 						content: '\f014';
 					}
 					> a.icon-up:after {
-						content: '\f015';	
+						content: '\f015';
 					}
 				}
 				display: inline-block;
@@ -81,7 +81,7 @@ nav.main-nav {
 						color: $color-white;
 						border-bottom: transparent;
 					}
-				}				
+				}
 				a {
 					text-transform: uppercase;
 					font-size: 14px;
@@ -95,25 +95,21 @@ nav.main-nav {
 						cursor: pointer;
 					}
 				}
-				
+
 				&.current-menu-item > a {
 					cursor: pointer;
-    				background-color: $color-white;
     				margin-bottom: 0px;
 				}
-				
+
 				> ul {
-					display: none;					
+					display: none;
 				}
 
 				/*For drop-down menus*/
-				> .sub-menu {		
-					-moz-box-shadow:    0px 2px 3px #ccc, -3px 2px 5px #ccc, 3px 2px 3px #ccc;
-  					-webkit-box-shadow: 0px 2px 3px #ccc, -3px 2px 5px #ccc, 3px 2px 3px #ccc;
-  					box-shadow:         0px 2px 3px #ccc, -3px 2px 5px #ccc, 3px 2px 3px #ccc;
+				> .sub-menu {
 					border-top: none;
 					padding: 25px;
-					margin-top: 29px;			
+					margin-top: 29px;
 					display: none;
 					position: absolute;
 					background-color: $color-white;
@@ -124,7 +120,7 @@ nav.main-nav {
 						&:last-child {
 							background-color: $color-white;
 							padding: 0;
-						}					
+						}
 						a {
 							color: $color-orange;
 							text-transform: capitalize;
@@ -138,7 +134,7 @@ nav.main-nav {
 							&:after {
 								content: none;
 							}
-						}						
+						}
 					}
 				}
 				/*End drop down*/
@@ -171,7 +167,7 @@ nav.main-nav {
 			ul {
 				margin-top: 15px;
 				li {
-					
+
 					> .sub-menu {
 						margin-top: 14px;
 					}
@@ -230,7 +226,7 @@ nav.main-nav {
 		.inner {
 			padding: 0;
 			width: 100%;
-			position: absolute;			
+			position: absolute;
 			top: -64px;
 			height: 114px;
 			overflow: hidden;
@@ -293,7 +289,7 @@ nav.main-nav {
 							background-color: $color-orange;
 							color: $color-white;
 						}
-					}					
+					}
 				}
 			}
 		}
@@ -316,10 +312,10 @@ nav.main-nav {
 					top: 0;
 					left: 0;
 					display: block;
-				}			
+				}
 				> ul {
 					overflow-y: auto;
-					overflow-x: hidden;					
+					overflow-x: hidden;
 				 	li > ul.sub-menu {
 						display: block;
 
@@ -338,11 +334,11 @@ nav.main-nav {
 				}
 				li {
 					border-bottom: 1px solid $color-lightGray;
-					padding-bottom: 0px;				
+					padding-bottom: 0px;
 					a {
 						transition: none;
 						padding: 10px 15px;
-						
+
 					}
 
 					> .sub-menu {
@@ -363,9 +359,9 @@ nav.main-nav {
 						}
 						a {
 							font-weight: 600;
-							line-height: 1.5em;							
-						}						
-					}					
+							line-height: 1.5em;
+						}
+					}
 					&:first-child {
 						display: block;
 						text-align: right;
@@ -376,5 +372,5 @@ nav.main-nav {
 				}
 			}
 		}
-	}	
+	}
 }

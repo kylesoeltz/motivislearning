@@ -259,17 +259,17 @@ div.single-column {
 	@media (max-width: 850px) {
 		width: 100%;
 	}
-}
-
-div.blockquote {
-	width: 350px;
-	float: right;
-	padding-left: 20px;
-	@media (max-width: 768px) {
-		padding-left: 0;
-		width: 100%;
+	div.blockquote {
+		width: 350px;
+		float: right;
+		padding-left: 20px;
+		@media (max-width: 768px) {
+			padding-left: 0;
+			width: 100%;
+		}
 	}
 }
+
 
 blockquote {
 	font-size: 25px;
@@ -390,18 +390,13 @@ blockquote {
 	@include clearfix();
 	margin-bottom: $standard-bottomMargin *3;
 	text-align: center;
-
 	p {
 		padding: 0 25px;
-	}
-
-	h3 a {
-		color: $color-orange;
 	}
 }
 
 i.motivis.title-icon {
-	color: $color-blue;
+	color: $color-darkGray;
 	text-align: center;
 	display: block;
 	margin: $standard-bottomMargin auto;
@@ -640,9 +635,9 @@ section.case-study {
 	}
 	i.motivis {
 		position: absolute;
-		top: 6px;
-		color: $color-navy;
-		font-size: 20px;
+		top: 18px;
+		color: $color-darkGray;
+		font-size: 28px;
 		+ .content {
 			padding-left: 50px;
 		}
