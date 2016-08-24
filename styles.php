@@ -407,6 +407,9 @@
 		        		</div>
 		        	</div>
 	        	</section>
+	        	<section>
+	        		<div class="full-width-banner-img" style="background-image: url(images/harvard-bg.jpg);"></div>
+	        	</section>
         	</article>
         </main>
         <?php include 'includes/footer.php'; ?>
