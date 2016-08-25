@@ -5922,7 +5922,8 @@ blockquote {
   margin: 0 auto; }
   .team-members img {
     border-radius: 9999px;
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    min-height: 238px; }
   .team-members h4 {
     text-align: center;
     text-transform: uppercase;

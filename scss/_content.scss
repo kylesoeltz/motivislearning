@@ -340,6 +340,7 @@ blockquote {
 	img {
 		border-radius: $bajillion;
 		margin-bottom: $standard-bottomMargin;
+		min-height: 238px;
 	}
 	h4 {
 		text-align: center;
