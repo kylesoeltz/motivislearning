@@ -5859,7 +5859,10 @@ aside.side-nav .featured-content {
   margin-bottom: 52px; }
 
 nav.secondary-nav {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
   nav.secondary-nav .current-menu-item > a {
     border-bottom: 1px solid #e3573c; }
 

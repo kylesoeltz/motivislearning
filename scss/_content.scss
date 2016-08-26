@@ -251,6 +251,7 @@ aside.side-nav {
 
 nav.secondary-nav {
 	background-color: $color-white;
+	@include lightShadow();
 	.current-menu-item > a {
 		border-bottom: 1px solid $color-orange;	
 	}
