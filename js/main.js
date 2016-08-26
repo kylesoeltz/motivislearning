@@ -5,19 +5,22 @@
  *    Section 1: Page load JS
  *    Section 2: Navigation JS
  *    Section 3: Footer JS
+ *    Section 4: Category and selectpicker
+ *    Section 5: Animations
  *    Section ?: On Ready
  */
 
-//Section 1
+//Section 1: Page load JS
 var mainJS = {
     init: function(){
         navJS.init();
         footerJS.init();
         categoryFilterJS.init();
+        animationsJS.init();
     }
 }
 
-//Section 2
+//Section 2: Navigation JS
 var navJS = {
     init: function(){
         ( function( $ ) {
@@ -83,7 +86,7 @@ var navJS = {
     }
 }
 
-//Section 3
+//Section 3: Footer JS
 var footerJS = {
     init: function(){
         ( function( $ ) {
@@ -92,17 +95,31 @@ var footerJS = {
     }
 }
 
-//Section 4
+//Section 4: Category and selectpicker
 var categoryFilterJS = {
     init: function(){
         ( function( $ ) {
             $('select', '#category-select').on('change', function(e) {
                 $(this).siblings('input[type=submit]').click();
             });
-            $('.selectpicker').selectpicker();
         } )( jQuery );
     }
 }
+
+//Section 5: Animations
+var animationsJS = {
+    init: function(){
+        ( function( $ ) {
+            $(window).scroll(function(){
+                $('.scroll-fade-in').each(function(){
+                    console.log($(this).offset().top);
+                });
+            })
+        } )( jQuery );
+    }
+}
+$(document).on('ready', function(){
+    $('.selectpicker').selectpicker();
 
 
 //Section ?
