@@ -384,22 +384,62 @@
 		        		<div class="team-members">
 			        		<div class="row">
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/brian.png">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
 					        		<h4>Brian Peddle</h4>
 					        		<small>Founder &amp; President</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/alan.png">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
 					        		<h4>Alan Laurentano</h4>
 					        		<small>Chief Operating Officer</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/aj.png">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
 					        		<h4>AJ Dellicicchi</h4>
 					        		<small>Vice President of Development</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/colin.png">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
+					        		<h4>Colin Irose</h4>
+					        		<small>Vice President of Partnerships</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
+					        		<h4>Brian Peddle</h4>
+					        		<small>Founder &amp; President</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
+					        		<h4>Alan Laurentano</h4>
+					        		<small>Chief Operating Officer</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
+					        		<h4>AJ Dellicicchi</h4>
+					        		<small>Vice President of Development</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
+					        		<h4>Colin Irose</h4>
+					        		<small>Vice President of Partnerships</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
+					        		<h4>Brian Peddle</h4>
+					        		<small>Founder &amp; President</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
+					        		<h4>Alan Laurentano</h4>
+					        		<small>Chief Operating Officer</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
+					        		<h4>AJ Dellicicchi</h4>
+					        		<small>Vice President of Development</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
 					        		<h4>Colin Irose</h4>
 					        		<small>Vice President of Partnerships</small>
 				        		</div>

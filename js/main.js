@@ -111,15 +111,28 @@ var animationsJS = {
     init: function(){
         ( function( $ ) {
             $(window).scroll(function(){
-                $('.scroll-fade-in').each(function(){
+                fadeInObject();
+            });
+            $(document).on('ready', function(){
+                fadeInObject();
+            });
+            function fadeInObject() {
+                var scrollBottom = $(window).scrollTop() + $(window).height();
+                $('.scroll-fade').each(function(){
+                    if (scrollBottom > $(this).offset().top) {
+                        $(this).addClass('fade-in')
+                    }
                     console.log($(this).offset().top);
+                    console.log(scrollBottom);
                 });
-            })
+            }
         } )( jQuery );
     }
 }
-$(document).on('ready', function(){
-    $('.selectpicker').selectpicker();
+
+
+// $(document).on('ready', function(){
+//     $('.selectpicker').selectpicker();
 
 
 //Section ?
