@@ -251,6 +251,7 @@ aside.side-nav {
 
 nav.secondary-nav {
 	background-color: $color-white;
+	@include lightShadow();
 	.current-menu-item > a {
 		border-bottom: 1px solid $color-orange;	
 	}
@@ -441,6 +442,7 @@ article section, article[class ^= "post-"] {
 article section.text-left {
 	h2, h3 {
 		margin: 0 auto;
+		margin-bottom: $standard-bottomMargin;
 		padding: 0;
 	}
 }
