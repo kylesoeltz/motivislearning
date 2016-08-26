@@ -221,7 +221,6 @@ if (typeof jQuery === 'undefined') {
 
       if (e.isDefaultPrevented()) return
 
-      console.log('aria-expanded');
       $this
         .trigger('focus')
         .attr('aria-expanded', 'true')

@@ -99,15 +99,14 @@ var categoryFilterJS = {
             $('select', '#category-select').on('change', function(e) {
                 $(this).siblings('input[type=submit]').click();
             });
+            $('.selectpicker').selectpicker();
         } )( jQuery );
     }
 }
 
 
-//Section 5
-$('.selectpicker').selectpicker();
-
 //Section ?
 jQuery(function(){
     mainJS.init();
 });
+
