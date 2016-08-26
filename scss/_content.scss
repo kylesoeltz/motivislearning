@@ -441,6 +441,7 @@ article section, article[class ^= "post-"] {
 article section.text-left {
 	h2, h3 {
 		margin: 0 auto;
+		margin-bottom: $standard-bottomMargin;
 		padding: 0;
 	}
 }

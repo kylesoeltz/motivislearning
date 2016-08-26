@@ -5022,7 +5022,7 @@ h2 {
   font-family: 'Roboto Slab', arial, sans-serif;
   font-weight: 300;
   font-size: 40px;
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin: 0 auto;
   margin-bottom: 26px;
   max-width: 1000px;
@@ -6017,6 +6017,7 @@ article section ul, article[class^="post-"] ul {
 
 article section.text-left h2, article section.text-left h3 {
   margin: 0 auto;
+  margin-bottom: 26px;
   padding: 0; }
 
 article.text-center {

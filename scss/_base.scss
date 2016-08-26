@@ -42,7 +42,7 @@ h1 {
 h2 {
     @include font-roboto-light();
     font-size: 40px;
-    line-height: 1.5em;
+    line-height: 1.2em;
     margin: 0 auto;
     margin-bottom: $standard-bottomMargin;
     max-width: 1000px;
