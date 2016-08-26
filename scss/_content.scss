@@ -251,8 +251,9 @@ aside.side-nav {
 
 nav.secondary-nav {
 	background-color: $color-white;
+	@include lightShadow();
 	.current-menu-item > a {
-		border-bottom: 1px solid $color-orange;	
+		border-bottom: 1px solid $color-orange;
 	}
 }
 
@@ -358,6 +359,14 @@ blockquote {
 	}
 }
 
+.scroll-fade {
+	opacity: 0;
+	transition: opacity 1.25s ease;
+	&.fade-in {
+		opacity: 1;
+	}
+}
+
 .secondary-nav {
 	background-color: $color-white;
 	padding: $standard-padding;
@@ -441,6 +450,7 @@ article section, article[class ^= "post-"] {
 article section.text-left {
 	h2, h3 {
 		margin: 0 auto;
+		margin-bottom: $standard-bottomMargin;
 		padding: 0;
 	}
 }
@@ -965,7 +975,7 @@ footer.entry-footer {
     			margin-bottom: 5px;
 			}
 			input {
-				width: 500px;				
+				width: 500px;
 			}
 			input[type="submit"] {
 				height: 40px;
@@ -1128,7 +1138,7 @@ article.post {
 	border-bottom: 1px solid $color-gray;
 	background-color: $color-white;
 	text-align: center;
-	
+
 	& * {
 		margin: 0px auto;
 	}
@@ -1159,7 +1169,7 @@ article.post {
 div.search {
 	background-color: $color-offWhite;
 	.inner {
-		text-align: center;		
+		text-align: center;
 		padding-top: $standard-bottomMargin;
 		form {
 			display: inline-block;
@@ -1172,7 +1182,7 @@ div.search {
 				}
 				i {
 					margin-left: -30px;
-				}	
+				}
 			}
 			&.category-select {
 				input[type="submit"] {
@@ -1181,7 +1191,7 @@ div.search {
 				select {
 					border: 1px solid $color-gray;
 					border-radius: 0px;
-				}			
+				}
 			}
 		}
 	}

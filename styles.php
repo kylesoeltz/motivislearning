@@ -13,6 +13,36 @@
         <main>
         	<article>
 	        	<article>
+	        		<div class="row form-row">
+                        <div class="col-sm-7">
+                            <label for="resource-type">Status <strong>*</strong></label>
+                        </div>
+                        <div class="col-sm-17">
+                            <select class="selectpicker it-typeSelect" title=" ">
+                                <option>Active</option>
+                                <option>Inactive</option>
+                                <option>Archived</option>
+                            </select>
+                        </div>
+                    </div>
+	        		<div class="search">
+		        		<div class="inner">
+			        		<select class="selectpicker">
+								<option value="-1">Select One</option>
+								<option class="level-0" value="1">Uncategorized</option>
+								<option class="level-0" value="3">Case Study</option>
+								<option class="level-0" value="10">Education</option>
+								<option class="level-0" value="12">Learning</option>
+								<option class="level-0" value="17">Quotes</option>
+								<option class="level-0" value="19">In the News</option>
+								<option class="level-0" value="24">Salesforce</option>
+								<option class="level-0" value="29">Work</option>
+								<option class="level-0" value="33">Community</option>
+								<option class="level-0" value="37">Inspiration</option>
+								<option class="level-0" value="39">Leadership</option>
+							</select>
+		        		</div>
+	        		</div>
 	        		<div class="inner">
 		        		<div class="row">
 			        		<div class="col-sm-18">
@@ -354,22 +384,62 @@
 		        		<div class="team-members">
 			        		<div class="row">
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/brian.png">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
 					        		<h4>Brian Peddle</h4>
 					        		<small>Founder &amp; President</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/alan.png">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
 					        		<h4>Alan Laurentano</h4>
 					        		<small>Chief Operating Officer</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/aj.png">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
 					        		<h4>AJ Dellicicchi</h4>
 					        		<small>Vice President of Development</small>
 				        		</div>
 				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
-					        		<img src="images/team-photos/colin.png">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
+					        		<h4>Colin Irose</h4>
+					        		<small>Vice President of Partnerships</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
+					        		<h4>Brian Peddle</h4>
+					        		<small>Founder &amp; President</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
+					        		<h4>Alan Laurentano</h4>
+					        		<small>Chief Operating Officer</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
+					        		<h4>AJ Dellicicchi</h4>
+					        		<small>Vice President of Development</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
+					        		<h4>Colin Irose</h4>
+					        		<small>Vice President of Partnerships</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/brian.png">
+					        		<h4>Brian Peddle</h4>
+					        		<small>Founder &amp; President</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/alan.png">
+					        		<h4>Alan Laurentano</h4>
+					        		<small>Chief Operating Officer</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/aj.png">
+					        		<h4>AJ Dellicicchi</h4>
+					        		<small>Vice President of Development</small>
+				        		</div>
+				        		<div class="col-md-6 col-sm-8 col-xs-B-6">
+					        		<img class="scroll-fade" src="images/team-photos/colin.png">
 					        		<h4>Colin Irose</h4>
 					        		<small>Vice President of Partnerships</small>
 				        		</div>
