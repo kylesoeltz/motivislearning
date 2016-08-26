@@ -251,6 +251,9 @@ aside.side-nav {
 
 nav.secondary-nav {
 	background-color: $color-white;
+	.current-menu-item > a {
+		border-bottom: 1px solid $color-orange;	
+	}
 }
 
 div.single-column {
@@ -381,6 +384,7 @@ blockquote {
     top: 0;
     width: 100%;
 }
+
 
 .full-width-banner-img {
 	width: 100%;
@@ -956,14 +960,7 @@ footer.entry-footer {
     			margin-bottom: 5px;
 			}
 			input {
-				width: 500px;
-				border: none;
-				border: 1px solid $color-gray;
-				background-color: $color-offWhite;
-				&:focus {
-					border: 1px solid $color-orange;
-					outline: none;
-				}
+				width: 500px;				
 			}
 			input[type="submit"] {
 				height: 40px;
@@ -1118,32 +1115,33 @@ article.contactdemo-page {
 //
 ///////////////////////////
 
-.insightslisting article {
+
+
+article.post {
 	font-size: 16px;
 	padding: 50px;
 	border-bottom: 1px solid $color-gray;
 	background-color: $color-white;
 	text-align: center;
-	> a:first-of-type{
-		margin-bottom: $standard-bottomMargin;
-		color: $color-blue;
-		text-transform: uppercase;
-		&:hover {
-			border-bottom: 1px solid $color-blue;
-		}
-	}
+	
 	& * {
 		margin: 0px auto;
 	}
+
+	.details a {
+		color: $color-blue;
+		cursor: pointer;
+		&:hover {
+			border-color: $color-blue;
+		}
+	}
+
 	h3 {
 		max-width: 650px;
 		margin-top: $standard-bottomMargin;
 		a {
 			color: $color-orange;
 			cursor: pointer;
-			&:hover {
-				border-bottom: 1px solid $color-orange;
-			}
 		}
 	}
 	p {
@@ -1153,8 +1151,39 @@ article.contactdemo-page {
 	}
 }
 
+div.search {
+	background-color: $color-offWhite;
+	.inner {
+		text-align: center;		
+		padding-top: $standard-bottomMargin;
+		form {
+			display: inline-block;
+			&.search {
+				button {
+					display: none;
+				}
+				input[type='text'] {
+					padding-right: 30px;
+				}
+				i {
+					margin-left: -30px;
+				}	
+			}
+			&.category-select {
+				input[type="submit"] {
+					display: none;
+				}
+				select {
+					border: 1px solid $color-gray;
+					border-radius: 0px;
+				}			
+			}
+		}
+	}
+}
+
 //
-//	Section 13: Insights Listing
+//	Section 14: Gated Content
 //
 ///////////////////////////
 

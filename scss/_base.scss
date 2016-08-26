@@ -194,11 +194,16 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="url"] {
+    border: 1px solid $color-gray;
+    background-color: $color-offWhite;
+    &:focus {
+        border-color: $color-orange;
+        outline: none;
+    }
     color: $color-black;
     font-size: 16px;
     line-height: 40px;
     height: 40px;
-    background-color: $color-offWhite;
     padding-left: 10px;
     @include font-primary-regular();
     &.whiteBg {
@@ -230,6 +235,15 @@ input[type="url"] {
         color: $color-gray;
     }
 }
+
+button[type="submit"],
+button[type="button"],
+select {
+    appearance:         none;
+    -moz-appearance:    none; 
+    -webkit-appearance: none;
+}
+
 button {
     cursor: pointer;
 }

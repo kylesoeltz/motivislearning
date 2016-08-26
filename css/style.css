@@ -5168,11 +5168,12 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="url"] {
+  border: 1px solid #d7d7d7;
+  background-color: #f9f9f9;
   color: #3f3f3f;
   font-size: 16px;
   line-height: 40px;
   height: 40px;
-  background-color: #f9f9f9;
   padding-left: 10px;
   font-family: 'Open Sans', arial, sans-serif;
   font-weight: 400;
@@ -5182,6 +5183,15 @@ input[type="url"] {
   @media screen and (min-width: $break-desktopSmall) {
       font-size: 21px;
   }*/ }
+  input[type="text"]:focus,
+  input[type="search"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus {
+    border-color: #e3573c;
+    outline: none; }
   input[type="text"].whiteBg,
   input[type="search"].whiteBg,
   input[type="password"].whiteBg,
@@ -5238,6 +5248,13 @@ input[type="url"] {
   input[type="url"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #d7d7d7; }
+
+button[type="submit"],
+button[type="button"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
 
 button {
   cursor: pointer; }
@@ -5843,6 +5860,8 @@ aside.side-nav .featured-content {
 
 nav.secondary-nav {
   background-color: #ffffff; }
+  nav.secondary-nav .current-menu-item > a {
+    border-bottom: 1px solid #e3573c; }
 
 div.single-column {
   width: 800px;
@@ -6374,13 +6393,7 @@ footer.entry-footer .screen-reader-text {
     font-size: 12px;
     margin-bottom: 5px; }
   .comments-area form p input {
-    width: 500px;
-    border: none;
-    border: 1px solid #d7d7d7;
-    background-color: #f9f9f9; }
-    .comments-area form p input:focus {
-      border: 1px solid #e3573c;
-      outline: none; }
+    width: 500px; }
   .comments-area form p input[type="submit"] {
     height: 40px;
     width: 110px;
@@ -6461,32 +6474,48 @@ article.contactdemo-page .row span.bold {
   .thanks-page article div.section span.orange {
     color: #e3573c; }
 
-.insightslisting article {
+article.post {
   font-size: 16px;
   padding: 50px;
   border-bottom: 1px solid #d7d7d7;
   background-color: #ffffff;
   text-align: center; }
-  .insightslisting article > a:first-of-type {
-    margin-bottom: 26px;
-    color: #0d9fd0;
-    text-transform: uppercase; }
-    .insightslisting article > a:first-of-type:hover {
-      border-bottom: 1px solid #0d9fd0; }
-  .insightslisting article * {
+  article.post * {
     margin: 0px auto; }
-  .insightslisting article h3 {
+  article.post .details a {
+    color: #0d9fd0;
+    cursor: pointer; }
+    article.post .details a:hover {
+      border-color: #0d9fd0; }
+  article.post h3 {
     max-width: 650px;
     margin-top: 26px; }
-    .insightslisting article h3 a {
+    article.post h3 a {
       color: #e3573c;
       cursor: pointer; }
-      .insightslisting article h3 a:hover {
-        border-bottom: 1px solid #e3573c; }
-  .insightslisting article p {
+  article.post p {
     max-width: 750px;
     font-size: 18px;
     margin-top: 26px; }
+
+div.search {
+  background-color: #f9f9f9; }
+  div.search .inner {
+    text-align: center;
+    padding-top: 26px; }
+    div.search .inner form {
+      display: inline-block; }
+      div.search .inner form.search button {
+        display: none; }
+      div.search .inner form.search input[type='text'] {
+        padding-right: 30px; }
+      div.search .inner form.search i {
+        margin-left: -30px; }
+      div.search .inner form.category-select input[type="submit"] {
+        display: none; }
+      div.search .inner form.category-select select {
+        border: 1px solid #d7d7d7;
+        border-radius: 0px; }
 
 .gated-content div[class^="col-md-"]:nth-of-type(2) {
   padding-left: 60px;
