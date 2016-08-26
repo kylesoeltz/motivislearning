@@ -19,12 +19,12 @@ var mainJS = {
 
 //Section 2
 var navJS = {
-    init: function(){        
+    init: function(){
         ( function( $ ) {
             //On document click
             $(document).unbind().on('click', function(e){
                 $('.sub-menu-vis').removeClass('sub-menu-vis').children('ul').toggle();
-                $('.icon-up').removeClass();               
+                $('.icon-up').removeClass();
                 $('.mobileNavVisible').removeClass('mobileNavVisible');
             });
 
@@ -45,7 +45,7 @@ var navJS = {
 
             //Do nothing when sub-menu is clicked
             $('.sub-menu').unbind().on('click', function(e){
-                e.stopPropagation();    
+                e.stopPropagation();
             });
 
             //Close menu when close is clicked
@@ -66,12 +66,12 @@ var navJS = {
                 $('.secondary-nav').show();
             }
 
-            //Handle the sticky secondary nav            
+            //Handle the sticky secondary nav
             $(window).unbind().on('scroll', function(e){
                 var calculatedHeight = $('.nav-header').outerHeight() + $('.page-header').outerHeight();
                 var $elm = $('.secondary-nav');
                 var isPositionFixed = ($elm.css('position') == 'fixed');
-                
+
                 if($(this).scrollTop() > calculatedHeight && !isPositionFixed) {
                     $($elm).addClass('fixed-secondary-nav');
                 }
@@ -102,6 +102,10 @@ var categoryFilterJS = {
         } )( jQuery );
     }
 }
+
+
+//Section 5
+$('.selectpicker').selectpicker();
 
 //Section ?
 jQuery(function(){

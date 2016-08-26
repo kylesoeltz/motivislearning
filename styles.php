@@ -13,6 +13,36 @@
         <main>
         	<article>
 	        	<article>
+	        		<div class="row form-row">
+                        <div class="col-sm-7">
+                            <label for="resource-type">Status <strong>*</strong></label>
+                        </div>
+                        <div class="col-sm-17">
+                            <select class="selectpicker it-typeSelect" title=" ">
+                                <option>Active</option>
+                                <option>Inactive</option>
+                                <option>Archived</option>
+                            </select>
+                        </div>
+                    </div>
+	        		<div class="search">
+		        		<div class="inner">
+			        		<select class="selectpicker">
+								<option value="-1">Select One</option>
+								<option class="level-0" value="1">Uncategorized</option>
+								<option class="level-0" value="3">Case Study</option>
+								<option class="level-0" value="10">Education</option>
+								<option class="level-0" value="12">Learning</option>
+								<option class="level-0" value="17">Quotes</option>
+								<option class="level-0" value="19">In the News</option>
+								<option class="level-0" value="24">Salesforce</option>
+								<option class="level-0" value="29">Work</option>
+								<option class="level-0" value="33">Community</option>
+								<option class="level-0" value="37">Inspiration</option>
+								<option class="level-0" value="39">Leadership</option>
+							</select>
+		        		</div>
+	        		</div>
 	        		<div class="inner">
 		        		<div class="row">
 			        		<div class="col-sm-18">
