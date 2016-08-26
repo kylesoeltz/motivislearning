@@ -25,14 +25,14 @@ var navJS = {
     init: function(){
         ( function( $ ) {
             //On document click
-            $(document).unbind().on('click', function(e){
+            $(document).on('click', function(e){
                 $('.sub-menu-vis').removeClass('sub-menu-vis').children('ul').toggle();
                 $('.icon-up').removeClass();
                 $('.mobileNavVisible').removeClass('mobileNavVisible');
             });
 
             //Toggle the sub-menu when link is clicked
-            $('.menu-item-464').unbind().on('click', function(e){
+            $('.menu-item-464').on('click', function(e){
                 e.preventDefault();
                 e.stopPropagation();
                 var $elm = $(this);
@@ -41,18 +41,18 @@ var navJS = {
             });
 
             //Show mobile nav when toggle is clicked
-            $('.mobileNavToggle').unbind().on('click', function(e){
+            $('.mobileNavToggle').on('click', function(e){
                 e.stopPropagation();
                 $('body').addClass('mobileNavVisible');
             });
 
             //Do nothing when sub-menu is clicked
-            $('.sub-menu').unbind().on('click', function(e){
+            $('.sub-menu').on('click', function(e){
                 e.stopPropagation();
             });
 
             //Close menu when close is clicked
-            $('.main-nav li:first').unbind().on('click', function(e){
+            $('.main-nav li:first').on('click', function(e){
                 e.stopPropagation();
                 $('.mobileNavVisible').removeClass('mobileNavVisible');
                 $('.sub-menu-vis').removeClass('sub-menu-vis').children('ul').toggle();
@@ -60,7 +60,7 @@ var navJS = {
             });
 
             //Do nothing when mobile nav is clicked
-            $('.main-nav ul').unbind().on('click', function(e){
+            $('.main-nav ul').on('click', function(e){
                 e.stopPropagation();
             });
 
@@ -70,7 +70,7 @@ var navJS = {
             }
 
             //Handle the sticky secondary nav
-            $(window).unbind().on('scroll', function(e){
+            $(window).on('scroll', function(e){
                 var calculatedHeight = $('.nav-header').outerHeight() + $('.page-header').outerHeight();
                 var $elm = $('.secondary-nav');
                 var isPositionFixed = ($elm.css('position') == 'fixed');
@@ -102,6 +102,7 @@ var categoryFilterJS = {
             $('select', '#category-select').on('change', function(e) {
                 $(this).siblings('input[type=submit]').click();
             });
+            $('.selectpicker').selectpicker();
         } )( jQuery );
     }
 }
@@ -131,8 +132,6 @@ var animationsJS = {
 }
 
 
-// $(document).on('ready', function(){
-//     $('.selectpicker').selectpicker();
 
 
 //Section ?
