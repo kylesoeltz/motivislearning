@@ -99,10 +99,10 @@ var footerJS = {
 var categoryFilterJS = {
     init: function(){
         ( function( $ ) {
+            $('.category-select select').selectpicker();
             $('select', '#category-select').on('change', function(e) {
-                $(this).siblings('input[type=submit]').click();
+                $(this).parents('form').find('input[type=submit]').click();
             });
-            $('.selectpicker').selectpicker();
         } )( jQuery );
     }
 }
@@ -123,8 +123,6 @@ var animationsJS = {
                     if (scrollBottom > $(this).offset().top) {
                         $(this).addClass('fade-in')
                     }
-                    console.log($(this).offset().top);
-                    console.log(scrollBottom);
                 });
             }
         } )( jQuery );
