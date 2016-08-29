@@ -113,7 +113,7 @@ footer {
 		width: 45px;
 		height: 45px;
 		position: relative;
-		font-size: 20px;    		
+		font-size: 20px !important;    		
     	background-color: $color-orange;
     	color: $color-white;
     	border-radius: 3px;
@@ -135,7 +135,7 @@ footer {
 
 @media (min-width: 768px) {
 	footer section.background {
-		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('../images/footer-background-2.jpg');
+		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('images/footer-background-2.jpg');
 		background-repeat: no-repeat;
     	background-size: cover;
     	background-position: center center;
@@ -168,7 +168,7 @@ footer {
 			width: 100%;
 			.footer-elm {
 				&:nth-of-type(1) {
-					background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('../images/footer-background.png');
+					background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('images/footer-background.png');
 					background-repeat: no-repeat;
     				background-size: cover;
     				background-position: right center;
