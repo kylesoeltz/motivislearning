@@ -6532,58 +6532,50 @@ header.page-header {
     header.page-header.featured-header div.inner {
       position: relative; }
 
-.entry-content, nav.post-navigation, footer.entry-footer, .comments-area {
-  max-width: 950px;
+.single-post main {
+  background-color: #ffffff; }
+  .single-post main header.page-header {
+    margin-bottom: 26px; }
+
+.entry-content, nav.post-navigation, .comments-area {
+  max-width: 1000px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0 auto;
   text-align: left; }
+  .entry-content figure, nav.post-navigation figure, .comments-area figure {
+    margin-bottom: 26px; }
+    .entry-content figure figcaption, nav.post-navigation figure figcaption, .comments-area figure figcaption {
+      margin-top: 10px;
+      font-size: 16px; }
 
-article div.entry-content {
-  padding: 25px; }
-  article div.entry-content p {
-    font-size: 18px; }
-  article div.entry-content p, article div.entry-content figure, article div.entry-content ul, article div.entry-content h2 {
-    max-width: 100%; }
-
-nav.post-navigation, footer.entry-footer {
-  line-height: 1.8em;
-  padding: 0 25px; }
+div.entry-content p {
+  font-size: 18px; }
 
 nav.post-navigation {
-  margin-bottom: 26px; }
-
-footer.entry-footer .vcard {
   line-height: 1.8em;
-  display: block;
-  margin-top: 26px; }
-  footer.entry-footer .vcard > * {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 90%; }
-  footer.entry-footer .vcard img {
-    margin-right: 26px;
-    max-height: 90px;
-    max-width: 90px;
+  margin-bottom: 26px !important; }
+  nav.post-navigation .screen-reader-text {
+    display: none; }
+
+div.author-info .author-avatar {
+  width: 9%;
+  display: inline-block;
+  margin-right: 26px; }
+  div.author-info .author-avatar img {
     height: 90px;
-    width: 90px; }
-    footer.entry-footer .vcard img + span {
-      font-size: 14px;
-      font-weight: bold; }
-      footer.entry-footer .vcard img + span + a {
-        font-size: 14px;
-        font-weight: bold; }
-  footer.entry-footer .vcard .bio {
-    margin-left: 120px;
-    margin-top: -50px;
-    font-size: 16px;
-    margin-bottom: 26px; }
-footer.entry-footer .posted-on, footer.entry-footer .cat-links, footer.entry-footer .tags-links {
-  display: block; }
-  footer.entry-footer .posted-on:not(.tags-links), footer.entry-footer .cat-links:not(.tags-links), footer.entry-footer .tags-links:not(.tags-links) {
-    margin-bottom: 0; }
-footer.entry-footer .tags-links {
-  margin-bottom: 52px; }
-footer.entry-footer .screen-reader-text {
-  display: inline-block; }
+    width: 90px;
+    border-radius: 9999px; }
+div.author-info .author-description {
+  width: 85%;
+  display: inline-block;
+  vertical-align: top; }
+  div.author-info .author-description h2.author-title {
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 13px; }
+  div.author-info .author-description p {
+    font-size: 16px; }
 
 .comments-area {
   padding: 25px; }
@@ -6625,6 +6617,10 @@ footer.entry-footer .screen-reader-text {
       border: 1px solid #e3573c;
       outline: none; }
 
+@media (max-width: 976px) {
+  div.author-info .author-avatar, div.author-info .author-description {
+    display: block;
+    width: 100%; } }
 @media (max-width: 768px) {
   footer.entry-footer .vcard > * {
     max-width: 100%; }
@@ -6731,7 +6727,17 @@ div.search {
     text-align: center;
     padding-top: 26px; }
     div.search .inner form {
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: top; }
+      div.search .inner form select {
+        display: none; }
+      div.search .inner form .dropdown-toggle {
+        height: 40px;
+        border-radius: 0; }
+      div.search .inner form .filter-option {
+        display: block;
+        margin-top: -3px;
+        margin-right: 10px; }
       div.search .inner form.search button {
         display: none; }
       div.search .inner form.search input[type='text'] {
@@ -6819,6 +6825,8 @@ footer section.background .col-sm-12 h5 {
 footer section.background .col-sm-12 .padding {
   padding-top: 50px;
   padding-bottom: 50px; }
+footer .footer-elm:nth-of-type(2) .padding {
+  padding-left: 25px; }
 footer .address a {
   color: #595959; }
   footer .address a:hover {
