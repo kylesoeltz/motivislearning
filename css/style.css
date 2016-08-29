@@ -6552,12 +6552,6 @@ header.page-header {
 div.entry-content p {
   font-size: 18px; }
 
-nav.post-navigation {
-  line-height: 1.8em;
-  margin-bottom: 26px !important; }
-  nav.post-navigation .screen-reader-text {
-    display: none; }
-
 div.author-info .author-avatar {
   width: 9%;
   display: inline-block;
@@ -6572,6 +6566,7 @@ div.author-info .author-description {
   vertical-align: top; }
   div.author-info .author-description h2.author-title {
     font-size: 14px;
+    font-weight: bold;
     padding: 0;
     margin-bottom: 13px; }
   div.author-info .author-description p {
@@ -6600,6 +6595,8 @@ div.author-info .author-description {
     width: 110px;
     cursor: pointer;
     border-radius: 4px;
+    border: none;
+    outline: none;
     background-color: #e3573c;
     color: #ffffff;
     font-size: 12px;
@@ -6622,16 +6619,6 @@ div.author-info .author-description {
     display: block;
     width: 100%; } }
 @media (max-width: 768px) {
-  footer.entry-footer .vcard > * {
-    max-width: 100%; }
-  footer.entry-footer .vcard img {
-    display: block;
-    margin: 0px auto; }
-    footer.entry-footer .vcard img + a {
-      max-width: 100%; }
-  footer.entry-footer .vcard .bio {
-    margin: 0px auto; }
-
   .comments-area p input {
     max-width: 100%; }
   .comments-area textarea {

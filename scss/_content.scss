@@ -897,26 +897,20 @@ header.page-header {
 	margin: 0 auto;
 	text-align: left;
 	figure {
-		margin-bottom: $standard-bottomMargin;
+		margin-bottom: $standard-bottomMargin;		
 		figcaption {
 			margin-top: 10px;
 			font-size: 16px;
 		}
 	}
 }
+
 table {
 
 }
+
 div.entry-content p {
 	font-size: 18px;
-}
-
-nav.post-navigation {
-	line-height: 1.8em;
-	margin-bottom: $standard-bottomMargin !important;
-	.screen-reader-text {
-		display: none;
-	}
 }
 
 div.author-info {
@@ -936,6 +930,7 @@ div.author-info {
 		vertical-align: top;
 		h2.author-title {
 			font-size: 14px;
+			font-weight: bold;
 			padding: 0;
 			margin-bottom: $standard-bottomMargin/2;
 		}
@@ -975,6 +970,8 @@ div.author-info {
 				width: 110px;
 				cursor: pointer;
 				border-radius: $border-radius();
+				border: none;
+				outline: none;
 				background-color: $color-orange;
 				color: $color-white;
 				font-size: 12px;
@@ -1011,22 +1008,6 @@ div.author-info {
 }
 
 @media (max-width: 768px) {
-	footer.entry-footer .vcard {
-		> * {
-			max-width: 100%;
-		}
-		img {
-			display: block;
-			margin: 0px auto;
-			+ a {
-				max-width: 100%;
-			}
-		}
-		.bio {
-			margin: 0px auto;
-		}
-	}
-
 	.comments-area {
 		p {
 			input {
