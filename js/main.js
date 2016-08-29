@@ -37,7 +37,7 @@ var navJS = {
                 e.stopPropagation();
                 var $elm = $(this);
                 $elm.children('a').toggleClass('icon-up');
-                $elm.hasClass('sub-menu-vis') ? $elm.removeClass('sub-menu-vis').children('ul').toggle() : $elm.addClass('sub-menu-vis').children('ul').slideToggle();
+                $elm.hasClass('sub-menu-vis') ? $elm.removeClass('sub-menu-vis').children('ul').toggle() : $elm.addClass('sub-menu-vis').children('ul').slideToggle(500);
             });
 
             //Show mobile nav when toggle is clicked
