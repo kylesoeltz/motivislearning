@@ -426,7 +426,7 @@ i.motivis.title-icon {
 	font-size: 108px;
 }
 
-article section, article[class ^= "post-"] {
+article section, article[class ^= "post-"], div.entry-content {
 	ul {
 		list-style: none;
 		margin: $standard-bottomMargin auto;
@@ -444,6 +444,10 @@ article section, article[class ^= "post-"] {
 				border-radius: $bajillion;
 			}
 		}
+	}
+	ol {
+		list-style: decimal;
+		list-style-position: inside;
 	}
 }
 
@@ -1072,9 +1076,6 @@ article.contactdemo-page {
 			padding-left: 50px;
 			border-left: 1px solid $color-gray;
 		}
-		h2, p, a {
-			color: $color-darkGray;
-		}
 		p {
 			padding-right: 25px;
 		}
@@ -1095,6 +1096,24 @@ article.contactdemo-page {
 		span.bold {
 			font-weight: bold;
 		}
+	}
+	i {
+		width: 45px;
+		height: 45px;
+		position: relative;
+		font-size: 20px;    		
+    	background-color: $color-orange;
+    	color: $color-white;
+    	border-radius: 3px;
+    	text-align: center;
+
+    	&:before {
+    		@include absoluteCenter(100%, 20px);
+    	}
+
+    	&:hover {
+    		background-color: lighten($color-orange, 3);
+    	}
 	}
 }
 

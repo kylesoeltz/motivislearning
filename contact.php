@@ -34,7 +34,10 @@
 								</p>
 								<p><strong>Email</strong><br/>
 									<a href="mailto:info@motivislearning.com">info@motivislearning.com</a>
-								</p>        			
+								</p>  
+								<a href="#"><i class="motivis motivis-twitter"></i></a>
+								<a href="#"><i class="motivis motivis-linkedin"></i></a>
+								<a href="#"><i class="motivis motivis-facebook"></i></a>
 			        		</div>
 			        		<div class="col-md-12 form-container">
 			        			<script>

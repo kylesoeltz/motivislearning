@@ -108,12 +108,17 @@ footer {
     	}
 	}
 
-	.left-content {
-		padding-right: 50px;
-		float: right;
+	.left-content, .right-content {
+		max-width: 500px;
 	}
 
 	.lower {
+		.address a {
+			color: $color-darkGray;
+			&:hover {
+				border-color: $color-darkGray;
+			}
+		}
 		p {
 			vertical-align: top;
 			font-weight: 600;	
@@ -162,15 +167,9 @@ footer {
 
 @media (max-width: 1380px) {
 	footer {
-		.left-content, .right-content {
-			max-width: 500px;
-			margin: 0px auto;
+		.left-content, .right-content {			
 			padding-left: 20px;
 			padding-right: 20px;
-		}
-
-		.right-content {
-			float: none;
 		}
 	}
 }
