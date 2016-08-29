@@ -36,8 +36,6 @@ footer {
 				font-size: 20px;
 			}
 		}
-
-	clear: both;
 	a {
 		cursor: pointer;
 		&.logo {
@@ -58,124 +56,90 @@ footer {
     	text-transform: uppercase;
 	}
 
-	section.upper {
-		padding: 0 10px;		
+	section.background {
+    	.col-sm-12 {
+    		small {
+    			display: block;
+    			margin-bottom: $standard-bottomMargin;
+    			color: $color-white;
+    			&:first-of-type {
+    				@include font-primary-bold();    			
+    				margin-bottom: $standard-bottomMargin/2;
+    			}
+    		}
+    		h5 {
+    			@include font-primary-bold();
+    			color: $color-white;    			
+    		}
+    		.padding {
+    			padding-top: 50px;
+    			padding-bottom: 50px;
+    		}
+    	}
 	}
 
-	.footer-left {
-		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('images/footer-background.png');
-		background-repeat: no-repeat;
-    	background-size: cover;
-    	background-position: right center;    	
+	.address a {
+		color: $color-darkGray;
+		&:hover {
+			border-color: $color-darkGray;
+		}
+	}
+	p {
+		vertical-align: top;
+		font-weight: 600;	
+		text-align: left;	
 	}
 
-	.footer-right {
-		background-color: $color-navyGray;
-		.right-content {
-			padding-left: 50px;	
-			h4 {
-				text-transform: capitalize;
-			}
-			ul li {
-				&:first-child {
-					margin-bottom: $standard-bottomMargin;
-				}
-			    font-size: 18px;
-			    line-height: 1.25em;
-			    @include font-primary-bold();
-			    margin-bottom: 15px;
-			    margin-top: -4px;
+	.social-icon-container {
+		text-align: right;
+		margin-top: $standard-bottomMargin;
+		a {
+			border-bottom: none;
+			&:not(:last-child) {
+				margin-right: 10px;
 			}
 
-			a.btn {
-				padding: 8px 24px;
+			&:last-child {
+				margin-right: $standard-bottomMargin;
 			}
 		}
 	}
 
-	.footer-left, .footer-right {
-		padding-top: 90px;
-    	padding-bottom: 90px;
-    	text-align: left;
+	i {
+		width: 45px;
+		height: 45px;
+		position: relative;
+		font-size: 20px;    		
+    	background-color: $color-orange;
     	color: $color-white;
+    	border-radius: 3px;
+    	text-align: center;
 
-    	h5 {
-    		color: $color-white;
+    	&:before {
+    		@include absoluteCenter(100%, 20px);
     	}
 
-    	h4 {
-    		color: $color-orange;
+    	&:hover {
+    		background-color: lighten($color-orange, 3);
     	}
 	}
 
-	.left-content, .right-content {
-		max-width: 500px;
-	}
-
-	.lower {
-		.address a {
-			color: $color-darkGray;
-			&:hover {
-				border-color: $color-darkGray;
-			}
-		}
-		p {
-			vertical-align: top;
-			font-weight: 600;	
-			text-align: left;	
-		}
-
-		.social-icon-container {
-			text-align: right;
-			margin-top: $standard-bottomMargin;
-			a {
-				border-bottom: none;
-				&:not(:last-child) {
-					margin-right: 10px;
-				}
-
-				&:last-child {
-					margin-right: $standard-bottomMargin;
-				}
-			}
-		}
-
-		i {
-			width: 45px;
-			height: 45px;
-			position: relative;
-			font-size: 20px;    		
-    		background-color: $color-orange;
-    		color: $color-white;
-    		border-radius: 3px;
-    		text-align: center;
-
-    		&:before {
-    			@include absoluteCenter(100%, 20px);
-    		}
-
-    		&:hover {
-    			background-color: lighten($color-orange, 3);
-    		}
-		}
-
-		.contact-info {
-			margin-top: $standard-bottomMargin;			
-		}
+	.contact-info {
+		margin-top: $standard-bottomMargin;			
 	}
 }
 
-@media (max-width: 1380px) {
-	footer {
-		.left-content, .right-content {			
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+@media (min-width: 768px) {
+	footer section.background {
+		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('../images/footer-background-2.jpg');
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center center;
 	}
 }
 
 @media (max-width: 1036px) {
-	footer .lower h1.logo {
+	footer h1.logo {
 		margin-bottom: 0;
 		a {
 			width: 230px;
@@ -183,7 +147,7 @@ footer {
 	}
 }
 @media (max-width: 880px) {
-	footer .lower h1.logo {
+	footer h1.logo {
 		margin-bottom: 0;
 		a {
 			width: 200px;
@@ -193,16 +157,25 @@ footer {
 
 @media(max-width: 767px) {
 	footer {
-		.lower p {
+		section.background {
+			background: none !important;
+		}
+		.inner {
+			width: 100%;
+			.footer-elm {
+				&:nth-of-type(1) {
+					background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('../images/footer-background.png');
+					background-repeat: no-repeat;
+    				background-size: cover;
+    				background-position: right center;
+				}
+				&:nth-of-type(2) {
+					background-color: $color-navyGray;
+				}
+			}
+		}
+		p {
 			text-align: center;
-		}
-		.left-content {
-			float: none;
-			padding-left: 0px;
-		}
-
-		.footer-right .right-content {
-			padding-left: 5px;
 		}
 
 		.logo a {
@@ -212,7 +185,7 @@ footer {
 }
 
 @media(max-width: 768px) {
-	footer .lower {
+	footer {
 		.social-icon-container {
 			text-align: center;
 			margin-bottom: $standard-bottomMargin;
