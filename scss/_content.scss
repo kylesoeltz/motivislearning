@@ -906,7 +906,10 @@ header.page-header {
 }
 
 table {
-
+	margin-bottom: $standard-bottomMargin;
+	td:not(:first-child) {
+		padding: 5px 50px 0px 50px;
+	}
 }
 
 div.entry-content p {

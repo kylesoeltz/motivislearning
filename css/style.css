@@ -6549,6 +6549,11 @@ header.page-header {
       margin-top: 10px;
       font-size: 16px; }
 
+table {
+  margin-bottom: 26px; }
+  table td:not(:first-child) {
+    padding: 5px 50px 0px 50px; }
+
 div.entry-content p {
   font-size: 18px; }
 
