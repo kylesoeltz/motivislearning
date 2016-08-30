@@ -5637,6 +5637,8 @@ nav.main-nav {
         margin-right: 20px;
         /*For drop-down menus*/
         /*End drop down*/ }
+        nav.main-nav .inner ul li.current_page_item a {
+          border-color: #595959; }
         nav.main-nav .inner ul li.solutions {
           line-height: 1.2em; }
           nav.main-nav .inner ul li.solutions > a {
