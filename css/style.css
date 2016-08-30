@@ -6531,6 +6531,12 @@ header.page-header {
       filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5'); }
     header.page-header.featured-header div.inner {
       position: relative; }
+  header.page-header div.author-info h2.author-title {
+    text-align: left;
+    margin: 0;
+    color: #ffffff; }
+  header.page-header div.author-info p.author-bio {
+    text-align: left; }
 
 .single-post main {
   background-color: #ffffff; }
@@ -6570,15 +6576,29 @@ div.author-info .author-description {
   display: inline-block;
   vertical-align: top; }
   div.author-info .author-description h2.author-title {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    font-weight: bold;
     padding: 0;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    text-transform: uppercase; }
+    div.author-info .author-description h2.author-title span {
+      text-transform: uppercase; }
   div.author-info .author-description p {
     font-size: 16px; }
+    div.author-info .author-description p a {
+      display: block; }
 
 .comments-area {
   padding: 25px; }
+  .comments-area ol li {
+    margin-top: 26px; }
+  .comments-area .comment-author img {
+    display: inline; }
+  .comments-area .comment-author b, .comments-area .comment-author span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px; }
   .comments-area h2 {
     font-size: 20px;
     padding: 0px;
@@ -6622,7 +6642,9 @@ div.author-info .author-description {
 @media (max-width: 976px) {
   div.author-info .author-avatar, div.author-info .author-description {
     display: block;
-    width: 100%; } }
+    width: 100%; }
+  div.author-info .author-avatar {
+    margin: 26px auto; } }
 @media (max-width: 768px) {
   .comments-area p input {
     max-width: 100%; }
@@ -6840,7 +6862,7 @@ footer i {
   width: 45px;
   height: 45px;
   position: relative;
-  font-size: 20px;
+  font-size: 20px !important;
   background-color: #e3573c;
   color: #ffffff;
   border-radius: 3px;
@@ -6861,7 +6883,7 @@ footer .contact-info {
 
 @media (min-width: 768px) {
   footer section.background {
-    background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url("../images/footer-background-2.jpg");
+    background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url("images/footer-background-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; } }
@@ -6881,7 +6903,7 @@ footer .contact-info {
   footer .inner {
     width: 100%; }
     footer .inner .footer-elm:nth-of-type(1) {
-      background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url("../images/footer-background.png");
+      background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url("images/footer-background.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right center; }

@@ -875,6 +875,16 @@ header.page-header {
 			position: relative;
 		}
 	}
+	div.author-info {
+		h2.author-title {
+			text-align: left;
+    		margin: 0;
+    		color: $color-white;
+		}
+		p.author-bio {
+			text-align: left;
+		}
+	}
 }
 
 //
@@ -912,8 +922,10 @@ table {
 	}
 }
 
-div.entry-content p {
-	font-size: 18px;
+div.entry-content {
+	p {
+		font-size: 18px;	
+	}
 }
 
 div.author-info {
@@ -932,19 +944,39 @@ div.author-info {
 		display: inline-block;
 		vertical-align: top;
 		h2.author-title {
+			@include font-primary-bold();
 			font-size: 14px;
-			font-weight: bold;
 			padding: 0;
 			margin-bottom: $standard-bottomMargin/2;
+			text-transform: uppercase;
+			span {
+				text-transform: uppercase;
+			}
 		}
 		p {
 			font-size: 16px;
+			a {
+				display: block;
+			}
 		}
 	}
 }
 
 .comments-area {
 	padding: 25px;
+	ol li {
+		margin-top: $standard-bottomMargin;
+	}
+	.comment-author {
+		img {
+			display: inline;
+		}
+		b, span {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 5px;
+		}
+	}
 	h2 {
 		font-size: 20px;
 		padding: 0px;
@@ -1007,6 +1039,9 @@ div.author-info {
 			display: block;
 			width: 100%;
 		}		
+		.author-avatar {
+			margin: $standard-bottomMargin auto;
+		}
 	}
 }
 

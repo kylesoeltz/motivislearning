@@ -127,6 +127,30 @@
 		        		<a href="#" class="btn">Download Whitepaper</a>
 	        		</div>
 	        	</header>
+	        	<header class="page-header navy solid-banner">
+	        	<div class="background-image" style="background-image: url(images/home/insights-blog.jpg);"></div>
+	        	<div class="inner">	        			
+	        			<div class="author-info">
+	        				<div class="author-avatar">
+	        					<img src="http://motiviswp.thisbetterworkbetter.com/wp-content/uploads/2016/08/brian-peddle-1-150x150.jpg" width="42" height="42" alt="Brian Peddle" class="avatar avatar-42 wp-user-avatar wp-user-avatar-42 alignnone photo">
+	        				</div><!-- .author-avatar -->
+	        				<div class="author-description">
+	        					<h2 class="author-title">
+		        					<span class="author-heading">Author:</span> 
+		        					Brian Peddle
+		        				</h2>
+	        					<p class="author-bio">
+	        						Brian Peddle is founder and CEO of Motivis Learning, the next generation education platform that puts the focus on student outcomes. Prior to that he served as the Chief Technology Officer at College for America @ SNHU. During his time with CfA he and his team launched a competency-based learning management system and student information system built from the ground up on the Salesforce platform. Brian's previous roles include VP of Technology and Development at Jobscience and senior software engineering positions at Healthcaresource, Monster.com, and Adobe. He is also a first-generation college graduate.
+	        						<a class="author-link" href="http://motiviswp.thisbetterworkbetter.com/insights/author/brian/" rel="author">View all posts by Brian Peddle</a>
+	        					</p><!-- .author-bio -->
+	        					<a href="https://www.facebook.com/motivislearning/" class="facebook" target="_blank">Facebook</a>
+	        					<a href="https://plus.google.com/+Motivislearningsystems" class="googlePlus" target="_blank">Google+</a>
+	        					<a href="https://twitter.com/brianpeddle" class="twitter" target="_blank">Twitter</a>
+	        					<a href="https://www.linkedin.com/in/bpeddle" class="linkedin" target="_blank">linkedIn</a>
+	        				</div><!-- .author-description -->
+	        			</div><!-- .author-info -->
+	        		</div>
+	        	</header>
         	</article>
         </main>
         <?php include 'includes/footer.php'; ?>
