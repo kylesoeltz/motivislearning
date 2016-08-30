@@ -164,6 +164,9 @@ footer {
 				}
 				&:nth-of-type(2) {
 					background-color: $color-navyGray;
+					.padding {
+						padding-left: 0;
+					}
 				}
 			}
 		}

@@ -6900,6 +6900,8 @@ footer .contact-info {
       background-position: right center; }
     footer .inner .footer-elm:nth-of-type(2) {
       background-color: #31363c; }
+      footer .inner .footer-elm:nth-of-type(2) .padding {
+        padding-left: 0; }
   footer p {
     text-align: center; }
   footer a.logo {
