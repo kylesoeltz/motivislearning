@@ -62,6 +62,24 @@
 	}
 }
 
+img {
+	&.align-left {
+		float: left;
+		margin-right: $standard-bottomMargin;
+	}
+	&.align-right {
+		float: right;
+		margin-left: $standard-bottomMargin;
+	}
+	&.aligncenter {
+		margin: 0 auto;
+	}
+	&.alignnone {
+		float: none;
+		margin: 0;
+	}
+}
+
 .open-space {
 	letter-spacing: 2px;
 }

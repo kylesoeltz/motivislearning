@@ -5921,6 +5921,18 @@ nav.main-nav {
         text-align: center;
         margin: 18px auto; } }
 
+img.align-left {
+  float: left;
+  margin-right: 26px; }
+img.align-right {
+  float: right;
+  margin-left: 26px; }
+img.aligncenter {
+  margin: 0 auto; }
+img.alignnone {
+  float: none;
+  margin: 0; }
+
 .open-space {
   letter-spacing: 2px; }
 
