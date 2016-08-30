@@ -6331,7 +6331,7 @@ section.case-study.content-right .image-half {
       section.case-study.content-right .image-half img {
         left: 0;
         right: 0; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.case-study {
     padding: 0 0 50px; }
     section.case-study .image-half {
