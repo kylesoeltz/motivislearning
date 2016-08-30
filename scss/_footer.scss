@@ -1,21 +1,7 @@
 /*-----
 	Footer Styles
 	-----*/
-footer {
-	 a.logo {
-		display: block;
-    	text-indent: -10000px;
-    	text-align: left;
-    	font-size: 0;
-    	width: 290px;
-    	height: 62px;
-    	background-image: url("images/motivis-logo.svg");
-    	background-repeat: no-repeat;
-    	background-size: 100%;
-    	border: none;
-    	line-height: 1.3em;
-    	margin-bottom: 20px;
-	}
+footer {	 
 	p, small {
 		@include font-primary-regular();
 	}
@@ -40,15 +26,17 @@ footer {
 		cursor: pointer;
 		&.logo {
 			display: block;
-			text-indent: -10000px;
-			text-align: left;
-			font-size: 0;
-			width: 290px;
-			height: 62px;
-			background-image: url('images/motivis-logo.svg');
-			background-repeat: no-repeat;
-			background-size: 100%;
-			border: none;
+    		text-indent: -10000px;
+    		text-align: left;
+    		font-size: 0;
+    		width: 290px;
+    		height: 62px;
+    		background-image: url("images/motivis-logo.svg");
+    		background-repeat: no-repeat;
+    		background-size: 100%;
+    		border: none;
+    		line-height: 1.3em;
+    		margin-top: $standard-bottomMargin;
 		}
 	}
 
@@ -72,8 +60,8 @@ footer {
     			color: $color-white;    			
     		}
     		.padding {
-    			padding-top: 50px;
-    			padding-bottom: 50px;
+    			padding-top: $standard-bottomMargin * 2;
+    			padding-bottom: $standard-bottomMargin * 2;
     		}
     	}
 	}
@@ -138,7 +126,7 @@ footer {
 		background: linear-gradient(rgba(49, 54, 60, 0.9), rgba(49, 54, 60, 0.9)), url('images/footer-background-2.jpg');
 		background-repeat: no-repeat;
     	background-size: cover;
-    	background-position: center center;
+    	background-position: center center;    	
 	}
 }
 
@@ -163,6 +151,7 @@ footer {
 	footer {
 		section.background {
 			background: none !important;
+			padding: $standard-verticalPadding 0;
 		}
 		.inner {
 			width: 100%;
@@ -182,7 +171,7 @@ footer {
 			text-align: center;
 		}
 
-		.logo a {
+		a.logo {
 			margin: 0 auto;
 		}
 	}
