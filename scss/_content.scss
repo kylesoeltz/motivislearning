@@ -429,7 +429,7 @@ i.motivis.title-icon {
 article section, article[class ^= "post-"], div.entry-content {
 	ul {
 		list-style: none;
-		margin: $standard-bottomMargin auto;
+		margin: $standard-bottomMargin;
 		li {
 			padding-left: 20px;
 			position: relative;
@@ -446,8 +446,8 @@ article section, article[class ^= "post-"], div.entry-content {
 		}
 	}
 	ol {
+		margin: $standard-bottomMargin $standard-bottomMargin + 16px;
 		list-style: decimal;
-		list-style-position: inside;
 	}
 }
 

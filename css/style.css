@@ -5217,8 +5217,7 @@ h2 {
   line-height: 1.2em;
   margin: 0 auto;
   margin-bottom: 26px;
-  max-width: 1000px;
-  padding: 0 10px; }
+  max-width: 1000px; }
   @media (max-width: 933px) {
     h2 {
       font-size: 30px; } }
@@ -6202,7 +6201,7 @@ i.motivis.title-icon {
 
 article section ul, article[class^="post-"] ul, div.entry-content ul {
   list-style: none;
-  margin: 26px auto; }
+  margin: 26px; }
   article section ul li, article[class^="post-"] ul li, div.entry-content ul li {
     padding-left: 20px;
     position: relative; }
@@ -6216,8 +6215,8 @@ article section ul, article[class^="post-"] ul, div.entry-content ul {
       background-color: #595959;
       border-radius: 9999px; }
 article section ol, article[class^="post-"] ol, div.entry-content ol {
-  list-style: decimal;
-  list-style-position: inside; }
+  margin: 26px 42px;
+  list-style: decimal; }
 
 article section.text-left h2, article section.text-left h3 {
   margin: 0 auto;
