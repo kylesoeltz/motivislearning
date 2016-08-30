@@ -6775,19 +6775,9 @@ div.search {
         border: 1px solid #d7d7d7;
         border-radius: 0px; }
 
-.gated-content div[class^="col-md-"]:nth-of-type(2) {
-  padding-left: 60px;
-  padding-right: 60px; }
-  .gated-content div[class^="col-md-"]:nth-of-type(2) p:first-child {
-    font-family: 'Roboto Slab', arial, sans-serif;
-    font-weight: 300;
-    font-size: 25px; }
+.notGated div[class^="col-md-"]:nth-of-type(2) p {
+  padding: 0 26px; }
 
-@media (max-width: 991px) {
-  .gated-content div[class^="col-md-"]:nth-of-type(2) {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 52px 0; } }
 /*-----
 	Footer Styles
 	-----*/

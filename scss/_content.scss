@@ -1269,21 +1269,6 @@ div.search {
 //
 ///////////////////////////
 
-.gated-content {
-	div[class ^= "col-md-"]:nth-of-type(2) {
-		padding-left: 60px;
-		padding-right: 60px;
-		p:first-child {
-			@include font-roboto-light();
-			font-size: 25px;
-		}
-	}
-}
-
-@media (max-width: 991px) {
-	.gated-content div[class ^= "col-md-"]:nth-of-type(2) {
-		padding-left: 0;
-		padding-right: 0;
-		margin: $standard-bottomMargin*2 0;
-	}
+.notGated div[class ^= "col-md-"]:nth-of-type(2) p {		
+	padding: 0 $standard-bottomMargin;
 }
