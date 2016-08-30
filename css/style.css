@@ -6082,6 +6082,7 @@ div.single-column {
     @media (max-width: 768px) {
       div.single-column div.blockquote {
         padding-left: 0;
+        float: none;
         width: 100%; } }
 
 blockquote {
