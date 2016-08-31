@@ -6369,7 +6369,8 @@ section.case-study.content-right .image-half {
   margin-bottom: 26px; }
 
 .bullet-box {
-  position: relative; }
+  position: relative;
+  margin-bottom: 26px; }
   .bullet-box .content {
     padding: 15px 15px 0 15px; }
     .bullet-box .content p {
