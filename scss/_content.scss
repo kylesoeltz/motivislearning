@@ -926,6 +926,12 @@ header.page-header {
 //
 ///////////////////////////
 
+body.single {
+	.at4-share-outer {
+        display: block !important; 
+    }
+}
+
 .single-post main {
 	background-color: $color-white;
 	header.page-header {
