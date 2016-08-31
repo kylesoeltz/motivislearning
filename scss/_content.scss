@@ -1270,7 +1270,9 @@ div.search {
 					background-position: 8px 10px;
 					padding-right: 8px;
 					padding-left: 35px;
-					width: 310px;
+					@media (min-width: 350px) {
+						width: 310px;
+					}
 				}
 				i {
 					margin-left: -30px;
@@ -1287,4 +1289,8 @@ div.search {
 			}
 		}
 	}
+}
+
+form#tag-select {
+	display: none;
 }
