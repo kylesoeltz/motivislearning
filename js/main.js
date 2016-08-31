@@ -99,8 +99,8 @@ var footerJS = {
 var categoryFilterJS = {
     init: function(){
         ( function( $ ) {
-            $('.category-select select').selectpicker();
-            $('select', '#category-select').on('change', function(e) {
+            $('.selectpicker select').selectpicker();
+            $('.selectpicker').on('change', 'select', function(e) {
                 $(this).parents('form').find('input[type=submit]').click();
             });
         } )( jQuery );
