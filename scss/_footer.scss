@@ -6,6 +6,10 @@ footer {
 		@include font-primary-regular();
 	}
 
+	article {
+		margin-bottom: $standard-bottomMargin;
+	}
+
 	h4 {
 		@include font-roboto-light();
 		font-size: 25px;
@@ -67,7 +71,7 @@ footer {
 	}
 
 	.footer-elm:nth-of-type(2) .padding {
-		padding-left: 25px;
+		margin-left: 62px;
 	}
 
 	.address a {
@@ -85,15 +89,15 @@ footer {
 	.social-icon-container {
 		text-align: right;
 		margin-top: $standard-bottomMargin;
-		a {
-			border-bottom: none;
-			&:not(:last-child) {
-				margin-right: 10px;
+		> a {
+			margin-right: 10px;			
+			&:hover {
+				border: transparent;
 			}
-
-			&:last-child {
-				margin-right: $standard-bottomMargin;
-			}
+		}
+		> p {
+			text-align: right;
+			margin-right: 10px;
 		}
 	}
 
@@ -165,7 +169,7 @@ footer {
 				&:nth-of-type(2) {
 					background-color: $color-navyGray;
 					.padding {
-						padding-left: 0;
+						margin-left: 0;
 					}
 				}
 			}
@@ -184,6 +188,10 @@ footer {
 	footer {
 		.social-icon-container {
 			text-align: center;
+			> p {
+				text-align: center;
+				margin-top: $standard-bottomMargin;
+			}
 			margin-bottom: $standard-bottomMargin;
 		}
 	}
