@@ -5374,15 +5374,6 @@ input[type="url"] {
   @media screen and (min-width: $break-desktopSmall) {
       font-size: 21px;
   }*/ }
-  input[type="text"]:focus,
-  input[type="search"]:focus,
-  input[type="password"]:focus,
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus {
-    border-color: #e3573c;
-    outline: none; }
   input[type="text"].whiteBg,
   input[type="search"].whiteBg,
   input[type="password"].whiteBg,
@@ -6972,11 +6963,6 @@ footer .contact-info {
 .hs-form input[type="tel"] {
   width: 100%;
   border: 1px solid #d7d7d7; }
-  .hs-form input[type="text"]:focus,
-  .hs-form input[type="email"]:focus,
-  .hs-form input[type="tel"]:focus {
-    border: 1px solid #e3573c;
-    outline: none; }
 .hs-form input[type="submit"] {
   font-family: 'Open Sans', arial, sans-serif;
   font-weight: 700;
@@ -6988,5 +6974,26 @@ footer .contact-info {
   padding: 10px 15px;
   color: #ffffff;
   cursor: pointer; }
+
+.solid-banner .hbspt-form {
+  max-width: 500px;
+  margin: 0 auto; }
+  .solid-banner .hbspt-form .hs-form-required {
+    display: none; }
+  .solid-banner .hbspt-form input[type="submit"] {
+    background-color: #1b7bac;
+    border: 2px solid #ffffff;
+    transition: all .2s ease;
+    padding: 12px 24px;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    font: inherit;
+    outline: none; }
+    .solid-banner .hbspt-form input[type="submit"]:hover {
+      background-color: #ffffff;
+      color: #1b7bac; }
+.solid-banner li:before {
+  height: 0;
+  width: 0; }
 
 /*# sourceMappingURL=style.css.map */

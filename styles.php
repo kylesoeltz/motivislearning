@@ -7,6 +7,7 @@
         <title>Motivis</title>
         <meta name="description" content="">
         <?php include 'includes/head.php'; ?>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     </head>
     <body>
         <?php include 'includes/header.php'; ?>
@@ -477,11 +478,29 @@
 		        		</div>
 		        	</div>
 	        	</section>
+
 	        	<section>
 	        		<div class="full-width-banner-img" style="background-image: url(images/harvard-bg.jpg);"></div>
 	        	</section>
+
+	        	<section class="solid-banner navy text-center">
+		        	<div class="inner">
+		        		<div class="section">
+			        		<h4>Subscribe for updates</h4>
+			        		<script>
+  								hbspt.forms.create({ 
+    								css: '',
+    								portalId: '1625919',
+    								formId: 'a3f1b923-abba-4c91-aef8-abe8c789988c'
+  								});
+							</script>
+		        		</div>
+	        		</div>
+	        	</section>
+
         	</article>
         </main>
         <?php include 'includes/footer.php'; ?>
+
     </body>
 </html>
