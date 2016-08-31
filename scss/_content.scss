@@ -63,11 +63,11 @@
 }
 
 img {
-	&.align-left {
+	&.alignleft {
 		float: left;
 		margin-right: $standard-bottomMargin;
 	}
-	&.align-right {
+	&.alignright {
 		float: right;
 		margin-left: $standard-bottomMargin;
 	}

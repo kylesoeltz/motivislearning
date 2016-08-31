@@ -5920,10 +5920,10 @@ nav.main-nav {
         text-align: center;
         margin: 18px auto; } }
 
-img.align-left {
+img.alignleft {
   float: left;
   margin-right: 26px; }
-img.align-right {
+img.alignright {
   float: right;
   margin-left: 26px; }
 img.aligncenter {
