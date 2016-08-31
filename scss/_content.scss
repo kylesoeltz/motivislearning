@@ -1261,6 +1261,14 @@ div.search {
 				color: $color-charcoal;
 				text-transform: none;
 			}
+			.bootstrap-select {
+				ul.dropdown-menu.inner {
+					max-height: 300px !important;
+					li:first-child {
+						display: none;
+					}
+				}
+			}
 			&.search {
 				button {
 					display: none;

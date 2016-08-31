@@ -691,12 +691,13 @@ select.mobile-device {
     }
     .caret:before {
         @include iconFont();
-        content: "\f014";
-        font-size: 6px;
+        content: "\f001";
+        transform: rotate(90deg);
+        font-size: 16px;
+        color: $color-charcoal;
         position: absolute;
-        top: 0px;
+        top: -5px;
         right: 4px;
-        color: #333333;
     }
 }
 
