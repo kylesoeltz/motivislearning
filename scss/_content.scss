@@ -1273,12 +1273,3 @@ div.search {
 		}
 	}
 }
-
-//
-//	Section 14: Gated Content
-//
-///////////////////////////
-
-.notGated div[class ^= "col-md-"]:nth-of-type(2) p {
-	padding: 0 $standard-bottomMargin;
-}
