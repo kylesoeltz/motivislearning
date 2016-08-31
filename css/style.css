@@ -6874,6 +6874,7 @@ footer .social-icon-container {
     footer .social-icon-container > a:hover {
       border: transparent; }
   footer .social-icon-container > p {
+    margin-top: 40px;
     text-align: right;
     margin-right: 10px; }
 footer i {
