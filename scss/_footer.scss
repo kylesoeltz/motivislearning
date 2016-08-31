@@ -8,6 +8,9 @@ footer {
 
 	article {
 		margin-bottom: $standard-bottomMargin;
+		small a {
+			color: $color-white;
+		}
 	}
 
 	h4 {

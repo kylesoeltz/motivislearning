@@ -6407,6 +6407,8 @@ header.page-header {
   header.page-header address {
     text-transform: uppercase;
     font-weight: 700; }
+    header.page-header address a {
+      color: #ffffff; }
   header.page-header:not(.featured-header) a.btn {
     background-color: transparent;
     border: solid 2px #ffffff;
@@ -6810,6 +6812,8 @@ footer p, footer small {
   font-weight: 400; }
 footer article {
   margin-bottom: 26px; }
+  footer article small a {
+    color: #ffffff; }
 footer h4 {
   font-family: 'Roboto Slab', arial, sans-serif;
   font-weight: 300;
