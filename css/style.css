@@ -6557,6 +6557,8 @@ header.page-header {
 
 body.single .at4-share-outer {
   display: block !important; }
+body.single .comments {
+  display: none; }
 
 .single-post main {
   background-color: #ffffff; }
@@ -6820,6 +6822,9 @@ footer h4 {
   font-size: 25px; }
 footer ul {
   margin-bottom: 35px; }
+  footer ul li:before {
+    height: 0px !important;
+    width: 0px !important; }
   footer ul li:first-of-type h5 {
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400; }
