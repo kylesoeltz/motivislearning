@@ -66,6 +66,7 @@ var navJS = {
 
             // show page subnav only if this page is a child of main nav
             if($('.secondary-nav .current_page_ancestor').length > 0){
+                $('.secondary-nav').before('<div style="height:0px;" class="secondary-nav-placeholder"></div>');
                 $('.secondary-nav').show();
             }
 
@@ -77,9 +78,11 @@ var navJS = {
 
                 if($(this).scrollTop() > calculatedHeight && !isPositionFixed) {
                     $($elm).addClass('fixed-secondary-nav');
+                    $('.secondary-nav-placeholder').css("height", $elm.outerHeight());
                 }
                 if($(this).scrollTop() < calculatedHeight && isPositionFixed) {
                     $($elm).removeClass('fixed-secondary-nav');
+                    $('.secondary-nav-placeholder').css("height", "0");
                 }
             });
         } )( jQuery );
