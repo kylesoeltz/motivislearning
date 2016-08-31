@@ -6204,13 +6204,13 @@ i.motivis.title-icon {
   margin: 26px auto;
   font-size: 108px; }
 
-article section ul, article[class^="post-"] ul, div.entry-content ul {
+article section ul, article[class^="post-"] ul, body.single section ul {
   list-style: none;
   margin: 26px; }
-  article section ul li, article[class^="post-"] ul li, div.entry-content ul li {
+  article section ul li, article[class^="post-"] ul li, body.single section ul li {
     padding-left: 20px;
     position: relative; }
-    article section ul li:before, article[class^="post-"] ul li:before, div.entry-content ul li:before {
+    article section ul li:before, article[class^="post-"] ul li:before, body.single section ul li:before {
       top: 14px;
       left: 0;
       content: "";
@@ -6219,7 +6219,7 @@ article section ul, article[class^="post-"] ul, div.entry-content ul {
       position: absolute;
       background-color: #595959;
       border-radius: 9999px; }
-article section ol, article[class^="post-"] ol, div.entry-content ol {
+article section ol, article[class^="post-"] ol, body.single section ol {
   margin: 26px 42px;
   list-style: decimal; }
 
