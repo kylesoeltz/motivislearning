@@ -710,6 +710,15 @@ header.page-header {
 	h1 {
 		max-width: 1000px;
 		margin: 0 auto;
+		a {
+			color: $color-white;
+			&:hover {
+				border-color: $color-white;
+			}
+		}
+		+ a.btn {
+			margin-top: $standard-bottomMargin;
+		}
 	}
 	p {
 		color: $color-white;
@@ -916,7 +925,7 @@ header.page-header {
 	header.page-header {
 		margin-bottom: $standard-bottomMargin;
 	}
-	
+
 }
 
 .entry-content, nav.post-navigation, .comments-area {
@@ -926,7 +935,7 @@ header.page-header {
 	margin: 0 auto;
 	text-align: left;
 	figure {
-		margin-bottom: $standard-bottomMargin;		
+		margin-bottom: $standard-bottomMargin;
 		figcaption {
 			margin-top: 10px;
 			font-size: 16px;
@@ -943,7 +952,7 @@ table {
 
 div.entry-content {
 	p {
-		font-size: 18px;	
+		font-size: 18px;
 	}
 }
 
@@ -1057,7 +1066,7 @@ div.author-info {
 		.author-avatar, .author-description {
 			display: block;
 			width: 100%;
-		}		
+		}
 		.author-avatar {
 			margin: $standard-bottomMargin auto;
 		}
@@ -1137,7 +1146,7 @@ article.contactdemo-page {
 		width: 45px;
 		height: 45px;
 		position: relative;
-		font-size: 20px;    		
+		font-size: 20px;
     	background-color: $color-orange;
     	color: $color-white;
     	border-radius: 3px;
@@ -1270,6 +1279,6 @@ div.search {
 //
 ///////////////////////////
 
-.notGated div[class ^= "col-md-"]:nth-of-type(2) p {		
+.notGated div[class ^= "col-md-"]:nth-of-type(2) p {
 	padding: 0 $standard-bottomMargin;
 }

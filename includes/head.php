@@ -22,7 +22,7 @@
 <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
 
 
-<link href="css/style.css" rel="stylesheet" />
+<link href="css/style.css?<?php echo time(); ?>" rel="stylesheet" />
 <script src="https://use.fortawesome.com/a6e72423.js"></script>
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
