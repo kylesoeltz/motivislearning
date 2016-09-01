@@ -933,7 +933,7 @@ body.single {
 	.at4-share-outer {
         display: block !important; 
     }
-    .comments {
+    .comments-area {
     	display: none;
     }
 }
@@ -959,6 +959,10 @@ body.single {
 			font-size: 16px;
 		}
 	}
+	small {
+		display: block;
+		margin-bottom: $standard-bottomMargin;
+	}
 }
 
 table {
@@ -974,19 +978,29 @@ div.entry-content {
 	}
 }
 
+.author-bg {
+	width: 100%;
+	background-color: $color-white;
+	border-top: 1px solid $color-gray;
+	border-bottom: 1px solid $color-gray;
+}
+
 div.author-info {
+		margin-top: $standard-bottomMargin;
+    	padding-top: $standard-bottomMargin * 2;
+    	padding-bottom: 34px;
 	.author-avatar {
-		width: 9%;
+		width: 15%;
 		display: inline-block;
 		margin-right: $standard-bottomMargin;
 		img {
-			height: 90px;
-			width: 90px;
+			height: 215px;
+			width: 215px;
 			border-radius: $bajillion;
 		}
 	}
 	.author-description {
-		width: 85%;
+		width: 80%;
 		display: inline-block;
 		vertical-align: top;
 		h2.author-title {
@@ -1076,13 +1090,33 @@ div.author-info {
 	}
 }
 
-@media (max-width: 976px) {
+.relatedContent {
+	h3 {
+		@include font-roboto-light();
+		font-size: 30px;
+		margin-bottom: $standard-bottomMargin;
+	}
+	.related {
+		address {
+			text-transform: uppercase;
+			color: $color-darkGray;
+			a {
+				color: $color-darkGray;
+			}
+		}
+	}
+	.related {
+		margin-bottom: $standard-bottomMargin;
+	}
+}
+
+@media (max-width: 840px) {
 	div.author-info {
 		.author-avatar, .author-description {
 			display: block;
 			width: 100%;
 		}
-		.author-avatar {
+		.author-avatar img {
 			margin: $standard-bottomMargin auto;
 		}
 	}
@@ -1097,6 +1131,21 @@ div.author-info {
 		}
 		textarea {
 			max-width: 100%;
+		}
+	}
+}
+
+body.author {
+	main {		
+		header h2 {
+			color: $color-white;
+		}
+		.author-info {
+			max-width: 1000px;
+    		padding-left: 25px;
+    		padding-right: 25px;
+    		margin: 0 auto;
+    		text-align: left;
 		}
 	}
 }

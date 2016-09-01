@@ -6557,7 +6557,7 @@ header.page-header {
 
 body.single .at4-share-outer {
   display: block !important; }
-body.single .comments {
+body.single .comments-area {
   display: none; }
 
 .single-post main {
@@ -6576,6 +6576,9 @@ body.single .comments {
     .entry-content figure figcaption, nav.post-navigation figure figcaption, .comments-area figure figcaption {
       margin-top: 10px;
       font-size: 16px; }
+  .entry-content small, nav.post-navigation small, .comments-area small {
+    display: block;
+    margin-bottom: 26px; }
 
 table {
   margin-bottom: 26px; }
@@ -6585,29 +6588,39 @@ table {
 div.entry-content p {
   font-size: 18px; }
 
-div.author-info .author-avatar {
-  width: 9%;
-  display: inline-block;
-  margin-right: 26px; }
-  div.author-info .author-avatar img {
-    height: 90px;
-    width: 90px;
-    border-radius: 9999px; }
-div.author-info .author-description {
-  width: 85%;
-  display: inline-block;
-  vertical-align: top; }
-  div.author-info .author-description h2.author-title {
-    font-family: 'Open Sans', arial, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 0;
-    margin-bottom: 13px;
-    text-transform: uppercase; }
-    div.author-info .author-description h2.author-title span {
+.author-bg {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7; }
+
+div.author-info {
+  margin-top: 26px;
+  padding-top: 52px;
+  padding-bottom: 34px; }
+  div.author-info .author-avatar {
+    width: 15%;
+    display: inline-block;
+    margin-right: 26px; }
+    div.author-info .author-avatar img {
+      height: 215px;
+      width: 215px;
+      border-radius: 9999px; }
+  div.author-info .author-description {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top; }
+    div.author-info .author-description h2.author-title {
+      font-family: 'Open Sans', arial, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 0;
+      margin-bottom: 13px;
       text-transform: uppercase; }
-  div.author-info .author-description p {
-    font-size: 16px; }
+      div.author-info .author-description h2.author-title span {
+        text-transform: uppercase; }
+    div.author-info .author-description p {
+      font-size: 16px; }
 
 .comments-area {
   padding: 25px; }
@@ -6659,17 +6672,39 @@ div.author-info .author-description {
       border: 1px solid #e3573c;
       outline: none; }
 
-@media (max-width: 976px) {
+.relatedContent h3 {
+  font-family: 'Roboto Slab', arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 26px; }
+.relatedContent .related address {
+  text-transform: uppercase;
+  color: #595959; }
+  .relatedContent .related address a {
+    color: #595959; }
+.relatedContent .related {
+  margin-bottom: 26px; }
+
+@media (max-width: 840px) {
   div.author-info .author-avatar, div.author-info .author-description {
     display: block;
     width: 100%; }
-  div.author-info .author-avatar {
+  div.author-info .author-avatar img {
     margin: 26px auto; } }
 @media (max-width: 768px) {
   .comments-area p input {
     max-width: 100%; }
   .comments-area textarea {
     max-width: 100%; } }
+body.author main header h2 {
+  color: #ffffff; }
+body.author main .author-info {
+  max-width: 1000px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+  text-align: left; }
+
 .error404 article h2 {
   font-size: 120px;
   color: #59c1e0; }
@@ -7001,8 +7036,8 @@ footer .contact-info {
     .solid-banner .hbspt-form input[type="submit"]:hover {
       background-color: #ffffff;
       color: #1b7bac; }
-.solid-banner li:before {
-  height: 0;
-  width: 0; }
+  .solid-banner .hbspt-form li:before {
+    height: 0;
+    width: 0; }
 
 /*# sourceMappingURL=style.css.map */
