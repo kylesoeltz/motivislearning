@@ -44,7 +44,7 @@ nav.main-nav {
 			display: inline-block;
 			margin-top: 20px;
 			li {
-				&.current_page_item, &.current-page-ancestor {
+				&.current_page_item, &.current-page-ancestor, &.current_page_parent {
 					a {
 						border-color: rgba($color-darkGray, 1);
 					} 
