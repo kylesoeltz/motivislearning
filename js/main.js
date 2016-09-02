@@ -115,6 +115,15 @@ var categoryFilterJS = {
     }
 }
 
+
+function hubspotFormFunction() {
+        alert('goodbye');
+        ( function( $ ) {
+            $('.hs-dependent-field select').selectpicker();
+        } )( jQuery );
+}
+
+
 //Section 5: Animations
 var animationsJS = {
     init: function(){
