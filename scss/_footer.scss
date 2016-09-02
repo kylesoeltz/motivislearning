@@ -6,7 +6,9 @@ footer {
 	p, small {
 		@include font-primary-regular();
 	}
-
+	a.btn {
+		margin-top: 20px;
+	}
 	article {
 		margin-bottom: $standard-bottomMargin;
 		small a {
