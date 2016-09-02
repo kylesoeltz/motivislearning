@@ -1333,8 +1333,16 @@ div.search {
 			}
 
 			&.search {
+				position: relative;
 				button {
-					display: none;
+					position: absolute;
+					top: 0;
+				    left: 0;
+				    font-size: 1px;
+				    width: 30px;
+				    height: 40px;
+				    background-color: transparent;
+				    border: none;
 				}
 				input[type='text'] {
 					background-color: $color-white;
