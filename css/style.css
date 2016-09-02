@@ -6607,7 +6607,7 @@ div.author-info {
     display: inline-block;
     margin-right: 26px; }
     div.author-info .author-avatar img {
-      height: 215px;
+      height: auto;
       width: 215px;
       border-radius: 9999px; }
   div.author-info .author-description {
