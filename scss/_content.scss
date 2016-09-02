@@ -151,6 +151,10 @@ section.pagination {
 	}
 }
 
+section#primary {
+	padding-bottom: 0;
+}
+
 //
 //	Section 2: Link and button styles
 //
@@ -1408,6 +1412,6 @@ form#tag-select input {
 	display: none;
 }
 
-body.search-results main section {
+body.search-results main > section:first-child {
 	padding-top: 0;
 }

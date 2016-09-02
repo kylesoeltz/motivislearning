@@ -5979,6 +5979,9 @@ section.pagination div.nav-links a.next {
 section.pagination div.nav-links a.next:before {
   content: '\f001'; }
 
+section#primary {
+  padding-bottom: 0; }
+
 [class*="btn-ghost-"] {
   border-width: 2px;
   border-style: solid; }
@@ -6873,7 +6876,7 @@ textarea.hs-input {
 form#tag-select input {
   display: none; }
 
-body.search-results main section {
+body.search-results main > section:first-child {
   padding-top: 0; }
 
 /*-----
