@@ -27,10 +27,10 @@
 	border-radius: 600px;
 	border: solid 2px $color-white;
 	max-width: 136px;
-	max-height: 136px;
+	height: auto;
 	&.avatar-medium {
 		max-width: 175px;
-		max-height: 175px;
+		height: auto;
 	}
 }
 
@@ -46,14 +46,14 @@
 		padding-left: 105px;
 		img.avatar {
 			max-width: 90px;
-			max-height: 90px;
+			max-height: auto;
 		}
 	}
 	@media (max-width: 500px) {
 		padding-left: 0;
 		img.avatar {
 			max-width: 112px;
-			max-height: 112px;
+			max-height: auto;
 			position: relative;
 			display: block;
 			text-align: center;
@@ -360,10 +360,12 @@ blockquote {
 .team-members {
 	max-width: 1050px;
 	margin: 0 auto;
+	.matchHeight {
+		min-height: 240px;
+	}
 	img {
 		border-radius: $bajillion;
 		margin-bottom: $standard-bottomMargin;
-		min-height: 238px;
 	}
 	h4 {
 		text-align: center;
@@ -511,7 +513,6 @@ section {
 				padding-left: 0;
 				img.avatar {
 					max-width: 140px;
-					max-height: 140px;
 					display: block;
 					position: relative;
 					margin: 0 auto 40px;
@@ -931,7 +932,7 @@ header.page-header {
 
 body.single {
 	.at4-share-outer {
-        display: block !important; 
+        display: block !important;
     }
     .comments-area {
     	display: none;
@@ -1136,7 +1137,7 @@ div.author-info {
 }
 
 body.author {
-	main {		
+	main {
 		header h2 {
 			color: $color-white;
 		}
