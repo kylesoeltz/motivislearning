@@ -111,18 +111,12 @@ var categoryFilterJS = {
             $('.category-select').on('change', 'select', function(e) {
                 $(this).parents('form').find('input[type=submit]').click();
             });
+            $(window).load(function(){ //hubspot form changes go here
+                $('.hs-dependent-field select').selectpicker();
+            })
         } )( jQuery );
     }
 }
-
-
-function hubspotFormFunction() {
-        alert('goodbye');
-        ( function( $ ) {
-            $('.hs-dependent-field select').selectpicker();
-        } )( jQuery );
-}
-
 
 //Section 5: Animations
 var animationsJS = {

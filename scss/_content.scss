@@ -1323,12 +1323,7 @@ div.search {
 			select {
 				display: none;
 			}
-			.dropdown-toggle {
-				height: 40px;
-				width: 210px;
-				border-radius: 0;
-				margin-right: 20px;
-			}
+
 			.filter-option {
 				display: block;
 				margin-top: -3px;
@@ -1336,14 +1331,7 @@ div.search {
 				color: $color-charcoal;
 				text-transform: none;
 			}
-			.bootstrap-select {
-				ul.dropdown-menu.inner {
-					max-height: 300px !important;
-					li:first-child {
-						display: none;
-					}
-				}
-			}
+
 			&.search {
 				button {
 					display: none;
@@ -1374,6 +1362,38 @@ div.search {
 			}
 		}
 	}
+}
+
+.dropdown-toggle {
+	height: 40px;
+	width: 210px;
+	border-radius: 0;
+	margin-right: 20px;
+}
+.bootstrap-select {
+	ul.dropdown-menu.inner {
+		max-height: 300px !important;
+		li:first-child {
+			display: none;
+		}
+	}
+	&.hs-input {
+		.dropdown-toggle {
+			line-height: 1;
+			text-transform: none;
+		}
+		select {
+			display: none;
+		}
+	}
+}
+
+textarea.hs-input {
+	font-size: 16px;
+	width: 100%;
+	background-color: $color-pageBg;
+	border-color: $color-gray;
+	min-height: 150px;
 }
 
 form#tag-select input {

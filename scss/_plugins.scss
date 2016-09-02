@@ -671,9 +671,7 @@ select.mobile-device {
 .bootstrap-select {
     width: 100% !important;
 }
-.bootstrap-select .dropdown-toggle:focus {
-  outline: none !important;
-}
+
 .bootstrap-select button {
     width: 100%;
     border: solid 1px $color-darkGray;
@@ -687,7 +685,6 @@ select.mobile-device {
     &:hover,&:active,&:focus {
         color: $color-darkGray;
         background-color: $color-white;
-        border-color: $color-orange;
     }
     .caret:before {
         @include iconFont();
@@ -741,7 +738,6 @@ select.mobile-device {
 }
 
 .open > .dropdown-toggle.btn-default {
-  border-color: $color-orange !important;
   background-color: $color-white !important;
 }
 
