@@ -17,6 +17,7 @@ var mainJS = {
         footerJS.init();
         categoryFilterJS.init();
         animationsJS.init();
+        youtubeJS.init();
     }
 }
 
@@ -103,7 +104,11 @@ var categoryFilterJS = {
     init: function(){
         ( function( $ ) {
             $('.selectpicker select').selectpicker();
-            $('.selectpicker').on('change', 'select', function(e) {
+            $('.tag-select').on('change', 'select', function(e) {
+                var tagUrl = '/insights/tag/' + $(this).val();
+                $(this).parents('form').attr('action', tagUrl).find('input[type=submit]').click();
+            });
+            $('.category-select').on('change', 'select', function(e) {
                 $(this).parents('form').find('input[type=submit]').click();
             });
         } )( jQuery );
@@ -132,6 +137,37 @@ var animationsJS = {
     }
 }
 
+//Section 5: Responsive Youtube Videos
+var youtubeJS = {
+    init: function(){
+        ( function( $ ) {
+            $(document).ready( function(){
+                // Find all YouTube videos
+                var $allVideos = $('iframe[src*="youtube.com"]');
+                // Figure out and save aspect ratio for each video
+                $allVideos.each(function() {
+                  $(this)
+                    .data('aspectRatio', this.height / this.width)
+                    // and remove the hard coded width/height
+                    .removeAttr('height')
+                    .removeAttr('width');
+                });
+                // When the window is resized
+                $(window).resize(function() {
+                  // Resize all videos according to their own aspect ratio
+                  $allVideos.each(function() {
+                    var newWidth = $(this).parent().width();
+                    var $el = $(this);
+                    $el
+                      .width(newWidth)
+                      .height(newWidth * $el.data('aspectRatio'));
+                  });
+                // Kick off one resize to fix all videos on page load
+                }).resize();
+            });
+        } )( jQuery );
+    }
+}
 
 
 
