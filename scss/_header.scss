@@ -44,8 +44,10 @@ nav.main-nav {
 			display: inline-block;
 			margin-top: 20px;
 			li {
-				&.current_page_item a {
-					border-color: rgba($color-darkGray, 1);
+				&.current_page_item, &.current-page-ancestor {
+					a {
+						border-color: rgba($color-darkGray, 1);
+					} 
 				}
 				&.solutions {
 					line-height: 1.2em;

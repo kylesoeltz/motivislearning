@@ -1,6 +1,7 @@
 /*-----
 	Footer Styles
 	-----*/
+
 footer {	 
 	p, small {
 		@include font-primary-regular();
@@ -18,8 +19,7 @@ footer {
 		font-size: 25px;
 	}
 
-	ul {
-		margin-bottom: 35px;
+	ul {		
 		li:before {
 			height: 0px !important;
 			width: 0px !important;
