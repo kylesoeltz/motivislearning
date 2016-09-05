@@ -1408,8 +1408,14 @@ textarea.hs-input {
 	min-height: 150px;
 }
 
-form#tag-select input {
-	display: none;
+form#category-select {
+	width: 220px;
+}
+form#tag-select {
+	width: 220px;
+	input {
+		display: none;
+	}
 }
 
 body.search-results main > section:first-child {

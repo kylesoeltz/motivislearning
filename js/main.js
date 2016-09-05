@@ -105,7 +105,7 @@ var categoryFilterJS = {
         ( function( $ ) {
             $('.selectpicker select').selectpicker();
             $('.tag-select').on('change', 'select', function(e) {
-                var tagUrl = '/insights/tag/' + $(this).val();
+                var tagUrl = '/topic/' + $(this).val();
                 $(this).parents('form').attr('action', tagUrl).find('input[type=submit]').click();
             });
             $('.category-select').on('change', 'select', function(e) {
