@@ -5588,24 +5588,26 @@ header.nav-header {
   height: 90px;
   z-index: 200; }
 
-h1.logo a {
-  display: block;
-  text-indent: -10000px;
-  text-align: left;
-  font-size: 0;
-  width: 290px;
-  height: 62px;
-  background-image: url("images/motivis-logo.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border: none; }
+div.logo {
+  float: left; }
+  div.logo a {
+    display: block;
+    text-indent: -10000px;
+    text-align: left;
+    font-size: 0;
+    width: 290px;
+    height: 82px;
+    background-image: url("images/motivis-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none; }
 
 nav.main-nav {
   background-color: #ffffff;
   padding-top: 8px;
   width: 100%;
   border-bottom: solid 1px #e8e9ec; }
-  nav.main-nav h1.logo {
+  nav.main-nav div.logo {
     float: left; }
   nav.main-nav button.mobileNavToggle {
     display: none; }
@@ -5703,10 +5705,11 @@ nav.main-nav {
   header.nav-header {
     height: 70px; }
 
-  nav.main-nav .inner h1.logo {
+  nav.main-nav .inner div.logo {
     margin-bottom: 0; }
-    nav.main-nav .inner h1.logo a {
-      width: 230px; }
+    nav.main-nav .inner div.logo a {
+      width: 230px;
+      height: 62px; }
   nav.main-nav .inner ul {
     margin-top: 15px; }
     nav.main-nav .inner ul li {
@@ -5722,9 +5725,9 @@ nav.main-nav {
   header.nav-header {
     height: 70px; }
 
-  nav.main-nav .inner h1.logo {
+  nav.main-nav .inner div.logo {
     margin-bottom: 0; }
-    nav.main-nav .inner h1.logo a {
+    nav.main-nav .inner div.logo a {
       width: 200px; }
   nav.main-nav .inner ul {
     margin-top: 10px; }
@@ -5747,7 +5750,7 @@ nav.main-nav {
       top: -64px;
       height: 114px;
       overflow: hidden; }
-      nav.main-nav .inner h1.logo {
+      nav.main-nav .inner div.logo {
         position: relative;
         top: 64px;
         height: 50px;
@@ -6873,9 +6876,22 @@ textarea.hs-input {
   border-color: #d7d7d7;
   min-height: 150px; }
 
-form#tag-select input {
-  display: none; }
+form#category-select {
+  width: 220px; }
 
+form#tag-select {
+  width: 220px; }
+  form#tag-select input {
+    display: none; }
+
+body.search-results div.excerpt {
+  max-width: 750px;
+  font-size: 18px;
+  margin-top: 26px;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  word-wrap: break-word; }
 body.search-results main > section:first-child {
   padding-top: 0; }
 
@@ -6885,6 +6901,8 @@ body.search-results main > section:first-child {
 footer p, footer small {
   font-family: 'Open Sans', arial, sans-serif;
   font-weight: 400; }
+footer a.btn {
+  margin-top: 20px; }
 footer article {
   margin-bottom: 26px; }
   footer article small a {
