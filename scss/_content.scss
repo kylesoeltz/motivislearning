@@ -939,6 +939,10 @@ body.single {
     .comments-area {
     	display: none;
     }
+    section + div.entry-content {
+    	margin-top: $standard-bottomMargin * 2;
+    	margin-bottom: $standard-bottomMargin * 2;
+    }
 }
 
 .single-post main {
