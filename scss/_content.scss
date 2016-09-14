@@ -448,7 +448,7 @@ i.motivis.title-icon {
 	font-size: 108px;
 }
 
-article section, article[class ^= "post-"], body.single section {
+article section, article[class ^= "post-"], body.single section, body.single div.entry-content {
 	ul {
 		list-style: none;
 		margin: $standard-bottomMargin;
