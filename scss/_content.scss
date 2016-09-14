@@ -448,31 +448,6 @@ i.motivis.title-icon {
 	font-size: 108px;
 }
 
-article section, article[class ^= "post-"], body.single section, body.single div.entry-content {
-	ul {
-		list-style: none;
-		margin: $standard-bottomMargin;
-		li {
-			padding-left: 20px;
-			position: relative;
-			&:before {
-				top: 14px;
-	    		left: 0;
-				content: "";
-				height: 5px;
-				width: 5px;
-				position: absolute;
-				background-color: $color-darkGray;
-				border-radius: $bajillion;
-			}
-		}
-	}
-	ol {
-		margin: $standard-bottomMargin $standard-bottomMargin + 16px;
-		list-style: decimal;
-	}
-}
-
 article section.text-left {
 	h2, h3 {
 		margin: 0 auto;
