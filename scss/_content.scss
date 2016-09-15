@@ -113,6 +113,8 @@ p.details {
 	}
 }
 section.pagination {
+	background: #fff;
+	padding: 25px 0;
     div.inner {
     	text-align: center;
     }
@@ -129,25 +131,42 @@ section.pagination {
 	    span.current {
     	    font-weight: 700;
 	    }
+	    .page-numbers {
+	    	display: none;
+	    }
 	    a.prev,
 	    a.next {
 	    	content: "";
+	    	float: left;
 	    	display: inline-block;
-		    font: normal normal normal 14px/1 'MotivisWebsite';
-		    font-size: inherit;
-		    text-rendering: auto;
-		    -webkit-font-smoothing: antialiased;
-		    -moz-osx-font-smoothing: grayscale;
-	    	span {
-	    		display: none;
+	    	font-family: 'Open Sans', arial, sans-serif;
+		    color: #595959;
+		    span {
+	    		display: inline-block;
+	    	}
+	    	&:hover {
+	    		color: #e3573c;
 	    	}
 	    	&:before {
+			    font: normal normal normal 14px/1 'MotivisWebsite';
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			    font-size: inherit;
+	    		float: left;
 	    		content: '\f000';
+	    		color: #e3573c;
+	    		margin-right: 10px;
 	    	}
 	    }
-	    a.next:before {
-	    	content: '\f001';
-	    }
+	    a.next {
+	    	float: right;
+	    	&:before {
+		    	content: '\f001';
+	    		float: right;
+	    		margin: 0 0 0 10px;
+		    }
+		}
 	}
 }
 
@@ -1321,7 +1340,7 @@ div.search {
 					position: absolute;
 					top: 0;
 				    left: 0;
-				    font-size: 1px;
+				    font-size: 0;
 				    width: 30px;
 				    height: 40px;
 				    background-color: transparent;
