@@ -133,11 +133,16 @@ dl dd{
 ul {
     list-style: none;
     margin: $standard-bottomMargin;
+    nav &, footer &, &.sub-menu {
+        margin: 0;
+    }
     li {
         padding-left: 20px;
-        position: relative;
+        position: relative;        
         nav &, footer & {
             padding-left: 0;
+            position: initial;
+            
             &:before {
                 display: none;
             }
