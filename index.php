@@ -11,22 +11,26 @@
 
     </head>
     <body>
-        <?php include 'includes/header.php'; ?>
+        <?php //include 'includes/header.php'; ?>
         <main>
         	<article>
-	        	<header class="page-header image-header green dots callout-header">
+	        	<header class="page-header image-header green hexagons dots callout-header">
 		        	<div class="inner">
-		        		<h1>Their Future is Our Mission</h1>
-		        		<p>A modern platform built by educational experts for a holistic student experience.</p>
-		        		<a href="#" class="btn">Learn More</a>
-		        		<svg class="paint-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1270 690">
-							<defs>
-								<mask id="paintMask">
-								<image width="1270" height="690" xlink:href="images/home/paint-clip-mask-large.png"></image>
-						 		</mask>
-							</defs>
-							<image mask="url(#paintMask)" id="image" width="1270" height="690" xlink:href="images/home/slide2.jpg"></image>
-						</svg>
+			        	<div class="row">
+			        		<h1>Their Future is Our Mission</h1>
+			        		<p>A modern platform built by educational experts for a holistic student experience.</p>
+			        		<a href="#" class="btn">Learn More</a>
+			        		<div class="hero-image" style="background-image: url('images/Hero-Images.png');"></div>
+		        		</div>
+					</div>
+	        	</header>
+	        	<header class="page-header image-header blue">
+		        	<div class="inner">
+			        	<div class="row">
+			        		<h1>Learning Relationship Management</h1>
+			        		<p>Our Learning Relationship Management (LRM) platform is built specifically for education by experts in education. Both flexible and powerful, it ensures the solution you choose is an advantage today and in the future.</p>
+			        		<div class="hero-image" style="background-image: url('images/Solutions-banner.png');"></div>
+		        		</div>
 					</div>
 	        	</header>
 	        	<section>
