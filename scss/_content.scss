@@ -515,6 +515,33 @@ section {
 				}
 			}
 		}
+		&.video {
+			h2 {
+				margin-left: 0;
+			}
+			.content-container,.video-container {
+				width: 50%;
+				float: left;
+				@media (max-width: 799px) {
+					width: 100%;
+				}
+			}
+			.content-container {
+				display: table;
+				&.video-active {
+					@media (min-width: 799px) {
+						display: none;
+					}
+				}
+				@media (max-width: 799px) {
+					margin-bottom: $standard-bottomMargin;
+				}
+				.content {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
 	}
 	&.navy {
 		background-color: $color-navy;

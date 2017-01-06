@@ -13,6 +13,7 @@
         <?php include 'includes/header.php'; ?>
         <main>
         	<article>
+        		<!--
 	        	<article>
 	        		<div class="row form-row">
                         <div class="col-sm-7">
@@ -102,7 +103,7 @@
 		        		</div>
 		        	</div>
 	        	</article>
-
+	        	-->
 	        	<section>
 		        	<div class="inner">
 		        		<div class="section text-center">
@@ -150,6 +151,62 @@
 	        		</div>
 	        	</section>
 
+	        	<!--
+	        	This is the new video video component
+				Requires youtube iframe api loaded onto page
+	        	-->
+	        	<script src="https://www.youtube.com/iframe_api"></script>
+	        	<section class="solid-banner green video">
+		        	<div class="inner">
+		        		<div class="section">
+			        		<div class="content-container matchHeight">
+				        		<div class="content">
+					        		<h2>Learn About The Benefits Of Salesforce For Higher Education</h2>
+						        	<a href="#" class="btn">Learn More</a>
+					        	</div>
+				        	</div>
+			        		<div class="video-container matchHeight">
+				        		<div id="video01">
+				        		</div>
+			        		</div>
+		        		</div>
+	        		</div>
+	        	</section>
+	        	<script type="text/javascript">
+	        		var player, playing = false;
+				    function onYouTubeIframeAPIReady() {
+						var container = $('#video01').parent('.video-container');
+						var setWidth = container.width();
+						var setHeight = container.width()*.5625;
+				        player = new YT.Player('video01', {
+				            height: setHeight,
+				            width: setWidth,
+				            videoId: 'gXc_774MyTI',
+				            events: {
+				                'onStateChange': video01_StateChange
+				            }
+				        });
+				    }
+
+				    function video01_StateChange(event) {
+				        if(!playing){
+				        	var container = $('#video01').parent('.video-container');
+				        	container.css('width', '100%');
+				        	$('#video01').parents('.video').find('.content-container').addClass('video-active');
+				        	var setWidth = container.width();
+							var setHeight = container.width()*.5625;
+							$('#video01').css({
+								'height': setHeight,
+								'width': setWidth
+							});
+				        	container.css('height', 'auto');
+				            playing = true;
+				        }
+				    }
+	        	</script>
+	        	<!--
+				/End video component
+				-->
 	        	<section class="solid-banner blue">
 		        	<div class="inner">
 			        	<div class="section standard-block">
@@ -488,7 +545,7 @@
 		        		<div class="section">
 			        		<h4>Subscribe for updates</h4>
 			        		<script>
-  								hbspt.forms.create({ 
+  								hbspt.forms.create({
     								css: '',
     								portalId: '1625919',
     								formId: 'a3f1b923-abba-4c91-aef8-abe8c789988c'
