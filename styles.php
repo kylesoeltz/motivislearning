@@ -142,7 +142,7 @@
 		        	</div>
 	        	</section>
 
-	        	<section class="solid-banner navy text-center">
+	        	<section class="solid-banner green text-center">
 		        	<div class="inner">
 		        		<div class="section">
 			        		<h4>Learn About The Benefits Of Salesforce For Higher Education</h4>
@@ -151,12 +151,14 @@
 	        		</div>
 	        	</section>
 
+
+
 	        	<!--
 	        	This is the new video video component
 				Requires youtube iframe api loaded onto page
 	        	-->
 	        	<script src="https://www.youtube.com/iframe_api"></script>
-	        	<section class="solid-banner green video">
+	        	<section class="solid-banner blue video">
 		        	<div class="inner">
 		        		<div class="section">
 			        		<div class="content-container matchHeight">
@@ -207,7 +209,9 @@
 	        	<!--
 				/End video component
 				-->
-	        	<section class="solid-banner blue">
+
+
+	        	<section class="solid-banner green">
 		        	<div class="inner">
 			        	<div class="section standard-block">
 			        		<img src="images/avatar-paul.jpg" class="avatar avatar-medium">
